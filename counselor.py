@@ -19,172 +19,191 @@ CRISIS_KEYWORDS = [
     "harm myself", "cut myself", "suicidal",
 ]
 
-TOPIC_RESPONSES = {
+STOP_WORDS = {
+    "i", "me", "my", "myself", "we", "our", "you", "your", "yourself",
+    "he", "him", "she", "her", "it", "they", "them", "their",
+    "a", "an", "the", "and", "or", "but", "if", "because", "so",
+    "is", "am", "are", "was", "were", "be", "been", "being",
+    "have", "has", "had", "do", "does", "did", "will", "would",
+    "can", "could", "shall", "should", "may", "might",
+    "not", "no", "nor", "just", "very", "too", "really", "also",
+    "about", "with", "without", "for", "of", "to", "in", "into",
+    "on", "at", "by", "from", "up", "down", "out", "off", "now",
+    "over", "under", "again", "further", "then", "once",
+    "here", "there", "when", "where", "why", "how",
+    "all", "each", "every", "both", "few", "more", "most", "much",
+    "some", "any", "thing", "things", "like", "get", "got",
+    "feel", "feels", "feeling", "felt", "make", "makes",
+    "go", "went", "come", "came", "take", "took", "know",
+    "think", "thought", "want", "needs", "need", "says", "say",
+    "cannot", "cannot", "dont", "doesnt", "wont", "cant",
+    "always", "never", "ever", "even", "still", "already",
+    "much", "many", "lot", "lots", "some", "something",
+    "nothing", "everything", "anything", "everyone", "someone",
+    "maybe", "perhaps", "probably", "actually", "basically",
+    "definitely", "certainly", "absolutely", "quite", "pretty",
+    "ago", "since", "until", "while", "during", "before", "after",
+    "today", "yesterday", "tomorrow", "tonight", "morning",
+    "also", "though", "although", "however", "therefore",
+    "well", "oh", "ah", "okay", "ok", "yeah", "yes", "no",
+    "sure", "right", "fine", "good", "bad",
+}
+
+REFLECTION_STARTS = {
     "anxiety": [
-        "Anxiety can feel really heavy. What physical sensations do you notice when it shows up?",
-        "Let's try something: take a slow breath in for 4 counts, hold for 4, out for 4. What do you notice?",
-        "Anxiety often comes from trying to control the future. What's one small thing you can control right now?",
-        "It sounds like your mind is stuck in a worry loop. What helps you press pause on those thoughts?",
-        "Anxiety wants you to believe the worst will happen. What's a more balanced way to look at this?",
-        "I hear how hard this is. When you feel anxious, where do you feel it most in your body?",
-        "You don't have to fight anxiety alone. What would support look like for you right now?",
-        "Sometimes naming your anxiety helps. If it had a shape or color, what would it be?",
-        "What's one tiny thing you can do right now that feels manageable?",
-        "Your anxiety is valid, but it's also lying to you about how dangerous this is.",
-        "Let's try grounding: name 5 things you can see, 4 you can touch, 3 you can hear. What do you notice?",
-        "Anxiety thrives on avoidance. What's one small step you could take toward what scares you?",
-        "What would you tell a friend who was feeling this same anxiety?",
-        "I see how much this is affecting you. Have you tried progressive muscle relaxation?",
-        "Panic attacks are terrifying, but they can't hurt you. They pass. What helps you ride the wave?",
-        "Your nervous system is trying to protect you, but you're not in danger right now.",
+        "That anxiety sounds really unsettling.",
+        "I can hear the worry in what you're describing.",
+        "It sounds like your mind is working hard to protect you from something.",
     ],
     "sadness": [
-        "It's okay to be sad. Sadness isn't weakness — it's a sign you care about something. What started this feeling?",
-        "I'm sorry you're going through that. Have you been able to let yourself feel it, or are you pushing it away?",
-        "Sadness can be your mind's way of telling you something matters. What do you think it's trying to say?",
-        "It takes courage to sit with sadness. What do you need most right now?",
-        "You don't have to fix it today. Just being here with it is enough.",
-        "Sadness has a way of making everything feel heavier. What's one comfort you can give yourself?",
-        "I see your pain. You don't have to go through it alone.",
-        "What would it look like to be gentle with yourself right now?",
-        "Sadness isn't permanent, even though it feels endless. What helped you feel better in the past?",
-        "Your feelings are valid. There's no timeline for healing.",
-        "Grief is love with nowhere to go. What did this person or thing mean to you?",
-        "When we lose something important, it's natural to feel empty. What would honoring that loss look like?",
-        "Sometimes the heaviest thing is pretending to be okay. You don't have to do that here.",
-        "Have you tried behavioral activation? Even a small activity like a short walk can shift things.",
-        "I hear your hopelessness. When you've felt this low before, what got you through?",
-        "It's exhausting to carry this much sadness. What's one tiny act of self-compassion you could try?",
+        "That heaviness you're describing — it sounds painful.",
+        "I hear the sadness in your voice.",
+        "That ache makes sense given what you're going through.",
     ],
     "anger": [
-        "Anger is often a protector for deeper feelings like hurt or fear. What's underneath it?",
-        "It makes sense you'd feel angry about that. What would you need to feel heard?",
-        "Anger has a lot of energy. Before you act on it, what does it need you to understand?",
-        "You have every right to be angry. The question is: what do you want to do with that anger?",
-        "Sometimes anger is just grief in disguise. Is there something you're mourning?",
-        "I can feel how passionate you are about this. That matters.",
-        "What would a healthy release for this anger look like?",
-        "Anger can be a signal that a boundary has been crossed. What boundary might need attention?",
-        "Let's sit with the anger for a moment. What does it need you to know?",
-        "You're not bad for being angry. What happened that made you feel this way?",
-        "Try naming the temperature of your anger on a scale of 1-10. What would bring it down by 1 point?",
-        "Anger wants action. What's a constructive action you can take with this energy?",
-        "It sounds like you've been holding this in for a long time. That must be exhausting.",
-        "What would it look like to set a firm boundary around what's making you angry?",
+        "That sounds deeply frustrating.",
+        "I can feel how strongly this affects you.",
+        "That kind of frustration is completely understandable.",
     ],
     "stress": [
-        "Stress usually means you're carrying a lot. What's one thing you could set down, even for today?",
-        "When you're stressed, your nervous system is working overtime. What helps you feel safe?",
-        "You can't pour from an empty cup. What's one small act of care you can give yourself?",
-        "Let's break it down. What's the single most important thing on your plate right now?",
-        "Your best is enough, even if it doesn't feel like it.",
-        "What would it feel like to give yourself permission to rest?",
-        "I hear how overwhelmed you are. What can wait until tomorrow?",
-        "Stress thrives on urgency. Take a breath — what actually needs to happen right this second?",
-        "You're human, not a machine. It's okay to be at your limit.",
-        "What's one boundary you can set to protect your peace?",
-        "Try the 5-4-3-2-1 grounding technique: name 5 things you see, 4 you feel, 3 you hear, 2 you smell, 1 you taste.",
-        "Stress often comes from trying to control too much. What can you actually control right now?",
-        "What would you tell a friend who was carrying the same load?",
-        "Let's try a quick body scan - what part of your body is holding the most tension right now?",
-        "You've been running on empty. What would refuel you even 5 percent?",
+        "That sounds like a lot to carry right now.",
+        "It sounds like you're stretched thin.",
+        "I hear how much pressure you're under.",
     ],
     "sleep": [
-        "Sleep struggles often reflect what's happening in our waking hours. What's on your mind when you lie down?",
-        "A consistent wind-down routine can help. What does your evening look like right now?",
-        "It's hard to rest when your mind is racing. Would writing down your thoughts before bed help?",
-        "Your body wants to sleep — it might be your mind keeping you awake. What's it trying to process?",
-        "Have you tried creating a sleep sanctuary? Dark, cool, quiet — what would that look like for you?",
-        "I know how frustrating sleeplessness is. What have you tried so far?",
-        "Sometimes the pressure to sleep makes it worse. What if you just rested without trying to sleep?",
-        "Our brains process the day at night. Is there something you haven't had a chance to process?",
-        "A warm drink, dim lights, no screens — small rituals can signal safety to your brain.",
-        "Sleep will come. For now, let's focus on calming your nervous system.",
-        "CBT for insomnia suggests getting out of bed if you can't sleep for 20 minutes. Have you tried that?",
-        "What's your caffeine and screen time like before bed? Small adjustments can make a big difference.",
-        "Sleep anxiety is real - the fear of not sleeping keeps you awake. What if you took the pressure off?",
+        "That struggle to rest sounds exhausting.",
+        "It sounds like your mind stays busy even at night.",
+        "That frustration with sleep is completely understandable.",
     ],
     "relationships": [
-        "Relationships can be beautiful and hard. What do you need from this person that you're not getting?",
-        "It sounds like this relationship matters to you. What would a healthy version of it look like?",
-        "Communication is tough. What would you say if you knew they'd really listen?",
-        "You deserve to feel safe and valued in your relationships. Are you feeling that?",
-        "What's one small step you could take to improve things?",
-        "Relationships require two people trying. Are you both showing up?",
-        "It's okay to outgrow relationships. What does your heart tell you?",
-        "Boundaries aren't walls — they're guidelines for healthy connection. Do you have the boundaries you need?",
-        "I hear how much this is hurting you. What would you need to feel at peace?",
-        "You can't control the other person, but you can control how you show up. What feels right for you?",
-        "Breakups hurt because we're not just losing a person, we're losing the future we imagined.",
-        "Trust takes years to build and seconds to break. What would rebuilding trust look like for you?",
-        "It sounds like you've been carrying this relationship alone. That's not fair to you.",
-        "What would your ideal resolution look like? Sometimes naming it helps clarify what you want.",
-        "Heartbreak is a form of grief. It deserves the same compassion as any other loss.",
+        "That tension in your relationship sounds painful.",
+        "I hear how much this connection matters to you.",
+        "That feeling of distance sounds really hard.",
     ],
     "work": [
-        "Work takes up so much of our lives. What part of it drains you the most?",
-        "It's tough when work feels overwhelming. What's one boundary you could set this week?",
-        "Your worth is not your productivity. What would you do if you weren't afraid of failing?",
-        "It sounds like there's a mismatch somewhere. Is it the work, the environment, or something else?",
-        "What would your ideal work life look like? Even if it feels far away.",
-        "Burnout is real. What's one thing you can do to protect your energy?",
-        "You spend a third of your life working. It's okay to want more from it.",
-        "What skills or passions are you not using that you wish you could?",
-        "A job is what you do, not who you are. Remembering that can take some pressure off.",
-        "What would it take to feel fulfilled in your work?",
-        "Imposter syndrome is incredibly common. You're not alone in feeling this way.",
-        "Being laid off says nothing about your worth as a person. The job market is brutal right now.",
-        "What parts of your work used to bring you joy? Can you reconnect with any of them?",
-        "Career confusion is normal, especially in your 20s and 30s. You don't need to have it all figured out.",
+        "That work situation sounds draining.",
+        "I hear how much this is weighing on you professionally.",
+        "That frustration with your work makes sense.",
     ],
     "confusion": [
-        "Not knowing is uncomfortable, but it's also honest. What would bring you clarity?",
-        "Sometimes confusion means you're growing. What options are you weighing?",
-        "You don't need to have it all figured out. What's one thing you're sure about?",
-        "Confusion is a sign you're at a threshold. What feels most important right now?",
-        "Let's untangle this together. What's the heart of what you're unsure about?",
-        "It's okay not to know. The answers often come when we stop forcing them.",
-        "What would you do if you weren't afraid of making the wrong choice?",
-        "Sometimes writing down both sides helps. Want to talk through the options?",
-        "You don't have to decide today. Give yourself the space to sit with the question.",
-        "What does your gut say, even if your mind is complicated?",
-        "Identity crises are a normal part of growth. You're not broken - you're evolving.",
-        "What values matter most to you? Sometimes starting with values helps clarify decisions.",
-        "It's okay to change your mind. You're allowed to grow and shift.",
-        "Think about your past self - what would they tell you? What would your future self want you to know?",
+        "That uncertainty sounds disorienting.",
+        "Not having clarity is genuinely uncomfortable.",
+        "That feeling of being at a crossroads sounds confusing.",
     ],
     "positive": [
-        "That's wonderful to hear! What's contributing to that positive feeling?",
-        "It's great that you're noticing the good. How can you nurture that?",
-        "Savor this moment. You deserve to feel good. What does it feel like in your body?",
-        "I love that for you. What helped you get to this place?",
-        "Holding onto positive moments is like building a resilience bank. What are you most grateful for?",
-        "That's beautiful. How can you carry this feeling with you through harder days?",
-        "You're doing something right. What's working well in your life?",
-        "Let's celebrate that. You've earned it.",
-        "What would it look like to invite more of this into your life?",
-        "Joy is worth protecting. What helps you stay connected to this feeling?",
-        "Gratitude isn't about ignoring the hard stuff - it's about noticing the good alongside it.",
-        "What's one thing you did today that future you will be grateful for?",
-        "Positive moments build resilience. Store this one up for the tough days.",
+        "That sounds genuinely uplifting.",
+        "It's nice to hear something positive is happening.",
+        "That warmth in your voice is really nice to hear.",
     ],
     "general": [
-        "Tell me more about that. How does it make you feel?",
-        "I hear you. Can you share what's been going on?",
-        "That sounds important to you. What comes to mind when you think about it?",
-        "I'm listening. What do you wish was different?",
-        "Thank you for sharing that with me. How does it feel to talk about it?",
-        "I want to understand better. What's the hardest part?",
-        "That's really brave of you to open up. What do you need right now?",
-        "I appreciate you trusting me with this. What's been on your heart?",
-        "There's no pressure to get it perfect. Just share what feels true.",
-        "You're not alone in this. What feels most important to talk about?",
-        "Take your time. I'm here and I'm listening.",
-        "What would you say if there were no wrong answers?",
-        "Sometimes just saying things out loud helps. I'm here to listen.",
-        "How long have you been feeling this way?",
-        "What do you think triggered these feelings?",
-        "What's the biggest thing on your mind right now?",
+        "I hear what you're sharing.",
+        "That sounds important to you.",
+        "I appreciate you telling me about this.",
+    ],
+}
+
+VALIDATIONS = {
+    "anxiety": [
+        "It makes sense you'd feel that way.",
+        "Anxiety is your body's way of trying to protect you, even when it overdoes it.",
+    ],
+    "sadness": [
+        "It makes sense you'd feel that way.",
+        "Sadness is a natural response when something matters to us.",
+    ],
+    "anger": [
+        "Anyone might feel that way in your position.",
+        "Anger often shows us when something we care about has been crossed.",
+    ],
+    "stress": [
+        "Anyone would feel stretched under that load.",
+        "It makes sense to feel overwhelmed with everything on your plate.",
+    ],
+    "sleep": [
+        "It makes sense that would leave you feeling drained.",
+        "Sleep struggles often reflect how full our minds are during the day.",
+    ],
+    "relationships": [
+        "It makes sense that would hurt.",
+        "Relationships touch such a deep part of us, so it's natural for this to affect you.",
+    ],
+    "work": [
+        "It makes sense that would weigh on you.",
+        "So much of our identity gets tied up in work, so this kind of frustration is natural.",
+    ],
+    "confusion": [
+        "It makes sense to feel uncertain right now.",
+        "Confusion often means something important is shifting.",
+    ],
+    "positive": [
+        "That's really nice to hear.",
+        "It's good you're noticing that.",
+    ],
+    "general": [
+        "",
+    ],
+}
+
+QUESTIONS = {
+    "anxiety": [
+        "What does that anxiety feel like in your body right now?",
+        "When does that worry tend to show up most?",
+        "What's the first thing that comes to mind when you think about what's worrying you?",
+        "What part of this feels the hardest to sit with?",
+    ],
+    "sadness": [
+        "When did that heavy feeling first start showing up?",
+        "What does that sadness need you to understand about it?",
+        "What's the situation that feels most connected to this sadness?",
+        "Is there something specific that triggered this, or has it been building?",
+    ],
+    "anger": [
+        "What happened that sparked this frustration?",
+        "What does this anger want you to protect?",
+        "What would need to happen for you to feel heard about this?",
+        "When did you first notice this building up?",
+    ],
+    "stress": [
+        "What part of this feels the heaviest right now?",
+        "If you could set one thing down today, what would it be?",
+        "What's pulling at your attention most urgently?",
+        "What does your body feel like when you think about everything on your plate?",
+    ],
+    "sleep": [
+        "What's going through your mind when you're lying awake?",
+        "How long has this pattern been going on?",
+        "What's your evening like before you try to sleep?",
+        "Is it hard to fall asleep, or hard to stay asleep?",
+    ],
+    "relationships": [
+        "What do you find yourself needing from them that you're not getting right now?",
+        "What kind of conversation have you been wanting to have but haven't yet?",
+        "What does your gut tell you about this situation?",
+        "How long has this dynamic been building?",
+    ],
+    "work": [
+        "What part of your work drains you the most?",
+        "What would a better version of your work life look like?",
+        "Is it the work itself, or the environment around it?",
+        "What's been the hardest thing to navigate?",
+    ],
+    "confusion": [
+        "What feels most unclear when you sit with it?",
+        "What's the heart of what you're trying to figure out?",
+        "What options are you weighing right now?",
+        "What part of this feels the most important to resolve?",
+    ],
+    "positive": [
+        "What's contributing to that good feeling?",
+        "What helped bring this about?",
+        "What does that feeling make you want to do?",
+        "How does it feel in your body when you experience this?",
+    ],
+    "general": [
+        "What's coming up for you as you share that?",
+        "What feels most important about this to you?",
+        "How long have you been thinking about this?",
+        "What made you decide to bring this up today?",
     ],
 }
 
@@ -333,14 +352,15 @@ class Counselor:
         return topic, confidence
 
     def greet(self):
-        return ("Hi, I'm here to listen. I'm an AI counselor — I can help you work through "
-                "what's on your mind, but I'm not a replacement for a licensed professional. "
+        return ("Hi, I'm here to listen. I help people talk through what's on their mind. "
+                "I'm not a replacement for a licensed therapist. "
                 "What's your name?")
 
     def respond(self, user_input):
         text = user_input.strip()
         if not text:
-            return "Take your time. I'm here whenever you're ready."
+            self.history.append((USER, ""))
+            return "I'm here. You can take your time."
 
         self.history.append((USER, text))
 
@@ -348,7 +368,7 @@ class Counselor:
             return ("I'm really concerned about what you're saying. Please reach out to a crisis line now:\n"
                     "- National Suicide Prevention Lifeline: 988\n"
                     "- Crisis Text Line: Text HOME to 741741\n"
-                    "You matter, and there are people who want to help.")
+                    "There are people ready to help you through this.")
 
         if self.user_name is None:
             words = text.split()
@@ -361,37 +381,65 @@ class Counselor:
 
         return self._generate(text)
 
+    def _extract_key_phrases(self, text):
+        words = text.lower().split()
+        meaningful = [w.strip(",.!?;:'\"") for w in words
+                      if w.strip(",.!?;:'\"") not in STOP_WORDS
+                      and len(w.strip(",.!?;:'\"")) > 2]
+        random.shuffle(meaningful)
+        return meaningful[:3]
+
+    def _build_reflection(self, text, key_words, topic):
+        start = random.choice(REFLECTION_STARTS.get(topic, REFLECTION_STARTS["general"]))
+        if key_words and topic != "general":
+            kw = random.choice(key_words)
+            patterns = [
+                f"{start} Especially with {kw} on your mind.",
+                f"{start} And it sounds like {kw} is at the center of it.",
+                f"{start} I can hear how much {kw} is affecting you.",
+            ]
+            return random.choice(patterns)
+        return start
+
+    def _build_validation(self, topic):
+        opts = VALIDATIONS.get(topic, VALIDATIONS["general"])
+        if not opts or not opts[0]:
+            return ""
+        val = random.choice(opts)
+        if val:
+            return val[0].upper() + val[1:]
+        return ""
+
+    def _build_question(self, topic):
+        opts = QUESTIONS.get(topic, QUESTIONS["general"])
+        return random.choice(opts)
+
+    def _check_history(self):
+        if len(self.history) < 3:
+            return None
+        for i in range(len(self.history) - 2, 0, -2):
+            prev_text = self.history[i][1]
+            if len(prev_text.split()) > 3:
+                return prev_text[:80]
+        return None
+
     def _generate(self, text):
         topic, confidence = self._predict_topic(text)
+        key_words = self._extract_key_phrases(text)
 
-        if topic == "general" and confidence < 0.3:
-            return random.choice(TOPIC_RESPONSES["general"])
+        reflection = self._build_reflection(text, key_words, topic)
+        validation = self._build_validation(topic)
+        question = self._build_question(topic)
 
-        strategies = self.kb.get_coping_strategies(topic)
-        insight = self.kb.get_language_insight(text)
-
-        pool = TOPIC_RESPONSES.get(topic, TOPIC_RESPONSES["general"])
-        chosen = random.choice(pool)
-
-        if insight and random.random() < 0.15:
-            follow_up = insight.get("follow_up", "")
-            if follow_up:
-                return f"{chosen}\n\n{follow_up}"
-
-        if strategies and random.random() < 0.2:
-            strat = random.choice(strategies)
-            return f"{chosen}\n\nOne thing that may help: {strat.get('instructions', '')[:200]}"
-
-        if confidence > 0.7:
-            tag = f"[{topic}] "
-        else:
-            tag = ""
-        return tag + chosen
+        parts = [reflection]
+        if validation:
+            parts.append(validation)
+        parts.append(question)
+        return " ".join(parts)
 
     def goodbye(self):
-        return (f"{self.user_name or 'Friend'}, thank you for trusting me today. "
-                "Remember: you don't have to figure everything out at once. "
-                "Be kind to yourself. And if things get heavy, please reach out to a real counselor or crisis line. "
+        return (f"{self.user_name or 'Friend'}, thank you for talking with me. "
+                "If things get difficult, please reach out to a counselor or crisis line. "
                 "Take care.")
 
 
