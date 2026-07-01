@@ -1,0 +1,195 @@
+{
+  "description": "Evidence-informed coping skills organized by target emotion",
+  "strategies": [
+    {
+      "name": "5-4-3-2-1 grounding",
+      "target": ["anxiety", "panic", "overwhelm", "dissociation", "flashbacks"],
+      "difficulty": "easy",
+      "time_required": "3-5 minutes",
+      "instructions": "Name 5 things you can see. 4 things you can touch. 3 things you can hear. 2 things you can smell. 1 thing you can taste. Say them out loud or in your head.",
+      "evidence_level": "strong",
+      "best_situations": ["panic attacks", "anxiety spikes", "dissociation", "trauma triggers"],
+      "contraindications": ["none significant"]
+    },
+    {
+      "name": "box breathing",
+      "target": ["anxiety", "stress", "anger", "panic"],
+      "difficulty": "easy",
+      "time_required": "3-5 minutes",
+      "instructions": "Inhale for 4 counts. Hold for 4 counts. Exhale for 4 counts. Hold for 4 counts. Repeat 4-8 times.",
+      "evidence_level": "strong",
+      "best_situations": ["before stressful events", "during anxiety", "to calm nervous system"],
+      "contraindications": ["may increase anxiety in some with trauma history"]
+    },
+    {
+      "name": "progressive muscle relaxation",
+      "target": ["anxiety", "stress", "insomnia", "tension"],
+      "difficulty": "easy",
+      "time_required": "10-15 minutes",
+      "instructions": "Tense each muscle group for 5 seconds, then release. Work from toes to head. Notice the contrast between tension and relaxation.",
+      "evidence_level": "strong",
+      "best_situations": ["before sleep", "after stressful day", "chronic muscle tension"],
+      "contraindications": ["muscle injuries", "chronic pain conditions without adaptation"]
+    },
+    {
+      "name": "thought record",
+      "target": ["anxiety", "depression", "negative thinking patterns"],
+      "difficulty": "moderate",
+      "time_required": "15-20 minutes",
+      "instructions": "Write down the situation, automatic thought, emotion, evidence for and against the thought, and a balanced alternative thought.",
+      "evidence_level": "strong",
+      "best_situations": ["recurring negative thoughts", "cognitive distortions", "mood tracking"],
+      "contraindications": ["may feel overwhelming in acute crisis"]
+    },
+    {
+      "name": "behavioral activation scheduling",
+      "target": ["depression", "low motivation", "isolation", "anhedonia"],
+      "difficulty": "moderate",
+      "time_required": "10 minutes planning",
+      "instructions": "Schedule small activities that provide accomplishment or pleasure. Start very small (5-10 min). Rate expected vs actual mood change. Gradually increase.",
+      "evidence_level": "strong",
+      "best_situations": ["depression", "grief", "burnout recovery"],
+      "contraindications": ["immediate crisis", "severe fatigue from medical causes"]
+    },
+    {
+      "name": "self-compassion break",
+      "target": ["shame", "self-criticism", "inadequacy", "guilt"],
+      "difficulty": "easy",
+      "time_required": "5 minutes",
+      "instructions": "Acknowledge suffering ('this is hard'), recognize common humanity ('I'm not alone in this'), offer self-kindness ('may I be kind to myself').",
+      "evidence_level": "strong",
+      "best_situations": ["after mistakes", "feeling inadequate", "harsh self-judgment"],
+      "contraindications": ["may feel uncomfortable initially for those with deep shame"]
+    },
+    {
+      "name": "worry time scheduling",
+      "target": ["anxiety", "rumination", "insomnia"],
+      "difficulty": "moderate",
+      "time_required": "15 minutes daily",
+      "instructions": "Set aside 15 minutes at the same time daily to worry. At other times, postpone worries to worry time. During worry time, write out all concerns.",
+      "evidence_level": "moderate",
+      "best_situations": ["chronic worrying", "rumination", "racing thoughts at night"],
+      "contraindications": ["may not work for generalized anxiety without professional guidance"]
+    },
+    {
+      "name": "gratitude journaling",
+      "target": ["depression", "hopelessness", "negative focus"],
+      "difficulty": "easy",
+      "time_required": "5 minutes",
+      "instructions": "Write 3 things you're grateful for daily. Be specific. Can include small things (a warm cup of tea). Focus on different things each day.",
+      "evidence_level": "moderate-strong",
+      "best_situations": ["mild depression", "gratitude cultivation", "shifting perspective"],
+      "contraindications": ["may feel forced in severe depression"]
+    },
+    {
+      "name": "safe place visualization",
+      "target": ["anxiety", "panic", "overwhelm", "trauma triggers"],
+      "difficulty": "easy",
+      "time_required": "5-10 minutes",
+      "instructions": "Close your eyes. Imagine a place where you feel completely safe. Engage all senses — what do you see, hear, smell, feel? Stay here for several breaths.",
+      "evidence_level": "moderate",
+      "best_situations": ["before triggering events", "anxiety management", "as grounding tool"],
+      "contraindications": ["may be triggering for some trauma survivors", "dissociation risk"]
+    },
+    {
+      "name": "TIPP skills (DBT)",
+      "target": ["emotional overwhelm", "panic", "intense emotions"],
+      "difficulty": "easy",
+      "time_required": "5 minutes",
+      "instructions": "Temperature (cold water on face), Intense exercise (jumping jacks), Paced breathing, Progressive muscle relaxation. Use during emotional crisis.",
+      "evidence_level": "strong",
+      "best_situations": ["emotional flooding", "panic", "self-harm urges"],
+      "contraindications": ["cold water not safe for some heart conditions"]
+    },
+    {
+      "name": "cognitive defusion",
+      "target": ["anxiety", "negative thoughts", "rumination"],
+      "difficulty": "moderate",
+      "time_required": "5 minutes",
+      "instructions": "Notice the thought ('I notice I'm having the thought that I'm a failure'). Add 'I notice' prefix. Say it in a silly voice. Imagine it on a leaf floating by.",
+      "evidence_level": "moderate-strong",
+      "best_situations": ["repetitive negative thoughts", "anxiety-driven thinking"],
+      "contraindications": ["may feel dismissive if not introduced properly"]
+    },
+    {
+      "name": "opposite action",
+      "target": ["depression", "anxiety", "anger"],
+      "difficulty": "moderate",
+      "time_required": "variable",
+      "instructions": "Identify the urge (withdraw, avoid, attack). Do the opposite (reach out, approach, gentle disengage). Notice how the emotion shifts.",
+      "evidence_level": "strong",
+      "best_situations": ["when acting on the urge would make things worse"],
+      "contraindications": ["not appropriate when safety is at risk"]
+    },
+    {
+      "name": "mindful walking",
+      "target": ["stress", "anxiety", "rumination", "depression"],
+      "difficulty": "easy",
+      "time_required": "10-20 minutes",
+      "instructions": "Walk slowly. Notice each step. Feel the ground. Notice your surroundings with all senses. Return attention to walking when mind wanders.",
+      "evidence_level": "moderate-strong",
+      "best_situations": ["when sitting still is hard", "outdoor access", "needing gentle movement"],
+      "contraindications": ["mobility limitations", "unsafe walking environment"]
+    },
+    {
+      "name": "values-based action",
+      "target": ["confusion", "loss of meaning", "depression", "existential concerns"],
+      "difficulty": "moderate",
+      "time_required": "variable",
+      "instructions": "Identify what matters to you. Choose one small action aligned with that value. Do it with attention and intention. Repeat daily.",
+      "evidence_level": "strong",
+      "best_situations": ["feeling lost", "identity confusion", "depression", "major transitions"],
+      "contraindications": ["not suitable during acute crisis"]
+    },
+    {
+      "name": "sleep hygiene protocol",
+      "target": ["insomnia", "sleep disruption", "fatigue"],
+      "difficulty": "moderate",
+      "time_required": "ongoing",
+      "instructions": "Consistent wake time. No screens 1 hour before bed. Cool dark room. No caffeine after 2pm. Wind-down routine. Get up if can't sleep for 20 min.",
+      "evidence_level": "strong",
+      "best_situations": ["chronic insomnia", "poor sleep habits"],
+      "contraindications": ["may need professional help for severe insomnia"]
+    },
+    {
+      "name": "anger journaling",
+      "target": ["anger", "frustration", "resentment"],
+      "difficulty": "easy",
+      "time_required": "10-15 minutes",
+      "instructions": "Write out what happened, what you felt, the intensity (1-10), the trigger, and what you needed. Do not censor. Write and then review later if helpful.",
+      "evidence_level": "moderate",
+      "best_situations": ["after anger episodes", "when building patterns", "resentment processing"],
+      "contraindications": ["rumination risk if not structured"]
+    },
+    {
+      "name": "social connection scheduling",
+      "target": ["loneliness", "isolation", "depression"],
+      "difficulty": "moderate",
+      "time_required": "1 hour weekly",
+      "instructions": "Schedule one low-pressure social interaction per week. Could be coffee with a friend, joining a group, or a phone call. Start with safe, comfortable people.",
+      "evidence_level": "strong",
+      "best_situations": ["chronic loneliness", "social withdrawal", "transition periods"],
+      "contraindications": ["social anxiety may need graded approach"]
+    },
+    {
+      "name": "grounding through senses",
+      "target": ["dissociation", "numbness", "flashbacks"],
+      "difficulty": "easy",
+      "time_required": "5 minutes",
+      "instructions": "Hold an ice cube. Smell a strong scent (peppermint, citrus). Touch different textures. Eat something with strong flavor. Use strong sensations to return to present.",
+      "evidence_level": "moderate",
+      "best_situations": ["dissociation", "depersonalization", "numbness"],
+      "contraindications": ["avoid pain-based grounding for self-harm urges"]
+    },
+    {
+      "name": "thought stopping technique",
+      "target": ["rumination", "obsessive thoughts", "negative spirals"],
+      "difficulty": "moderate",
+      "time_required": "immediate",
+      "instructions": "Notice the rumination. Say (out loud or in head) 'STOP.' Redirect to a pre-chosen neutral or positive thought. Practice repeatedly.",
+      "evidence_level": "moderate",
+      "best_situations": ["repetitive unwanted thoughts", "worry spirals"],
+      "contraindications": ["may not work for OCD without professional guidance", "suppression may worsen for some"]
+    }
+  ]
+}

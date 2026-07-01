@@ -1,0 +1,141 @@
+{
+  "description": "Behavioral patterns and their healthy alternatives",
+  "patterns": [
+    {
+      "name": "avoidance",
+      "description": "Staying away from situations, people, or thoughts that cause discomfort",
+      "possible_causes": ["anxiety", "trauma", "low confidence", "past negative experiences"],
+      "warning_signs": ["making excuses", "procrastination", "changing plans suddenly", "physical symptoms before triggers"],
+      "healthy_alternatives": ["gradual exposure", "support system engagement", "coping skills development", "safe confrontation"],
+      "supportive_responses": ["What feels too overwhelming to face right now?", "Let's take one tiny step toward it together."]
+    },
+    {
+      "name": "isolation",
+      "description": "Withdrawing from social contact and relationships",
+      "possible_causes": ["depression", "social anxiety", "rejection sensitivity", "shame", "overwhelm"],
+      "warning_signs": ["declining invitations", "not responding to messages", "spending days without contact", "loneliness despite wanting connection"],
+      "healthy_alternatives": ["scheduled low-pressure social time", "one-on-one connections", "online communities", "structured groups"],
+      "supportive_responses": ["I've noticed you've been pulling back. What's that about?", "Even small connection counts. What feels manageable?"]
+    },
+    {
+      "name": "emotional_suppression",
+      "description": "Consciously or unconsciously blocking emotional expression",
+      "possible_causes": ["childhood invalidation", "cultural conditioning", "fear of vulnerability", "toxic masculinity"],
+      "warning_signs": ["I'm fine when clearly not", "emotional numbness", "physical symptoms without emotional awareness", "avoiding emotional topics"],
+      "healthy_alternatives": ["emotion identification practice", "safe expression outlets", "journaling", "therapy", "creative expression"],
+      "supportive_responses": ["You don't have to be fine with me. It's safe to feel here.", "What might happen if you let yourself feel it?"]
+    },
+    {
+      "name": "procrastination",
+      "description": "Delaying important tasks despite knowing the negative consequences",
+      "possible_causes": ["fear of failure", "perfectionism", "overwhelm", "low motivation", "task aversion"],
+      "warning_signs": ["waiting until last minute", "engaging in distractions", "telling yourself you work better under pressure", "anxiety about starting"],
+      "healthy_alternatives": ["five minute rule", "task breakdown", "body doubling", "scheduled work time", "reward systems"],
+      "supportive_responses": ["What's making it hard to start?", "Can we just commit to 5 minutes and see?"]
+    },
+    {
+      "name": "overworking",
+      "description": "Working excessively beyond healthy limits",
+      "possible_causes": ["perfectionism", "financial pressure", "identity tied to work", "avoiding personal issues", "company culture"],
+      "warning_signs": ["skipping breaks", "working evenings/weekends", "not taking vacation", "health deterioration", "relationship strain"],
+      "healthy_alternatives": ["strict boundaries", "scheduled rest", "hobbies", "work-free zones", "vacation planning"],
+      "supportive_responses": ["What would happen if you worked less?", "Your worth isn't your productivity. How can you rest?"]
+    },
+    {
+      "name": "people_pleasing_behavior",
+      "description": "Excessive accommodation of others at personal cost",
+      "possible_causes": ["approval seeking", "fear of conflict", "low self-worth", "childhood conditioning", "codependency"],
+      "warning_signs": ["difficulty saying no", "overapologizing", "agreeing when disagree", "prioritizing others' needs", "resentment building"],
+      "healthy_alternatives": ["assertive communication", "boundary setting", "self-prioritization", "discomfort tolerance"],
+      "supportive_responses": ["What do you need right now, not what others want?", "What's the cost of saying yes to this?"]
+    },
+    {
+      "name": "self_harm_urges",
+      "description": "Urges to physically harm oneself as a coping mechanism",
+      "possible_causes": ["emotional overwhelm", "dissociation", "self-punishment", "communication of distress", "emotional regulation failure"],
+      "warning_signs": ["talking about self-harm", "covering skin", "withdrawal", "access to implements", "hopelessness"],
+      "healthy_alternatives": ["crisis hotline", "DBT distress tolerance skills", "ice/ cold water", "tearing paper", "drawing on skin"],
+      "supportive_responses": ["I'm here with you. You don't have to act on this urge.", "Let's try a coping skill together first."]
+    },
+    {
+      "name": "substance_use_coping",
+      "description": "Using alcohol or drugs to manage emotions or situations",
+      "possible_causes": ["unprocessed trauma", "emotional numbness", "social pressure", "self-medication", "addiction"],
+      "warning_signs": ["increased frequency", "using alone", "withdrawal symptoms", "neglecting responsibilities", "lying about use"],
+      "healthy_alternatives": ["professional treatment", "support groups", "healthy coping skills", "addressing underlying causes"],
+      "supportive_responses": ["What are you trying to escape when you use? Let's talk about the underlying pain."]
+    },
+    {
+      "name": "sleep_disruption",
+      "description": "Difficulty with falling asleep, staying asleep, or poor quality sleep",
+      "possible_causes": ["anxiety", "depression", "stress", "poor sleep hygiene", "medical conditions", "trauma"],
+      "warning_signs": ["taking over 30 min to fall asleep", "waking frequently", "early morning waking", "daytime fatigue", "dependence on sleep aids"],
+      "healthy_alternatives": ["consistent schedule", "wind-down routine", "no screens before bed", "bed only for sleep", "therapy for underlying causes"],
+      "supportive_responses": ["What's happening when you lie down? What's on your mind?"]
+    },
+    {
+      "name": "impulsive_spending",
+      "description": "Spending money without forethought or within means",
+      "possible_causes": ["emotional regulation", "instant gratification", "low mood", "compulsive behavior", "financial illiteracy"],
+      "warning_signs": ["buying when upset", "hiding purchases", "credit card debt", "buyer's remorse", "budget violations"],
+      "healthy_alternatives": ["24-hour rule before purchases", "budget tracking", "identifying emotional triggers", "alternative rewards"],
+      "supportive_responses": ["What were you feeling before you bought that?", "Let's explore what need the spending was trying to meet."]
+    },
+    {
+      "name": "oversharing",
+      "description": "Disclosing personal information too quickly or inappropriately",
+      "possible_causes": ["anxiety", "attention seeking", "lack of boundaries", "trauma history", "neurodivergence"],
+      "warning_signs": ["regretting what you shared", "making others uncomfortable", "sharing with strangers", "too much too soon"],
+      "healthy_alternatives": ["gradual trust-building", "considering recipient", "boundary awareness", "journaling instead"],
+      "supportive_responses": ["It's brave to share — how do you feel about what you shared?"]
+    },
+    {
+      "name": "masking",
+      "description": "Hiding authentic self to fit in or avoid judgment",
+      "possible_causes": ["neurodivergence", "minority stress", "trauma", "social pressure", "self-acceptance issues"],
+      "warning_signs": ["exhaustion after socializing", "feeling fake", "not expressing true opinions", "monitoring behavior constantly"],
+      "healthy_alternatives": ["safe spaces to be authentic", "finding accepting community", "gradual unmasking", "self-acceptance work"],
+      "supportive_responses": ["What parts of yourself do you feel you have to hide? You're safe to be yourself here."]
+    },
+    {
+      "name": "comfort_eating",
+      "description": "Eating in response to emotions rather than hunger",
+      "possible_causes": ["emotional regulation", "habit", "stress", "depression", "food as reward"],
+      "warning_signs": ["eating when not hungry", "craving specific foods when stressed", "eating after conflict", "guilt after eating"],
+      "healthy_alternatives": ["mindful eating", "emotion identification", "alternative coping strategies", "regular meal schedule"],
+      "supportive_responses": ["What's happening emotionally when you reach for food?", "Let's find other ways to comfort yourself."]
+    },
+    {
+      "name": "social_withdrawal",
+      "description": "Reducing or eliminating social contact",
+      "possible_causes": ["depression", "social anxiety", "burnout", "rejection sensitivity", "trauma"],
+      "warning_signs": ["canceling plans", "not initiating contact", "short responses", "making excuses", "feeling drained by contact"],
+      "healthy_alternatives": ["low-contact check-ins", "short social interactions", "support groups", "therapy", "gradual re-engagement"],
+      "supportive_responses": ["I understand needing space. Is there any form of connection that feels manageable?"]
+    },
+    {
+      "name": "passive_aggression",
+      "description": "Indirect expression of negative feelings instead of direct communication",
+      "possible_causes": ["fear of conflict", "poor communication skills", "resentment", "powerlessness", "childhood modeling"],
+      "warning_signs": ["sarcasm", "silent treatment", "backhanded compliments", "procrastination as retaliation", "forgetting on purpose"],
+      "healthy_alternatives": ["assertive communication", "I statements", "timely expression", "conflict resolution skills"],
+      "supportive_responses": ["It sounds like something is bothering you. Would you be willing to talk about it directly?"]
+    },
+    {
+      "name": "compulsive_checking",
+      "description": "Repeatedly checking something due to anxiety or uncertainty",
+      "possible_causes": ["anxiety", "OCD", "uncertainty intolerance", "past mistakes", "perfectionism"],
+      "warning_signs": ["rechecking locked doors", "repeatedly checking messages", "excessive reviewing of work", "rituals"],
+      "healthy_alternatives": ["designated check times", "trust building", "uncertainty tolerance practice", "ERP therapy"],
+      "supportive_responses": ["What would happen if you checked just once? Let's explore the discomfort of uncertainty."]
+    },
+    {
+      "name": "anger_outbursts",
+      "description": "Sudden intense expression of anger disproportionate to trigger",
+      "possible_causes": ["unprocessed anger", "trauma", "stress overload", "poor emotional regulation", "modeling"],
+      "warning_signs": ["raising voice", "clenching fists", "pacing", "feeling hot", "seeing red"],
+      "healthy_alternatives": ["time out technique", "anger journal", "physical outlet", "therapy", "communication skills"],
+      "supportive_responses": ["Let's take a pause before this escalates. Can we step back for a moment?"]
+    }
+  ]
+}

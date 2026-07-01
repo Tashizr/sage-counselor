@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import re
+import json
 import urllib.request
 import tempfile
 import os
@@ -825,23 +826,147 @@ def train_model(X_train, y_train, max_features=5000):
     return pipeline
 
 
+EMOTION_TOPIC_MAP = {
+    "anxiety": "anxiety", "panic": "anxiety", "fear": "anxiety", "dread": "anxiety",
+    "sadness": "sadness", "grief": "sadness", "loneliness": "sadness", "hopelessness": "sadness",
+    "anger": "anger", "frustration": "anger", "resentment": "anger", "rage": "anger",
+    "stress": "stress", "overwhelm": "stress", "burnout": "stress", "pressure": "stress",
+    "sleep": "sleep", "insomnia": "sleep", "exhaustion": "sleep",
+    "relationships": "relationships", "love": "relationships", "trust": "relationships",
+    "work": "work", "career": "work", "job": "work",
+    "confusion": "confusion", "ambivalence": "confusion", "uncertainty": "confusion",
+    "gratitude": "positive", "pride": "positive", "hope": "positive", "calm": "positive",
+    "contentment": "positive", "joy": "positive", "excitement": "positive",
+}
+
+
+def build_from_knowledge_base(kb_dir=None):
+    if kb_dir is None:
+        kb_dir = os.path.join(os.path.dirname(__file__), "knowledge_base")
+    if not os.path.isdir(kb_dir):
+        print("  Knowledge base directory not found, skipping.")
+        return None
+
+    rows = []
+
+    files_to_process = [
+        "01_emotions.json", "02_life_events.json", "03_cognitive_patterns.json",
+        "04_behavior_patterns.json", "06_conversation_examples.jsonl",
+        "07_crisis_detection.json", "08_coping_strategies.json", "09_language_patterns.json",
+    ]
+
+    for fname in files_to_process:
+        fpath = os.path.join(kb_dir, fname)
+        if not os.path.exists(fpath):
+            continue
+        try:
+            if fname.endswith(".jsonl"):
+                with open(fpath, "r", encoding="utf-8") as f:
+                    for line in f:
+                        line = line.strip()
+                        if not line:
+                            continue
+                        entry = json.loads(line)
+                        text = entry.get("user", "")
+                        emos = entry.get("emotions", [])
+                        if text and emos:
+                            for emo in emos:
+                                topic = EMOTION_TOPIC_MAP.get(emo.lower(), "general")
+                                rows.append({"text": text, "label": topic, "source": fname})
+            elif fname == "01_emotions.json":
+                with open(fpath, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                for emo in data.get("emotions", []):
+                    t = EMOTION_TOPIC_MAP.get(emo["name"].lower(), "general")
+                    for phrase in emo.get("example_phrases", []):
+                        if phrase:
+                            rows.append({"text": phrase, "label": t, "source": fname})
+                    for thought in emo.get("common_thoughts", []):
+                        if thought:
+                            rows.append({"text": thought, "label": t, "source": fname})
+            elif fname == "02_life_events.json":
+                with open(fpath, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                for ev in data.get("events", []):
+                    for resp in ev.get("helpful_responses", []):
+                        if resp:
+                            rows.append({"text": resp, "label": "general", "source": fname})
+            elif fname == "03_cognitive_patterns.json":
+                with open(fpath, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                for pat in data.get("patterns", []):
+                    for thought in pat.get("typical_thoughts", []):
+                        if thought:
+                            t = EMOTION_TOPIC_MAP.get(pat.get("emotion", "").split(",")[0].strip().lower(), "general")
+                            rows.append({"text": thought, "label": t, "source": fname})
+            elif fname == "04_behavior_patterns.json":
+                with open(fpath, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                for pat in data.get("patterns", []):
+                    for resp in pat.get("supportive_responses", []):
+                        if resp:
+                            rows.append({"text": resp, "label": "general", "source": fname})
+            elif fname == "07_crisis_detection.json":
+                with open(fpath, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                for ct in data.get("crisis_types", []):
+                    for phrase in ct.get("warning_phrases", []):
+                        if phrase:
+                            rows.append({"text": phrase, "label": "anxiety", "source": fname})
+            elif fname == "08_coping_strategies.json":
+                with open(fpath, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                for strat in data.get("strategies", []):
+                    for target in strat.get("target", []):
+                        t = EMOTION_TOPIC_MAP.get(target.lower(), "general")
+                        rows.append({"text": strat["instructions"], "label": t, "source": fname})
+            elif fname == "09_language_patterns.json":
+                with open(fpath, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                for pat in data.get("patterns", []):
+                    phrase = pat.get("phrase", "")
+                    emo = pat.get("likely_emotion", "")
+                    if phrase and emo:
+                        t = EMOTION_TOPIC_MAP.get(emo.lower(), "general")
+                        rows.append({"text": phrase, "label": t, "source": fname})
+        except Exception as e:
+            print(f"  Error processing {fname}: {e}")
+            continue
+
+    if not rows:
+        print("  No training data extracted from knowledge base.")
+        return None
+
+    df = pd.DataFrame(rows)
+    df["label"] = df["label"].astype("category")
+    print(f"  Knowledge base training samples: {len(df)}")
+    print(f"  KB class distribution:\n{df['label'].value_counts()}")
+    return df
+
+
 def main():
     print("=" * 60)
     print("COUNSELOR MODEL TRAINING")
     print("=" * 60)
 
-    print("\n[1/5] Building synthetic dataset...")
+    print("\n[1/6] Building synthetic dataset...")
     synthetic_df = build_synthetic_df()
 
-    print("\n[2/5] Fetching ebook data (skipped - no network)...")
-    print("  Using synthetic data only.")
-    combined = synthetic_df
+    print("\n[2/6] Building knowledge base dataset...")
+    kb_df = build_from_knowledge_base()
 
-    print("\n[3/5] Balancing dataset...")
+    print("\n[3/6] Combining datasets...")
+    dfs = [synthetic_df]
+    if kb_df is not None:
+        dfs.append(kb_df)
+    combined = pd.concat(dfs, ignore_index=True)
+    print(f"  Combined dataset: {len(combined)} samples")
+
+    print("\n[4/6] Balancing dataset...")
     per_class = int(max(len(combined) / len(combined["label"].unique()) * 1.2, 80))
     balanced = balance_dataset(combined, target_per_class=per_class)
 
-    print("\n[4/5] Training model...")
+    print("\n[5/6] Training model...")
     X = balanced["text"].to_numpy(dtype=str)
     y = balanced["label"].to_numpy(dtype=str)
     X_train, X_test, y_train, y_test = train_test_split(
@@ -850,7 +975,7 @@ def main():
     print(f"  Train: {len(X_train)} samples, Test: {len(X_test)} samples")
     model = train_model(X_train, y_train)
 
-    print("\n[5/5] Evaluating model...")
+    print("\n[6/6] Evaluating model...")
     y_pred = model.predict(X_test)
     y_proba = model.predict_proba(X_test)
     print(f"\n  Test accuracy: {np.mean(y_pred == y_test):.3f}")

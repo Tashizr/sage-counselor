@@ -1,0 +1,673 @@
+{
+  "description": "Comprehensive taxonomy of life events and situations",
+  "events": [
+    {
+      "name": "graduation",
+      "category": "academic_transition",
+      "description": "Completing an educational program or degree",
+      "common_emotions": ["pride", "accomplishment", "excitement", "fear", "uncertainty", "nostalgia"],
+      "common_fears": ["what comes next", "job market", "student debt", "leaving friends", "imposter syndrome"],
+      "risk_factors": ["unsure next steps", "financial pressure", "lack of support", "high expectations"],
+      "protective_factors": ["supportive family", "clear plan", "mentorship", "financial stability"],
+      "helpful_responses": [
+        "Celebrate this achievement with me — what are you most proud of?",
+        "It's normal to feel both excited and scared about what's next.",
+        "What kind of support would feel helpful as you navigate this transition?",
+        "You've accomplished something significant. Take time to honor that."
+      ],
+      "helpful_questions": [
+        "What felt most meaningful about your journey?",
+        "What are you looking forward to in this next chapter?",
+        "What fears are coming up for you?"
+      ],
+      "things_to_avoid": [
+        "Minimizing the achievement",
+        "Only focusing on job prospects",
+        "Comparing to others' paths"
+      ]
+    },
+    {
+      "name": "job_loss",
+      "category": "work_career",
+      "description": "Being laid off, fired, or losing employment",
+      "common_emotions": ["shock", "shame", "anger", "fear", "anxiety", "inadequacy", "relief (sometimes)"],
+      "common_fears": ["financial ruin", "losing identity", "never finding work", "telling family", "losing home"],
+      "risk_factors": ["single income household", "limited savings", "few employment options", "discrimination"],
+      "protective_factors": ["savings buffer", "support network", "marketable skills", "mental health support"],
+      "helpful_responses": [
+        "I'm so sorry you're going through this. Losing a job is genuinely hard.",
+        "Your worth is not defined by your employment status. You are still a capable, valuable person.",
+        "It's okay to feel whatever you're feeling right now — shock, anger, relief, fear. All of it is valid.",
+        "Let's talk about what practical support you might need right now."
+      ],
+      "helpful_questions": [
+        "What's feeling hardest about this right now?",
+        "What kind of support would be most helpful?",
+        "What are your immediate concerns we can talk through?"
+      ],
+      "things_to_avoid": [
+        "Rushing to solutions",
+        "Telling them it's a blessing in disguise",
+        "Blaming them",
+        "Only talking about next job search"
+      ]
+    },
+    {
+      "name": "divorce",
+      "category": "relationship_ending",
+      "description": "Legal dissolution of marriage",
+      "common_emotions": ["grief", "anger", "sadness", "relief", "shame", "failure", "fear", "loneliness", "guilt"],
+      "common_fears": ["being alone", "financial instability", "impact on children", "losing friends", "starting over"],
+      "risk_factors": ["contentious divorce", "limited support", "financial strain", "custody battles"],
+      "protective_factors": ["strong support network", "mediation", "therapy", "stable finances", "good co-parenting"],
+      "helpful_responses": [
+        "Divorce is a profound loss, even when it's the right decision. It's okay to grieve.",
+        "You're not a failure for choosing your wellbeing. Sometimes the bravest thing is letting go.",
+        "This is a major life transition. It's okay to take things one day at a time.",
+        "I hear how much pain you're in. What do you need most right now?"
+      ],
+      "helpful_questions": [
+        "What's the hardest part of this process for you?",
+        "What would self-care look like today?",
+        "What kind of support do you have around you?"
+      ],
+      "things_to_avoid": [
+        "Taking sides",
+        "Making assumptions about the other person",
+        "Telling them it'll be fine quickly"
+      ]
+    },
+    {
+      "name": "moving_to_new_city",
+      "category": "life_transition",
+      "description": "Relocating to a different city or country",
+      "common_emotions": ["excitement", "anxiety", "loneliness", "homesickness", "hope", "overwhelm", "adventure"],
+      "common_fears": ["not making friends", "culture shock", "finding housing", "loneliness", "regret"],
+      "risk_factors": ["no support network", "language barrier", "limited funds", "discrimination"],
+      "protective_factors": ["existing contacts", "cultural familiarity", "financial resources", "openness to new experiences"],
+      "helpful_responses": [
+        "Moving somewhere new takes so much courage. How are you settling in?",
+        "It's completely normal to feel a mix of excitement and loneliness right now.",
+        "Building a new life takes time. Be patient with yourself."
+      ],
+      "helpful_questions": [
+        "What drew you to this new place?",
+        "What feels most different from where you came from?",
+        "Have you found any spots that feel like 'yours' yet?"
+      ],
+      "things_to_avoid": [
+        "Minimizing the difficulty",
+        "Telling them to just go out and meet people"
+      ]
+    },
+    {
+      "name": "bereavement",
+      "category": "loss_and_grief",
+      "description": "Loss of a loved one through death",
+      "common_emotions": ["shock", "numbness", "sadness", "anger", "guilt", "yearning", "despair", "relief", "confusion"],
+      "common_fears": ["forgetting them", "never feeling happy again", "losing others", "own mortality"],
+      "risk_factors": ["sudden death", "young age", "limited support", "complicated grief history", "traumatic death"],
+      "protective_factors": ["supportive community", "meaning-making", "rituals", "therapy", "time and patience"],
+      "helpful_responses": [
+        "I'm so deeply sorry for your loss. There are no words that can make this right.",
+        "Grief is not a straight line. However you're feeling today is okay.",
+        "You don't have to be strong right now. You just have to be.",
+        "Tell me about them, if you want to. I'd love to hear what made them special."
+      ],
+      "helpful_questions": [
+        "What's the hardest part of today?",
+        "Would you like to share a memory of them?",
+        "How can I best support you right now?"
+      ],
+      "things_to_avoid": [
+        "Saying they're in a better place",
+        "Telling them to move on",
+        "Comparing grief timelines",
+        "Avoiding saying their name"
+      ]
+    },
+    {
+      "name": "promotion",
+      "category": "work_career",
+      "description": "Advancement to a higher position at work",
+      "common_emotions": ["pride", "excitement", "imposter syndrome", "anxiety", "pressure", "accomplishment"],
+      "common_fears": ["not being ready", "managing former peers", "increased responsibility", "work-life balance"],
+      "risk_factors": ["lack of training", "toxic workplace", "unrealistic expectations", "poor boundaries"],
+      "protective_factors": ["mentorship", "clear expectations", "supportive team", "strong boundaries"],
+      "helpful_responses": [
+        "Congratulations! This is a real recognition of your abilities.",
+        "It's completely normal to feel both excited and terrified — that means you're growing.",
+        "What kind of support do you have in this new role?"
+      ],
+      "helpful_questions": [
+        "What part of this new role are you most excited about?",
+        "What feels most challenging about the transition?",
+        "How can you set yourself up for success?"
+      ],
+      "things_to_avoid": [
+        "Only talking about the positive",
+        "Minimizing imposter syndrome feelings"
+      ]
+    },
+    {
+      "name": "serious_illness_diagnosis",
+      "category": "health_medical",
+      "description": "Being diagnosed with a serious medical condition",
+      "common_emotions": ["shock", "fear", "denial", "anger", "sadness", "anxiety", "isolation", "determination"],
+      "common_fears": ["death", "pain", "loss of independence", "burdening family", "financial ruin", "unknown"],
+      "risk_factors": ["limited support", "financial stress", "lack of access", "poor prognosis", "mental health history"],
+      "protective_factors": ["strong support", "good healthcare", "financial resources", "coping skills", "meaning-making"],
+      "helpful_responses": [
+        "I hear how overwhelming this diagnosis must feel. You don't have to process it all at once.",
+        "It's okay to be scared. This is frightening news, and your feelings are valid.",
+        "You're not alone in this. What does your support system look like?",
+        "There's no right way to feel right now. Whatever comes up is okay."
+      ],
+      "helpful_questions": [
+        "What's the most pressing concern on your mind right now?",
+        "Who in your life knows about this diagnosis?",
+        "What would feel most supportive in this moment?"
+      ],
+      "things_to_avoid": [
+        "Toxic positivity",
+        "Comparing to others who recovered",
+        "Offering unsolicited medical advice",
+        "Minimizing the seriousness"
+      ]
+    },
+    {
+      "name": "pregnancy",
+      "category": "family_life",
+      "description": "Expecting a child",
+      "common_emotions": ["joy", "excitement", "anxiety", "fear", "ambivalence", "hope", "overwhelm", "vulnerability"],
+      "common_fears": ["miscarriage", "child's health", "becoming a parent", "body changes", "birth experience", "financial readiness"],
+      "risk_factors": ["previous loss", "high-risk pregnancy", "limited support", "financial stress", "relationship problems"],
+      "protective_factors": ["good prenatal care", "supportive partner", "support network", "financial stability", "maternity leave"],
+      "helpful_responses": [
+        "This is such a big life change. How are you feeling about it?",
+        "It's completely normal to feel a mix of excitement and fear.",
+        "Your feelings — whatever they are — are valid. Many people feel ambivalent at times."
+      ],
+      "helpful_questions": [
+        "What part of this journey feels most exciting to you?",
+        "What worries are coming up?",
+        "How can you take care of yourself through this?"
+      ],
+      "things_to_avoid": [
+        "Assuming they're only happy",
+        "Sharing scary birth stories",
+        "Unsolicited advice"
+      ]
+    },
+    {
+      "name": "infertility_struggle",
+      "category": "health_medical",
+      "description": "Difficulty conceiving a child",
+      "common_emotions": ["grief", "sadness", "anger", "jealousy", "shame", "inadequacy", "hopelessness", "isolation"],
+      "common_fears": ["never having children", "losing partner", "being judged", "financial cost of treatment"],
+      "risk_factors": ["failed treatments", "unsupportive partner", "financial strain", "social pressure", "age"],
+      "protective_factors": ["support groups", "therapy", "partner alignment", "financial resources", "alternative paths"],
+      "helpful_responses": [
+        "I'm so sorry you're going through this. Infertility is such a difficult journey.",
+        "It's okay to feel angry and sad. This is a real loss and it's painful.",
+        "You are not broken. Your worth is not tied to your ability to conceive.",
+        "It's normal to struggle with jealousy when others announce pregnancies. Be gentle with yourself."
+      ],
+      "helpful_questions": [
+        "What's the hardest part of this journey for you?",
+        "How are you and your partner navigating this together?",
+        "What would self-care look like for you right now?"
+      ],
+      "things_to_avoid": [
+        "Just relax and it'll happen",
+        "At least you can adopt",
+        "Comparing to others",
+        "Minimizing the pain"
+      ]
+    },
+    {
+      "name": "retirement",
+      "category": "life_transition",
+      "description": "Transition from working life to retirement",
+      "common_emotions": ["relief", "excitement", "anxiety", "loss of identity", "boredom", "freedom", "uncertainty"],
+      "common_fears": ["loss of purpose", "financial security", "health decline", "isolation", "not being useful"],
+      "risk_factors": ["identity tied to work", "limited social circle", "health issues", "inadequate savings"],
+      "protective_factors": ["hobbies", "social connections", "financial planning", "purpose beyond work", "partner/spouse"],
+      "helpful_responses": [
+        "Retirement is such a big transition — both liberating and challenging.",
+        "It's normal to feel lost without work structure. Be patient as you find your new rhythm.",
+        "This is a chance to discover parts of yourself that work may have overshadowed."
+      ],
+      "helpful_questions": [
+        "What are you looking forward to in retirement?",
+        "What feels most uncertain about this transition?",
+        "What hobbies or interests are you excited to explore?"
+      ],
+      "things_to_avoid": [
+        "You'll love having all that free time",
+        "Not acknowledging the loss aspect"
+      ]
+    },
+    {
+      "name": "bullying",
+      "category": "social_harm",
+      "description": "Repeated aggressive behavior targeting someone",
+      "common_emotions": ["fear", "shame", "anger", "helplessness", "isolation", "worthlessness", "hypervigilance"],
+      "common_fears": ["going to school/work", "retaliation", "not being believed", "it never ending"],
+      "risk_factors": ["being different", "lack of support", "previous trauma", "social isolation", "authority not intervening"],
+      "protective_factors": ["supportive adults", "friends", "intervention", "self-confidence building", "changing environment"],
+      "helpful_responses": [
+        "What you're experiencing is not okay. You deserve to feel safe and respected.",
+        "This is not your fault. Nothing about you justifies being bullied.",
+        "I believe you, and I'm sorry this is happening.",
+        "Let's talk about what options are available to keep you safe."
+      ],
+      "helpful_questions": [
+        "Can you tell me more about what's been happening?",
+        "Who have you told about this?",
+        "What would make you feel safer right now?"
+      ],
+      "things_to_avoid": [
+        "Just ignore them",
+        "Fight back",
+        "It'll build character",
+        "Boys will be boys"
+      ]
+    },
+    {
+      "name": "academic_pressure",
+      "category": "academic_transition",
+      "description": "Stress from educational demands and expectations",
+      "common_emotions": ["stress", "anxiety", "overwhelm", "fear of failure", "exhaustion", "inadequacy"],
+      "common_fears": ["failing", "disappointing family", "not getting into college", "wasting money"],
+      "risk_factors": ["high expectations", "lack of support", "learning difficulties", "poor study skills", "mental health issues"],
+      "protective_factors": ["good study habits", "supportive teachers", "mental health support", "balanced life", "reasonable expectations"],
+      "helpful_responses": [
+        "Academic pressure can feel crushing sometimes. What's weighing on you most?",
+        "Your grades don't define your worth. You are so much more than a number.",
+        "It's okay to ask for help. That's a sign of strength, not weakness."
+      ],
+      "helpful_questions": [
+        "What subject or area is causing the most stress?",
+        "What would a more balanced schedule look like?",
+        "Who could you reach out to for academic support?"
+      ],
+      "things_to_avoid": [
+        "Just work harder",
+        "Others have it worse",
+        "Grades are everything"
+      ]
+    },
+    {
+      "name": "financial_hardship",
+      "category": "economic_stress",
+      "description": "Serious financial difficulty or poverty",
+      "common_emotions": ["fear", "shame", "anxiety", "hopelessness", "anger", "stress", "overwhelm", "embarrassment"],
+      "common_fears": ["homelessness", "not feeding family", "debt spiral", "judgment", "loss of dignity"],
+      "risk_factors": ["job loss", "illness", "single parenting", "disability", "systemic inequality"],
+      "protective_factors": ["community support", "financial literacy", "social services", "family help", "resourcefulness"],
+      "helpful_responses": [
+        "I hear how hard this is. Financial stress touches every part of life.",
+        "You are not your bank account. This situation doesn't define your worth.",
+        "Let's think about what resources might be available to help."
+      ],
+      "helpful_questions": [
+        "What's the most pressing financial concern right now?",
+        "What support systems or resources have you explored?",
+        "How is this financial stress affecting your wellbeing?"
+      ],
+      "things_to_avoid": [
+        "Just budget better",
+        "Money isn't everything",
+        "Comparing to others worse off"
+      ]
+    },
+    {
+      "name": "self_discovery",
+      "category": "identity_growth",
+      "description": "Journey of understanding oneself more deeply",
+      "common_emotions": ["excitement", "confusion", "fear", "curiosity", "hope", "anxiety", "liberation", "vulnerability"],
+      "common_fears": ["losing relationships", "not being accepted", "being wrong", "unknown path ahead"],
+      "risk_factors": ["unsupportive environment", "internalized stigma", "major identity shifts", "mental health struggles"],
+      "protective_factors": ["supportive community", "self-compassion", "therapy", "role models", "safe spaces"],
+      "helpful_responses": [
+        "Self-discovery is such a brave journey. It's okay if it feels uncomfortable at times.",
+        "You're allowed to grow and change. Who you were doesn't limit who you can become.",
+        "There's no timeline for knowing yourself. Be patient with the process."
+      ],
+      "helpful_questions": [
+        "What parts of yourself are you exploring right now?",
+        "What feels freeing about this journey?",
+        "What feels scary or uncertain?"
+      ],
+      "things_to_avoid": [
+        "I always knew you were X",
+        "Are you sure?",
+        "Rushing the process"
+      ]
+    },
+    {
+      "name": "empty_nest",
+      "category": "family_life",
+      "description": "When children leave home for the first time",
+      "common_emotions": ["sadness", "loss", "pride", "relief", "confusion", "freedom", "loneliness", "re-evaluation"],
+      "common_fears": ["losing purpose", "relationship with partner", "health", "aging", "being needed"],
+      "risk_factors": ["identity as full-time parent", "poor partner relationship", "limited social circle", "mental health history"],
+      "protective_factors": ["hobbies", "strong partner relationship", "friendships", "new goals", "connection with children"],
+      "helpful_responses": [
+        "This is such a bittersweet transition. It's a sign of good parenting that they're ready to go.",
+        "It's normal to feel both proud and heartbroken at the same time.",
+        "This is also an opportunity to rediscover yourself. What parts of you are ready to come forward?"
+      ],
+      "helpful_questions": [
+        "What are you feeling most strongly right now?",
+        "What might you want to explore for yourself now?",
+        "How are you and your partner adjusting to the change?"
+      ],
+      "things_to_avoid": [
+        "Enjoy the freedom",
+        "At least they're successful",
+        "Not acknowledging the loss"
+      ]
+    },
+    {
+      "name": "coming_out",
+      "category": "identity_growth",
+      "description": "Sharing one's LGBTQ+ identity with others",
+      "common_emotions": ["fear", "relief", "anxiety", "pride", "vulnerability", "hope", "dread", "liberation"],
+      "common_fears": ["rejection by family", "losing friends", "discrimination", "violence", "not being believed"],
+      "risk_factors": ["unsupportive family", "religious conflict", "conservative environment", "financial dependency"],
+      "protective_factors": ["supportive people", "LGBTQ+ community", "safe spaces", "self-acceptance", "resources"],
+      "helpful_responses": [
+        "Thank you for trusting me with this part of who you are.",
+        "Coming out is incredibly brave. Your identity is valid and beautiful.",
+        "There's no right or wrong way to be who you are. Your journey is yours.",
+        "You have the right to share your identity on your own terms and timeline."
+      ],
+      "helpful_questions": [
+        "How are you feeling about this step?",
+        "What kind of support do you have right now?",
+        "What would feel safest for you right now?"
+      ],
+      "things_to_avoid": [
+        "Are you sure?",
+        "It's just a phase",
+        "Telling them who to tell or not tell",
+        "Minimizing the courage it took"
+      ]
+    },
+    {
+      "name": "college_transition",
+      "category": "academic_transition",
+      "description": "Starting college or university",
+      "common_emotions": ["excitement", "homesickness", "anxiety", "loneliness", "hope", "overwhelm", "curiosity"],
+      "common_fears": ["not making friends", "academic failure", "being away from home", "financial stress", "imposter syndrome"],
+      "risk_factors": ["far from home", "limited support", "academic unpreparedness", "mental health history"],
+      "protective_factors": ["orientation programs", "roommate connections", "campus resources", "family support", "structure"],
+      "helpful_responses": [
+        "Starting college is such a big step. How are the first few weeks going?",
+        "It's completely normal to feel homesick and excited at the same time.",
+        "Everyone else is also trying to make friends — you're not alone in that."
+      ],
+      "helpful_questions": [
+        "What's been the best part so far?",
+        "What's been harder than you expected?",
+        "Have you found any groups or activities you're interested in?"
+      ],
+      "things_to_avoid": [
+        "These are the best years of your life",
+        "Minimizing homesickness",
+        "Comparing their experience to yours"
+      ]
+    },
+    {
+      "name": "burnout_recovery",
+      "category": "health_medical",
+      "description": "Recovering from chronic work or life stress exhaustion",
+      "common_emotions": ["exhaustion", "numbness", "hopelessness", "anger", "guilt", "impatience", "hope"],
+      "common_fears": ["never recovering", "not meeting expectations", "letting people down", "returning to same situation"],
+      "risk_factors": ["high-demand job", "poor boundaries", "lack of support", "perfectionism", "caretaking role"],
+      "protective_factors": ["therapy", "time off", "boundaries", "support system", "reduced responsibilities"],
+      "helpful_responses": [
+        "Burnout is real and it takes time to recover. Be patient with yourself.",
+        "Rest is not a reward for productivity — it's a necessity for wellbeing.",
+        "You can't pour from an empty cup. What would refuel you even 5 percent?"
+      ],
+      "helpful_questions": [
+        "What led to this point of burnout?",
+        "What would genuine rest look like for you?",
+        "What boundaries can you start putting in place?"
+      ],
+      "things_to_avoid": [
+        "Just push through it",
+        "Others work harder",
+        "Take a vacation (as a fix)"
+      ]
+    },
+    {
+      "name": "addiction_recovery",
+      "category": "health_medical",
+      "description": "Process of overcoming substance or behavioral addiction",
+      "common_emotions": ["shame", "hope", "fear", "determination", "guilt", "pride", "vulnerability", "ambivalence"],
+      "common_fears": ["relapse", "not being strong enough", "losing support", "facing past harm", "identity without substance"],
+      "risk_factors": ["unsupportive environment", "unaddressed trauma", "peer pressure", "easy access", "mental health issues"],
+      "protective_factors": ["treatment program", "support groups", "therapy", "healthy relationships", "new routines"],
+      "helpful_responses": [
+        "I'm proud of you for choosing recovery. That takes immense courage.",
+        "Recovery is not a straight line. Every step forward counts, even the small ones.",
+        "You are not your addiction. You are a person healing and growing.",
+        "What support do you have in place for this journey?"
+      ],
+      "helpful_questions": [
+        "What motivated you to seek recovery?",
+        "What's been the hardest part so far?",
+        "What coping strategies are helping you right now?"
+      ],
+      "things_to_avoid": [
+        "Just quit",
+        "Shaming language",
+        "Addicts never change",
+        "One relapse means failure"
+      ]
+    },
+    {
+      "name": "trauma_processing",
+      "category": "health_medical",
+      "description": "Working through the impact of traumatic experiences",
+      "common_emotions": ["fear", "anger", "sadness", "numbness", "vulnerability", "shame", "hopelessness", "determination"],
+      "common_fears": ["never healing", "being broken", "flashbacks", "trusting again", "losing control"],
+      "risk_factors": ["ongoing threat", "limited support", "multiple traumas", "early childhood trauma", "lack of treatment"],
+      "protective_factors": ["trauma-informed therapy", "support system", "safety", "self-compassion", "patience"],
+      "helpful_responses": [
+        "I'm sorry you went through that. You didn't deserve what happened to you.",
+        "Healing from trauma takes time — sometimes years. There's no timeline you need to follow.",
+        "Your responses to trauma were survival mechanisms. They helped you get through.",
+        "You are not your trauma. You are a whole person who has experienced difficult things."
+      ],
+      "helpful_questions": [
+        "What feels most important for you to talk about today?",
+        "How is your nervous system feeling right now?",
+        "What helps you feel safe and grounded?"
+      ],
+      "things_to_avoid": [
+        "Just let it go",
+        "Others had it worse",
+        "You should be over it by now",
+        "Forcing details"
+      ]
+    },
+    {
+      "name": "career_change",
+      "category": "work_career",
+      "description": "Transitioning to a different career or field",
+      "common_emotions": ["fear", "excitement", "anxiety", "hope", "doubt", "imposter syndrome", "relief"],
+      "common_fears": ["starting over", "financial instability", "being too old", "not being good enough", "regret"],
+      "risk_factors": ["financial obligations", "unsupportive family", "limited skills", "age discrimination"],
+      "protective_factors": ["savings", "transferable skills", "support network", "training programs", "mentorship"],
+      "helpful_responses": [
+        "Career changes take courage. It's never too late to pursue what matters to you.",
+        "It's normal to feel like an imposter when starting something new. That will fade.",
+        "Your past experience isn't wasted — it gives you a unique perspective."
+      ],
+      "helpful_questions": [
+        "What's drawing you to this new path?",
+        "What feels most scary about the change?",
+        "What skills from your current career will transfer?"
+      ],
+      "things_to_avoid": [
+        "You're too old to switch",
+        "You're wasting your experience",
+        "Only focusing on the risks"
+      ]
+    },
+    {
+      "name": "having_first_child",
+      "category": "family_life",
+      "description": "Becoming a parent for the first time",
+      "common_emotions": ["joy", "overwhelm", "love", "fear", "exhaustion", "anxiety", "wonder", "isolation"],
+      "common_fears": ["not being a good parent", "baby's health", "losing identity", "relationship strain", "postpartum depression"],
+      "risk_factors": ["limited support", "postpartum depression", "colicky baby", "sleep deprivation", "single parenting"],
+      "protective_factors": ["partner support", "family help", "parenting groups", "good pediatric care", "paid leave"],
+      "helpful_responses": [
+        "Becoming a parent changes everything. It's okay to feel both overwhelmed and in love.",
+        "There's no perfect parent. You're learning alongside your baby, and that's enough.",
+        "Taking care of yourself is part of taking care of your baby. What do you need right now?"
+      ],
+      "helpful_questions": [
+        "How are you really doing? (Not just how you think you should be doing)",
+        "What support do you have in this new chapter?",
+        "What's surprised you most about parenthood?"
+      ],
+      "things_to_avoid": [
+        "Enjoy every moment",
+        "Just wait until...",
+        "Unsolicited parenting advice",
+        "Comparing to your experience"
+      ]
+    },
+    {
+      "name": "homelessness",
+      "category": "economic_stress",
+      "description": "Lack of stable, safe housing",
+      "common_emotions": ["fear", "shame", "hopelessness", "anger", "despair", "vulnerability", "invisibility"],
+      "common_fears": ["safety", "weather", "health", "belongings being stolen", "not surviving", "never escaping"],
+      "risk_factors": ["job loss", "eviction", "mental illness", "addiction", "domestic violence", "systemic factors"],
+      "protective_factors": ["shelter access", "social services", "community", "case worker", "temporary housing"],
+      "helpful_responses": [
+        "I'm so sorry you're in this situation. You deserve a safe place to be.",
+        "This is not your fault. Many people are one paycheck away from housing insecurity.",
+        "You are still a person worthy of dignity and respect, no matter your housing status."
+      ],
+      "helpful_questions": [
+        "What's your biggest safety concern right now?",
+        "What resources have you connected with?",
+        "What would help most in this moment?"
+      ],
+      "things_to_avoid": [
+        "Get a job",
+        "Just go to a shelter",
+        "Judgmental questions",
+        "Assuming all homeless situations are the same"
+      ]
+    },
+    {
+      "name": "postpartum_depression",
+      "category": "health_medical",
+      "description": "Depression after childbirth",
+      "common_emotions": ["sadness", "guilt", "shame", "numbness", "anger", "isolation", "disconnection from baby"],
+      "common_fears": ["being a bad mother", "not loving baby enough", "being judged", "never feeling better", "hurting baby"],
+      "risk_factors": ["previous depression", "birth trauma", "limited support", "hormonal changes", "sleep deprivation"],
+      "protective_factors": ["screening", "therapy", "medication", "partner support", "support groups", "sleep"],
+      "helpful_responses": [
+        "Postpartum depression is a medical condition, not a character flaw. You are not to blame.",
+        "Many mothers experience PPD. You are not alone, and you are not broken.",
+        "Getting help is not a sign of failure — it's a sign of strength and love for your baby.",
+        "Your baby needs a healthy mother, not a perfect one."
+      ],
+      "helpful_questions": [
+        "When did these feelings start?",
+        "Have you talked to your doctor about how you're feeling?",
+        "What kind of support do you have right now?"
+      ],
+      "things_to_avoid": [
+        "Just enjoy your baby",
+        "It's just baby blues",
+        "You'll get over it",
+        "You should be grateful"
+      ]
+    },
+    {
+      "name": "loss_of_pet",
+      "category": "loss_and_grief",
+      "description": "Death of a beloved animal companion",
+      "common_emotions": ["grief", "sadness", "guilt", "loneliness", "emptiness", "anger", "numbness"],
+      "common_fears": ["forgetting them", "that it was their fault", "never loving another pet", "others not understanding"],
+      "risk_factors": ["living alone", "pet was primary companion", "traumatic death", "lack of social support"],
+      "protective_factors": ["supportive friends who understand", "memorial rituals", "time to grieve", "other pets"],
+      "helpful_responses": [
+        "I'm so sorry for your loss. The love we share with animals is real and profound.",
+        "It's okay to grieve deeply for a pet. They were a member of your family.",
+        "Some people won't understand how much this hurts — but I do. Tell me about them."
+      ],
+      "helpful_questions": [
+        "What was your favorite thing about them?",
+        "Would you like to share a memory?",
+        "How are you taking care of yourself through this?"
+      ],
+      "things_to_avoid": [
+        "It was just an animal",
+        "You can always get another one",
+        "They're in a better place"
+      ]
+    },
+    {
+      "name": "wedding_planning",
+      "category": "family_life",
+      "description": "Planning and preparing for marriage",
+      "common_emotions": ["excitement", "stress", "joy", "anxiety", "pressure", "overwhelm", "hope", "conflict"],
+      "common_fears": ["something going wrong", "family conflict", "financial strain", "not being happy", "cold feet"],
+      "risk_factors": ["family tension", "financial pressure", "perfectionism", "unrealistic expectations", "limited time"],
+      "protective_factors": ["supportive partner", "wedding planner", "realistic budget", "premarital counseling", "clear priorities"],
+      "helpful_responses": [
+        "Wedding planning can be both beautiful and stressful. How are you managing?",
+        "Remember that the marriage matters more than the wedding day.",
+        "It's okay if everything isn't perfect. What matters is the commitment you're making."
+      ],
+      "helpful_questions": [
+        "What part of wedding planning is bringing you joy?",
+        "What's causing the most stress?",
+        "How are you and your partner navigating decisions together?"
+      ],
+      "things_to_avoid": [
+        "It's just one day",
+        "You're being a bridezilla",
+        "Minimizing the stress"
+      ]
+    },
+    {
+      "name": "caregiving_for_parent",
+      "category": "family_life",
+      "description": "Taking care of an aging or ill parent",
+      "common_emotions": ["duty", "exhaustion", "guilt", "resentment", "love", "grief", "frustration", "isolation"],
+      "common_fears": ["parent dying", "not doing enough", "burnout", "losing patience", "financial strain", "own health"],
+      "risk_factors": ["limited help", "full-time care", "distance", "parent with dementia", "own health issues"],
+      "protective_factors": ["respite care", "support groups", "shared responsibility", "therapy", "clear boundaries"],
+      "helpful_responses": [
+        "Caregiving for a parent is one of the hardest roles there is. It's okay to struggle with it.",
+        "You're doing the best you can. That is enough.",
+        "You deserve care too. Who is taking care of you while you take care of them?",
+        "It's normal to feel both love and resentment. Both feelings can coexist."
+      ],
+      "helpful_questions": [
+        "What's the hardest part of caregiving right now?",
+        "What support do you have in this role?",
+        "What would one moment of rest look like for you?"
+      ],
+      "things_to_avoid": [
+        "You're so lucky to have this time",
+        "Just put them in a home",
+        "Guilt-tripping about not doing enough"
+      ]
+    }
+  ]
+}

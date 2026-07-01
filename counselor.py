@@ -3,6 +3,7 @@ import re
 import sys
 import time
 import os
+import json
 import numpy as np
 import pandas as pd
 import joblib
@@ -188,6 +189,98 @@ TOPIC_RESPONSES = {
 }
 
 
+class KnowledgeBase:
+    def __init__(self, kb_dir=None):
+        if kb_dir is None:
+            kb_dir = os.path.join(os.path.dirname(__file__), "knowledge_base")
+        self.kb_dir = kb_dir
+        self.emotions = {}
+        self.life_events = {}
+        self.cognitive_patterns = {}
+        self.behavior_patterns = {}
+        self.conversations = []
+        self.crisis_data = {}
+        self.coping_strategies = {}
+        self.language_patterns = {}
+        self._loaded = False
+
+    def load(self):
+        if self._loaded:
+            return
+        if not os.path.isdir(self.kb_dir):
+            print("Warning: knowledge_base directory not found.")
+            return
+        self._load_json("01_emotions.json", "emotions", "name")
+        self._load_json("02_life_events.json", "life_events", "name")
+        self._load_json("03_cognitive_patterns.json", "cognitive_patterns", "name")
+        self._load_json("04_behavior_patterns.json", "behavior_patterns", "name")
+        self._load_jsonl("06_conversation_examples.jsonl")
+        self._load_json("07_crisis_detection.json", "crisis_data", "name")
+        self._load_json("08_coping_strategies.json", "coping_strategies", "name")
+        self._load_json("09_language_patterns.json", "language_patterns", "pattern")
+        self._loaded = True
+
+    def _load_json(self, fname, attr, key_field):
+        fpath = os.path.join(self.kb_dir, fname)
+        if not os.path.exists(fpath):
+            return
+        try:
+            with open(fpath, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            items = data.get(list(data.keys())[1] if len(data.keys()) > 1 else list(data.keys())[0], [])
+            if isinstance(items, list):
+                store = {}
+                for item in items:
+                    k = item.get(key_field, "").lower()
+                    if k:
+                        store[k] = item
+                setattr(self, attr, store)
+        except Exception as e:
+            print(f"  Warning: could not load {fname}: {e}")
+
+    def _load_jsonl(self, fname):
+        fpath = os.path.join(self.kb_dir, fname)
+        if not os.path.exists(fpath):
+            return
+        try:
+            with open(fpath, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if line:
+                        self.conversations.append(json.loads(line))
+        except Exception as e:
+            print(f"  Warning: could not load {fname}: {e}")
+
+    def get_coping_strategies(self, topic):
+        self.load()
+        strategies = []
+        for name, strat in self.coping_strategies.items():
+            targets = [t.lower() for t in strat.get("target", [])]
+            if topic.lower() in targets or any(t in topic.lower() for t in targets):
+                strategies.append(strat)
+        return strategies[:3]
+
+    def get_language_insight(self, phrase):
+        self.load()
+        phrase_lower = phrase.lower().strip(",.!?")
+        for pat_name, pat in self.language_patterns.items():
+            if pat_name in phrase_lower or phrase_lower in pat_name:
+                return pat
+        return None
+
+    def get_emotion_info(self, emotion_name):
+        self.load()
+        return self.emotions.get(emotion_name.lower())
+
+    def get_crisis_info(self, crisis_type):
+        self.load()
+        return self.crisis_data.get(crisis_type.lower())
+
+    def get_cognitive_pattern(self, pattern_name):
+        self.load()
+        return self.cognitive_patterns.get(pattern_name.lower())
+
+
 def detect_crisis(text):
     return any(kw in text.lower() for kw in CRISIS_KEYWORDS)
 
@@ -204,6 +297,7 @@ class Counselor:
         self.history = []
         self.user_name = None
         self.session_count = 0
+        self.kb = KnowledgeBase()
         if model_dir is None:
             model_dir = os.path.dirname(__file__)
         model_path = os.path.join(model_dir, "counselor_model.joblib")
@@ -273,8 +367,20 @@ class Counselor:
         if topic == "general" and confidence < 0.3:
             return random.choice(TOPIC_RESPONSES["general"])
 
+        strategies = self.kb.get_coping_strategies(topic)
+        insight = self.kb.get_language_insight(text)
+
         pool = TOPIC_RESPONSES.get(topic, TOPIC_RESPONSES["general"])
         chosen = random.choice(pool)
+
+        if insight and random.random() < 0.15:
+            follow_up = insight.get("follow_up", "")
+            if follow_up:
+                return f"{chosen}\n\n{follow_up}"
+
+        if strategies and random.random() < 0.2:
+            strat = random.choice(strategies)
+            return f"{chosen}\n\nOne thing that may help: {strat.get('instructions', '')[:200]}"
 
         if confidence > 0.7:
             tag = f"[{topic}] "

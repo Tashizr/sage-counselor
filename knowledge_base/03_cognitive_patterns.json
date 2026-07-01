@@ -1,0 +1,304 @@
+{
+  "description": "Cognitive patterns and thinking styles for counseling awareness",
+  "patterns": [
+    {
+      "name": "catastrophizing",
+      "definition": "Imagining the worst possible outcome and treating it as likely",
+      "typical_thoughts": ["this will be a complete disaster", "everything will fall apart", "I'll lose everything"],
+      "behavior": "anxiety, avoidance, overpreparation, seeking reassurance",
+      "emotion": "anxiety, fear, dread, panic",
+      "counselor_approach": "Cognitive reframing, reality testing, decatastrophizing questions",
+      "example_conversation": {
+        "user": "I have a presentation tomorrow and I know it's going to be terrible.",
+        "counselor": "What's the worst thing you imagine happening? Let's look at that together — how likely is it really?",
+        "technique": "Decatastrophizing"
+      }
+    },
+    {
+      "name": "black_and_white_thinking",
+      "definition": "Seeing things as all good or all bad with no middle ground",
+      "typical_thoughts": ["I'm a total failure", "nothing ever works out", "they're completely awful"],
+      "behavior": "extreme reactions, difficulty with nuance, relationship conflict",
+      "emotion": "anger, frustration, hopelessness",
+      "counselor_approach": "Introduce spectrum thinking, grey area exploration, dialectics",
+      "example_conversation": {
+        "user": "I messed up at work today. I'm terrible at my job.",
+        "counselor": "You made a mistake — that's different from being terrible. Can we look at the full picture of your performance?",
+        "technique": "Cognitive reframing"
+      }
+    },
+    {
+      "name": "overgeneralization",
+      "definition": "Drawing broad negative conclusions from a single event",
+      "typical_thoughts": ["this always happens to me", "I never get it right", "everyone always leaves"],
+      "behavior": "giving up easily, avoiding situations, hopelessness",
+      "emotion": "sadness, hopelessness, resignation",
+      "counselor_approach": "Evidence gathering, exceptions finding, specific vs general language",
+      "example_conversation": {
+        "user": "I didn't get the job. I never get what I want.",
+        "counselor": "You didn't get this job — that's painful. But does 'never' really fit? Let's look at other times you've achieved things.",
+        "technique": "Evidence-based questioning"
+      }
+    },
+    {
+      "name": "mind_reading",
+      "definition": "Assuming you know what others are thinking without evidence",
+      "typical_thoughts": ["they think I'm stupid", "everyone is judging me", "they don't like me"],
+      "behavior": "social anxiety, withdrawal, misinterpretation, defensiveness",
+      "emotion": "anxiety, insecurity, paranoia",
+      "counselor_approach": "Reality checking, communication encouragement, evidence examination",
+      "example_conversation": {
+        "user": "I know my boss thinks I'm incompetent.",
+        "counselor": "What evidence do you have for that? Have you considered checking in with them directly?",
+        "technique": "Reality testing"
+      }
+    },
+    {
+      "name": "fortune_telling",
+      "definition": "Predicting negative outcomes as if they're certain",
+      "typical_thoughts": ["I know I'll fail", "it's going to be awful", "I'll never find someone"],
+      "behavior": "avoidance, not trying, anticipatory anxiety",
+      "emotion": "anxiety, fear, hopelessness",
+      "counselor_approach": "Probability estimation, alternative outcomes, cognitive flexibility",
+      "example_conversation": {
+        "user": "I know if I go to the party, I'll just stand alone and feel awkward.",
+        "counselor": "That's one possibility. What are other possible outcomes? And what would help you feel more prepared either way?",
+        "technique": "Alternative thinking"
+      }
+    },
+    {
+      "name": "emotional_reasoning",
+      "definition": "Believing something is true because it feels true",
+      "typical_thoughts": ["I feel stupid, so I must be stupid", "I feel anxious, so something bad will happen"],
+      "behavior": "avoidance based on feelings, reinforcing negative beliefs",
+      "emotion": "anxiety, shame, sadness",
+      "counselor_approach": "Feelings vs facts distinction, emotional validation + cognitive reframing",
+      "example_conversation": {
+        "user": "I feel like a failure, so I must be one.",
+        "counselor": "Your feelings are valid, but they're not facts. What evidence is there that you're a failure, and what evidence shows your strengths?",
+        "technique": "Feelings vs facts"
+      }
+    },
+    {
+      "name": "perfectionism",
+      "definition": "Setting impossibly high standards and judging self harshly",
+      "typical_thoughts": ["if it's not perfect, it's worthless", "I should never make mistakes", "good enough isn't enough"],
+      "behavior": "procrastination, overwork, avoidance, burnout",
+      "emotion": "anxiety, shame, frustration, exhaustion",
+      "counselor_approach": "Standards examination, good enough concept, self-compassion, failure normalization",
+      "example_conversation": {
+        "user": "I've been working on this for 12 hours but it's still not perfect.",
+        "counselor": "What would 'good enough' look like? Does perfect actually exist here?",
+        "technique": "Cognitive restructuring"
+      }
+    },
+    {
+      "name": "people_pleasing",
+      "definition": "Prioritizing others' needs and approval over own wellbeing",
+      "typical_thoughts": ["if I say no, they'll hate me", "I need everyone to like me", "my needs don't matter"],
+      "behavior": "saying yes when you mean no, overcommitting, neglecting self",
+      "emotion": "resentment, exhaustion, anxiety, emptiness",
+      "counselor_approach": "Boundary work, self-worth exploration, assertiveness training, fear of rejection examination",
+      "example_conversation": {
+        "user": "I said yes to another project even though I'm completely overwhelmed.",
+        "counselor": "What made it hard to say no? Let's practice what that might look like next time.",
+        "technique": "Assertiveness training"
+      }
+    },
+    {
+      "name": "imposter_syndrome",
+      "definition": "Feeling like a fraud despite evidence of competence",
+      "typical_thoughts": ["I don't belong here", "they'll find out I don't know what I'm doing", "I got lucky"],
+      "behavior": "overworking, not sharing ideas, deflecting praise, avoiding visibility",
+      "emotion": "anxiety, shame, inadequacy, fear",
+      "counselor_approach": "Evidence collection, normalization, failure celebration, competence acknowledgment",
+      "example_conversation": {
+        "user": "I got promoted but I feel like everyone will figure out I'm not qualified.",
+        "counselor": "What evidence do you have that you're qualified? What would it take to trust that evidence?",
+        "technique": "Evidence collection"
+      }
+    },
+    {
+      "name": "negative_self_talk",
+      "definition": "Internal dialogue that is harsh, critical, or demeaning",
+      "typical_thoughts": ["I'm so stupid", "I can't do anything right", "what's wrong with me"],
+      "behavior": "low confidence, risk avoidance, self-sabotage",
+      "emotion": "shame, sadness, low self-worth",
+      "counselor_approach": "Self-compassion practice, inner critic externalization, cognitive restructuring",
+      "example_conversation": {
+        "user": "I can't believe I messed that up. I'm so stupid.",
+        "counselor": "Would you speak to a friend the way you're speaking to yourself? What might sound more compassionate?",
+        "technique": "Self-compassion"
+      }
+    },
+    {
+      "name": "rumination",
+      "definition": "Repetitive cycling on negative thoughts without resolution",
+      "typical_thoughts": ["why did that happen", "what if I had done something different", "I can't stop thinking about it"],
+      "behavior": "withdrawal, poor concentration, difficulty sleeping",
+      "emotion": "anxiety, depression, frustration",
+      "counselor_approach": "Thought stopping, worry time scheduling, distraction techniques, problem-solving vs rumination distinction",
+      "example_conversation": {
+        "user": "I keep replaying that conversation over and over. I can't stop.",
+        "counselor": "Let's try a technique called 'worry time.' You get 15 minutes to ruminate at 6pm, and any other time you redirect. Want to try it?",
+        "technique": "Worry time scheduling"
+      }
+    },
+    {
+      "name": "self_criticism",
+      "definition": "Habitual harsh evaluation of oneself",
+      "typical_thoughts": ["I should have done better", "I'm not good enough", "I always mess things up"],
+      "behavior": "apologizing, trying harder, seeking validation",
+      "emotion": "guilt, shame, inadequacy",
+      "counselor_approach": "Self-compassion, inner critic exploration, standards examination, self-acknowledgment practice",
+      "example_conversation": {
+        "user": "I should have handled that better. I'm so disappointed in myself.",
+        "counselor": "What would you say to a friend in the same situation? Can you offer yourself that same kindness?",
+        "technique": "Self-compassion"
+      }
+    },
+    {
+      "name": "personalization",
+      "definition": "Taking responsibility for events outside one's control",
+      "typical_thoughts": ["it's my fault they're upset", "I caused this to happen", "I should have prevented it"],
+      "behavior": "excessive responsibility, guilt, inability to let go",
+      "emotion": "guilt, shame, anxiety",
+      "counselor_approach": "Responsibility pie chart, control identification, self-blame reduction",
+      "example_conversation": {
+        "user": "My friend is upset and I think it's because of something I said.",
+        "counselor": "Let's look at all the factors that might contribute to their mood — how much is actually about you?",
+        "technique": "Responsibility pie"
+      }
+    },
+    {
+      "name": "should_statements",
+      "definition": "Rigid rules about how self or others ought to be",
+      "typical_thoughts": ["I should be further along", "they should know better", "I shouldn't feel this way"],
+      "behavior": "frustration, disappointment, guilt, perfectionism",
+      "emotion": "anger, guilt, frustration",
+      "counselor_approach": "Should-to-preference reframing, expectation examination, acceptance practice",
+      "example_conversation": {
+        "user": "I should have my life together by now.",
+        "counselor": "Where does that 'should' come from? What if we replaced it with 'I'd prefer to be further along, and I'm exactly where I am'?",
+        "technique": "Should reframing"
+      }
+    },
+    {
+      "name": "discounting_the_positive",
+      "definition": "Minimizing or dismissing positive experiences or qualities",
+      "typical_thoughts": ["that doesn't count", "anyone could have done that", "it was just luck"],
+      "behavior": "low self-esteem, not celebrating wins, deflecting praise",
+      "emotion": "sadness, inadequacy, low self-worth",
+      "counselor_approach": "Positive data logging, self-accomplishment inventory, praise acceptance practice",
+      "example_conversation": {
+        "user": "I got an award but it was probably just because no one else applied.",
+        "counselor": "Can you let yourself consider that you earned it? What would it mean if you actually deserved it?",
+        "technique": "Positive data logging"
+      }
+    },
+    {
+      "name": "labeling",
+      "definition": "Assigning global negative labels to self or others",
+      "typical_thoughts": ["I'm a loser", "they're toxic", "I'm broken"],
+      "behavior": "self-fulfilling prophecy, relationship damage, identity entrenchment",
+      "emotion": "shame, anger, hopelessness",
+      "counselor_approach": "Label deconstruction, behavior vs identity distinction, specific language practice",
+      "example_conversation": {
+        "user": "I'm just a failure. That's who I am.",
+        "counselor": "A behavior isn't an identity. You had a setback — that doesn't make you a failure. Can we separate what happened from who you are?",
+        "technique": "Behavior vs identity"
+      }
+    },
+    {
+      "name": "magnification_minimization",
+      "definition": "Exaggerating negatives while shrinking positives",
+      "typical_thoughts": ["this small mistake proves everything wrong", "my achievements are nothing special"],
+      "behavior": "distorted self-view, inability to accurately assess situations",
+      "emotion": "anxiety, shame, hopelessness",
+      "counselor_approach": "Balanced evidence review, scaling questions, perspective taking",
+      "example_conversation": {
+        "user": "I made one error in my report. I'm terrible at my job.",
+        "counselor": "Let's put that error in perspective. How does it compare to the hundreds of things you do well?",
+        "technique": "Perspective scaling"
+      }
+    },
+    {
+      "name": "comparison_trap",
+      "definition": "Measuring self-worth by comparing to others",
+      "typical_thoughts": ["they have it so much better", "everyone else is ahead of me", "I'm falling behind"],
+      "behavior": "social withdrawal, envy, discouragement, giving up",
+      "emotion": "jealousy, envy, inadequacy, sadness",
+      "counselor_approach": "Comparison redirection, own-path focus, gratitude for own journey",
+      "example_conversation": {
+        "user": "All my friends are getting married and having kids. I'm so behind.",
+        "counselor": "Everyone's timeline is different. What do you actually want for your life, not what others have?",
+        "technique": "Own-path focus"
+      }
+    },
+    {
+      "name": "helplessness_thinking",
+      "definition": "Belief that nothing you do can change your situation",
+      "typical_thoughts": ["nothing I do matters", "I'm stuck forever", "there's no point trying"],
+      "behavior": "passivity, not trying, giving up easily",
+      "emotion": "hopelessness, depression, resignation",
+      "counselor_approach": "Small wins identification, control locus examination, efficacy building",
+      "example_conversation": {
+        "user": "I've tried everything and nothing helps. What's the point?",
+        "counselor": "I hear how defeated you feel. Can we look at one tiny area where you might have more influence than you think?",
+        "technique": "Small wins"
+      }
+    },
+    {
+      "name": "jumping_to_conclusions",
+      "definition": "Rapidly reaching negative conclusions without sufficient evidence",
+      "typical_thoughts": ["they didn't reply, so they're mad at me", "this headache means something serious"],
+      "behavior": "anxiety, unnecessary conflict, misinterpretation",
+      "emotion": "anxiety, fear, anger",
+      "counselor_approach": "Evidence gathering, alternative explanations, reality testing",
+      "example_conversation": {
+        "user": "My friend hasn't texted back in 3 hours. They must be angry with me.",
+        "counselor": "What are other possible explanations? What has happened in similar situations before?",
+        "technique": "Alternative explanations"
+      }
+    },
+    {
+      "name": "blaming",
+      "definition": "Holding others responsible for one's feelings or problems",
+      "typical_thoughts": ["they made me feel this way", "it's their fault I'm unhappy", "if they would change, I'd be fine"],
+      "behavior": "not taking responsibility, relationship conflict, victim stance",
+      "emotion": "anger, resentment, powerlessness",
+      "counselor_approach": "Responsibility exploration, personal agency emphasis, control focus",
+      "example_conversation": {
+        "user": "My boss is the reason I'm so stressed. If they'd just leave me alone, I'd be fine.",
+        "counselor": "Even if they're contributing to the stress, what's within your control — your reactions, boundaries, coping strategies?",
+        "technique": "Control focus"
+      }
+    },
+    {
+      "name": "entitlement_thinking",
+      "definition": "Belief that one deserves special treatment or outcomes",
+      "typical_thoughts": ["this shouldn't happen to me", "I deserve better", "life owes me"],
+      "behavior": "anger when disappointed, difficulty with setbacks, relationship issues",
+      "emotion": "anger, disappointment, resentment",
+      "counselor_approach": "Expectation examination, fairness vs reality discussion, gratitude practice",
+      "example_conversation": {
+        "user": "I work so hard, I should get this promotion.",
+        "counselor": "I understand the disappointment. Life doesn't always give us what we deserve, and that's painful. How can you navigate this setback?",
+        "technique": "Expectation management"
+      }
+    },
+    {
+      "name": "selective_abstraction",
+      "definition": "Focusing on one negative detail while ignoring the bigger picture",
+      "typical_thoughts": ["this one criticism proves everything", "the only feedback was negative"],
+      "behavior": "distorted self-view, inability to take balanced feedback",
+      "emotion": "shame, inadequacy, defensiveness",
+      "counselor_approach": "Full picture examination, feedback integration therapy, balanced perspective",
+      "example_conversation": {
+        "user": "My review mentioned one thing to improve. I'm terrible at my job.",
+        "counselor": "You received one piece of constructive feedback among positive evaluation. Can we look at the whole picture?",
+        "technique": "Balanced perspective"
+      }
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "description": "Crisis recognition and response guidelines",
+  "crisis_types": [
+    {
+      "name": "suicidal_ideation",
+      "risk_level": "high_critical",
+      "warning_phrases": [
+        "I want to die", "I'm going to kill myself", "I don't want to be here anymore",
+        "I wish I was dead", "better off dead", "I'm going to end it",
+        "no one would miss me", "I'm planning to kill myself", "I have a plan",
+        "I bought a gun", "I have pills saved up", "I know how I'd do it"
+      ],
+      "protective_factors": ["social support", "future plans", "religious beliefs", "responsibility to family", "therapeutic relationship"],
+      "appropriate_responses": [
+        "I'm really concerned about what you're saying. Your safety is the most important thing right now.",
+        "Please reach out to the National Suicide Prevention Lifeline at 988. They have trained counselors available 24/7.",
+        "You are not alone. There are people who want to help you through this moment.",
+        "Can you commit to reaching out for help right now? I'm very worried about you."
+      ],
+      "escalation_recommendations": [
+        "Encourage immediate contact with crisis line (988)",
+        "If immediate danger, recommend calling 911 or going to emergency room",
+        "Remove access to lethal means if possible",
+        "Do not leave person alone if actively suicidal"
+      ],
+      "never_say": [
+        "You're being selfish",
+        "Think about how it would affect others",
+        "It's not that bad",
+        "You don't really mean that"
+      ]
+    },
+    {
+      "name": "self_harm_urges",
+      "risk_level": "high",
+      "warning_phrases": [
+        "I want to hurt myself", "I need to cut", "I feel like harming myself",
+        "I want to feel pain", "I deserve to be punished", "I can't stop thinking about hurting myself"
+      ],
+      "protective_factors": ["therapeutic relationship", "coping skills", "support system", "safety plan"],
+      "appropriate_responses": [
+        "I hear how much pain you're in. You don't deserve to hurt yourself — you deserve support.",
+        "Those urges are powerful but they pass. Let's try a coping skill together.",
+        "Let's use ice or cold water instead. The sensation can help without causing harm."
+      ],
+      "escalation_recommendations": [
+        "Implement safety plan",
+        "Encourage crisis line contact",
+        "Remove harmful objects",
+        "Distress tolerance skills"
+      ],
+      "never_say": [
+        "You're doing it for attention",
+        "Just stop",
+        "You'll scar yourself forever"
+      ]
+    },
+    {
+      "name": "panic_attack",
+      "risk_level": "moderate_high",
+      "warning_phrases": [
+        "I can't breathe", "I think I'm dying", "something is terribly wrong",
+        "my heart is racing and I'm scared", "I feel like I'm losing my mind",
+        "help me, I'm panicking", "I can't calm down"
+      ],
+      "protective_factors": ["knowledge that panic passes", "previous coping success", "safe environment", "support person"],
+      "appropriate_responses": [
+        "You're having a panic attack. It feels terrifying but it cannot hurt you. It will pass.",
+        "Let's breathe together. In through your nose for 4 counts. Hold for 4. Out for 4.",
+        "You are safe. This is just anxiety. Ride the wave — it will peak and then subside."
+      ],
+      "escalation_recommendations": [
+        "Stay with person",
+        "Guide grounding exercise",
+        "No emergency services needed unless physical symptoms don't subside"
+      ],
+      "never_say": [
+        "Just calm down",
+        "You're overreacting",
+        "There's nothing wrong with you"
+      ]
+    },
+    {
+      "name": "abuse_disclosure",
+      "risk_level": "high",
+      "warning_phrases": [
+        "my partner hits me", "I'm being abused", "they hurt me",
+        "I'm scared of my partner", "I can't go home", "they control everything I do",
+        "I'm being sexually abused", "my parent hurts me"
+      ],
+      "protective_factors": ["awareness of abuse", "support system", "resources knowledge", "safety plan"],
+      "appropriate_responses": [
+        "I believe you. What you're experiencing is not your fault.",
+        "You don't deserve to be treated this way. No one deserves abuse.",
+        "Let's talk about safety. Are you in immediate danger right now?"
+      ],
+      "escalation_recommendations": [
+        "If immediate danger, call 911",
+        "Provide domestic violence hotline: 1-800-799-7233",
+        "Safety planning",
+        "Connect with local shelter resources"
+      ],
+      "never_say": [
+        "Why don't you just leave?",
+        "It takes two to fight",
+        "They probably didn't mean it",
+        "You should try harder"
+      ]
+    },
+    {
+      "name": "psychosis_indicators",
+      "risk_level": "high",
+      "warning_phrases": [
+        "people are watching me", "the government is tracking me", "I can hear voices",
+        "people are reading my mind", "they're poisoning my food", "I have special powers",
+        "I can communicate with things others can't"
+      ],
+      "protective_factors": ["treatment adherence", "insight", "support system", "early intervention"],
+      "appropriate_responses": [
+        "I understand you're having frightening experiences right now. Let's make sure you're safe.",
+        "Have you talked to a doctor about what you're experiencing?",
+        "What helps you feel safe when things feel confusing?"
+      ],
+      "escalation_recommendations": [
+        "If danger to self or others, call 911",
+        "Encourage psychiatric evaluation",
+        "Don't argue with delusions",
+        "Focus on feelings and safety"
+      ],
+      "never_say": [
+        "That's not real",
+        "You're crazy",
+        "Just ignore the voices"
+      ]
+    },
+    {
+      "name": "severe_hopelessness",
+      "risk_level": "moderate_high",
+      "warning_phrases": [
+        "there's no point anymore", "I give up completely", "nothing will ever get better",
+        "I can't do this anymore", "I'm done", "I have nothing to live for",
+        "the world would be better without me"
+      ],
+      "protective_factors": ["hope for even one thing", "support system", "past resilience", "small future plans"],
+      "appropriate_responses": [
+        "I hear how much pain you're in. When things feel endless, it's hard to see a way through.",
+        "You're not alone in this moment. There are people who want to help.",
+        "Even when we can't see a way forward, our brains often can't imagine the good that's still possible."
+      ],
+      "escalation_recommendations": [
+        "Assess suicidal ideation",
+        "Encourage crisis line",
+        "Don't leave alone if severe",
+        "Connect with mental health support"
+      ],
+      "never_say": [
+        "Just think positive",
+        "Others have it worse",
+        "You'll get over it"
+      ]
+    },
+    {
+      "name": "domestic_violence",
+      "risk_level": "high_critical",
+      "warning_phrases": [
+        "they hit me", "I'm scared of their temper", "I can't leave",
+        "they threaten me when I disagree", "I have bruises", "they broke my things",
+        "they check my phone", "they isolate me from my family"
+      ],
+      "protective_factors": ["support system", "resources", "financial independence", "safety plan", "shelter availability"],
+      "appropriate_responses": [
+        "What you're describing is abuse. You deserve to feel safe in your own home.",
+        "I believe you. This is not your fault.",
+        "Let's talk about safety planning. What do you need to be safe?"
+      ],
+      "escalation_recommendations": [
+        "If immediate danger, call 911",
+        "National DV Hotline: 1-800-799-7233",
+        "Create safety plan",
+        "Identify safe places to go"
+      ],
+      "never_say": [
+        "Why do you stay?",
+        "It can't be that bad",
+        "You should try couples counseling (NOT appropriate in DV)"
+      ]
+    },
+    {
+      "name": "grief_crisis",
+      "risk_level": "moderate",
+      "warning_phrases": [
+        "I can't live without them", "I don't know how to go on",
+        "I can't stop crying", "I feel like I'm dying inside",
+        "the pain is unbearable", "I don't want to do this without them"
+      ],
+      "protective_factors": ["social support", "meaning-making", "rituals", "professional support"],
+      "appropriate_responses": [
+        "The pain of losing someone you love can feel unbearable. I'm so sorry.",
+        "There's no timeline for grief. Be gentle with yourself right now.",
+        "You don't have to go through this alone. What support do you have?"
+      ],
+      "escalation_recommendations": [
+        "Assess for suicidal ideation",
+        "Encourage grief support",
+        "Monitor for complicated grief"
+      ],
+      "never_say": [
+        "They're in a better place",
+        "Time heals all wounds",
+        "You should be over it by now"
+      ]
+    }
+  ]
+}

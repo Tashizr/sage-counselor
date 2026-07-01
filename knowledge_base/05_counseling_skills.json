@@ -1,0 +1,157 @@
+{
+  "description": "Counseling skills and techniques framework",
+  "skills": [
+    {
+      "name": "active_listening",
+      "purpose": "Fully concentrating on and understanding what the user communicates",
+      "example_dialogue": "User: 'I've been feeling really down lately.' Counselor: 'I hear you. Tell me more about what that's been like for you.'",
+      "when_to_use": "Always as foundation; especially at start of sessions and when emotions are high",
+      "when_not_to_use": "When immediate safety intervention is needed",
+      "common_mistakes": "Planning response while listening, interrupting, offering solutions prematurely"
+    },
+    {
+      "name": "reflective_listening",
+      "purpose": "Mirroring back the content or emotion of what was said",
+      "example_dialogue": "User: 'I'm just so tired of fighting with my partner.' Counselor: 'It sounds like you're exhausted from the conflict.'",
+      "when_to_use": "When user expresses emotions, to show understanding, to clarify",
+      "when_not_to_use": "When user needs direct information or in crisis escalation",
+      "common_mistakes": "Parroting instead of reflecting, adding interpretation prematurely"
+    },
+    {
+      "name": "validation",
+      "purpose": "Acknowledging the user's feelings and experiences as understandable",
+      "example_dialogue": "User: 'I feel so stupid for being upset about this.' Counselor: 'That makes sense. Anyone in your position might feel upset.'",
+      "when_to_use": "When user expresses self-judgment, strong emotions, or shares vulnerable content",
+      "when_not_to_use": "When validating harmful behaviors or beliefs without also addressing them",
+      "common_mistakes": "Confusing validation with agreement, minimizing, false reassurance"
+    },
+    {
+      "name": "open_ended_questions",
+      "purpose": "Encouraging deeper exploration and reflection",
+      "example_dialogue": "'What was that like for you?' 'How did you make sense of that?' 'What comes up when you think about it?'",
+      "when_to_use": "To explore feelings, gather information, promote insight",
+      "when_not_to_use": "During crisis where direct questions are needed, when user needs structure",
+      "common_mistakes": "Too many questions, leading questions, questions that feel like interrogation"
+    },
+    {
+      "name": "empathy_expression",
+      "purpose": "Communicating genuine understanding of the user's experience",
+      "example_dialogue": "'I can feel how painful this is for you.' 'That sounds incredibly hard.' 'I'm sitting with you in this.'",
+      "when_to_use": "When user shares vulnerable content, expresses pain, or shows emotion",
+      "when_not_to_use": "When user needs practical guidance over emotional connection",
+      "common_mistakes": "One-upping ('I know exactly how you feel'), cliches, insincere tone"
+    },
+    {
+      "name": "summarization",
+      "purpose": "Pulling together key themes and checking understanding",
+      "example_dialogue": "'Let me see if I'm following — you're feeling stuck at work, worried about your health, and also navigating family expectations. Did I get that right?'",
+      "when_to_use": "During transitions, at session end, when topics are complex, to clarify",
+      "when_not_to_use": "When user is in mid-expression of strong emotions",
+      "common_mistakes": "Adding interpretation, missing key points, too lengthy"
+    },
+    {
+      "name": "normalization",
+      "purpose": "Reducing shame by showing experiences are common and human",
+      "example_dialogue": "'Many people feel anxious before big changes. You're not alone in that.' 'That's a very human response to an difficult situation.'",
+      "when_to_use": "When user expresses shame, feels alone in experience, or judges self harshly",
+      "when_not_to_use": "When it minimizes the user's unique experience or when used to dismiss distress",
+      "common_mistakes": "Overusing ('that's normal' for everything), minimizing genuine suffering"
+    },
+    {
+      "name": "psychoeducation",
+      "purpose": "Providing evidence-based information about mental health topics",
+      "example_dialogue": "'What you're describing sounds like anxiety, which is your body's alarm system. It's designed to protect you, but sometimes it gets stuck in the 'on' position.'",
+      "when_to_use": "When user misunderstands their experience, needs context, or asks about symptoms",
+      "when_not_to_use": "When user needs emotional processing first, when it becomes lecturing",
+      "common_mistakes": "Too much information, jargon, premature education, not checking understanding"
+    },
+    {
+      "name": "cognitive_reframing",
+      "purpose": "Gently offering alternative perspectives on situations",
+      "example_dialogue": "'You see this as a failure. What if it's also a learning experience that taught you what doesn't work?'",
+      "when_to_use": "When user is stuck in rigid negative thinking patterns",
+      "when_not_to_use": "When user needs validation first, when reframe is unrealistic",
+      "common_mistakes": "Forcing reframes, toxic positivity, invalidating the initial perspective"
+    },
+    {
+      "name": "motivational_interviewing",
+      "purpose": "Exploring and strengthening motivation for change",
+      "example_dialogue": "'What would need to happen for you to consider making a change?' 'What are the good things about the way things are? What are the less good things?'",
+      "when_to_use": "When user is ambivalent about change, considering behavior change",
+      "when_not_to_use": "When user is in crisis, when change isn't the goal",
+      "common_mistakes": "Pushing for change, arguing with resistance, not meeting user where they are"
+    },
+    {
+      "name": "grounding_techniques",
+      "purpose": "Bringing user back to present moment during distress",
+      "example_dialogue": "'Let's try something together. Name 5 things you can see, 4 you can touch, 3 you can hear, 2 you can smell, 1 you can taste.'",
+      "when_to_use": "During panic, dissociation, flashbacks, emotional flooding",
+      "when_not_to_use": "When user needs to process rather than ground, when grounding is used to avoid emotions",
+      "common_mistakes": "Not explaining why, rushing, choosing wrong sense for their state"
+    },
+    {
+      "name": "goal_setting",
+      "purpose": "Helping user identify and work toward meaningful objectives",
+      "example_dialogue": "'What would you like to be different? Let's break that down into small steps you can take.'",
+      "when_to_use": "When user wants to make changes, needs direction, in later sessions",
+      "when_not_to_use": "Early in building rapport, during crisis, when user needs emotional processing first",
+      "common_mistakes": "Setting goals for user, unrealistic goals, not linking to values"
+    },
+    {
+      "name": "mindfulness_guidance",
+      "purpose": "Teaching present-moment non-judgmental awareness",
+      "example_dialogue": "'Let's take three mindful breaths together. Notice the sensation of air entering and leaving your body.'",
+      "when_to_use": "When user is anxious, overwhelmed, ruminating, or wants stress reduction skills",
+      "when_not_to_use": "During acute trauma processing, when user is dissociating, when user has trauma history with meditation",
+      "common_mistakes": "Not preparing user, too long, dismissing difficulties, no adaptation for trauma"
+    },
+    {
+      "name": "behavioral_activation",
+      "purpose": "Using structured activities to improve mood and motivation",
+      "example_dialogue": "'What's one small activity that might bring you even a tiny sense of accomplishment or pleasure? Let's schedule it.'",
+      "when_to_use": "When user is depressed, withdrawn, lacking motivation",
+      "when_not_to_use": "When user is in crisis, when physical health prevents activity",
+      "common_mistakes": "Starting too big, not troubleshooting barriers, not linking to values"
+    },
+    {
+      "name": "values_clarification",
+      "purpose": "Identifying what matters most to the user as a guide for action",
+      "example_dialogue": "'What matters most to you in life? If you weren't worried about what others think, how would you want to live?'",
+      "when_to_use": "When user feels lost, facing decisions, wants direction",
+      "when_not_to_use": "During crisis, when basic needs aren't met",
+      "common_mistakes": "Imposing own values, confusing goals with values, abstract without application"
+    },
+    {
+      "name": "self_compassion_practice",
+      "purpose": "Cultivating kindness toward oneself during difficulty",
+      "example_dialogue": "'What would you say to a dear friend going through this? Can you offer yourself those same words?'",
+      "when_to_use": "When user is self-critical, ashamed, perfectionistic",
+      "when_not_to_use": "When user needs accountability for harmful behavior",
+      "common_mistakes": "Confusing self-compassion with self-indulgence, rushing the practice"
+    },
+    {
+      "name": "safety_planning",
+      "purpose": "Creating a structured plan for managing suicidal thoughts or crisis",
+      "example_dialogue": "'Let's make a plan together for what you'll do if those thoughts return. Who can you call? What skills can you use?'",
+      "when_to_use": "When user has suicidal ideation, self-harm urges, or crisis risk",
+      "when_not_to_use": "When user is in immediate danger and needs emergency services",
+      "common_mistakes": "Not being specific, not identifying triggers, not including emergency contacts"
+    },
+    {
+      "name": "decatastrophizing",
+      "purpose": "Examining and reducing catastrophic thinking patterns",
+      "example_dialogue": "'What's the worst that could happen? What's the best? What's most likely? And could you handle even the worst case?'",
+      "when_to_use": "When user is catastrophizing about future events",
+      "when_not_to_use": "When user's fears are realistic and need action planning instead",
+      "common_mistakes": "Dismissing fears, reassurance seeking perpetuation, not exploring coping"
+    },
+    {
+      "name": "problem_solving_therapy",
+      "purpose": "Structured approach to solving life problems",
+      "example_dialogue": "'Let's identify the problem, brainstorm options, choose one, and make a plan. What's the first problem we should tackle?'",
+      "when_to_use": "When user faces concrete problems and feels stuck",
+      "when_not_to_use": "When problem is emotional processing, not practical",
+      "common_mistakes": "Solving for user, skipping emotion validation, too rigid structure"
+    }
+  ]
+}
