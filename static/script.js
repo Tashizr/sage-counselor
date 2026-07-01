@@ -3,40 +3,76 @@
   const messagesEl = document.getElementById('messages');
   const input = document.getElementById('text-input');
   const sendBtn = document.getElementById('send-btn');
-  const resetBtn = document.getElementById('reset-btn');
-  const timestamp = document.getElementById('timestamp');
+  const chipsEl = document.getElementById('chips');
 
   let nameSet = false;
   let loading = false;
+  let lastRequestId = 0;
+
+  const SUGGESTED_CHIPS = [
+    "I'm feeling anxious",
+    "I need someone to talk to",
+    "I'm having dark thoughts",
+    "Help me calm down",
+  ];
+
+  function pad(n) { return String(n).padStart(2, '0'); }
+
+  function now() {
+    const d = new Date();
+    const h = d.getHours();
+    const m = d.getMinutes();
+    const ampm = h >= 12 ? 'PM' : 'AM';
+    return `${h % 12 || 12}:${pad(m)} ${ampm}`;
+  }
 
   function scrollToBottom(smooth = true) {
-    if (!smooth) {
-      chatArea.scrollTop = chatArea.scrollHeight;
-      return;
-    }
     requestAnimationFrame(() => {
-      chatArea.scrollTo({ top: chatArea.scrollHeight, behavior: 'smooth' });
+      if (smooth) {
+        chatArea.scrollTo({ top: chatArea.scrollHeight, behavior: 'smooth' });
+      } else {
+        chatArea.scrollTop = chatArea.scrollHeight;
+      }
     });
   }
 
-  function addMessage(text, role) {
+  function addDateDivider() {
+    const existing = messagesEl.querySelector('.date-divider');
+    if (existing) return;
     const div = document.createElement('div');
-    div.className = `message ${role}`;
+    div.className = 'date-divider';
+    div.textContent = 'Today';
+    messagesEl.appendChild(div);
+  }
+
+  function addMessage(text, role) {
+    const msgDiv = document.createElement('div');
+    msgDiv.className = `message ${role}`;
+
+    const row = document.createElement('div');
+    row.className = 'message-row';
 
     if (role === 'bot') {
       const avatar = document.createElement('div');
       avatar.className = 'avatar';
       avatar.setAttribute('aria-hidden', 'true');
-      avatar.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4v2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-2V6a4 4 0 0 0-4-4z"/><path d="M9 14h6"/><path d="M12 11v6"/></svg>`;
-      div.appendChild(avatar);
+      avatar.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4v2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-2V6a4 4 0 0 0-4-4z"/><path d="M9 14h6"/><path d="M12 11v6"/></svg>`;
+      row.appendChild(avatar);
     }
 
     const bubble = document.createElement('div');
     bubble.className = 'bubble';
-    bubble.innerHTML = text.replace(/\n/g, '<br>');
-    div.appendChild(bubble);
+    bubble.textContent = text;
+    row.appendChild(bubble);
 
-    messagesEl.appendChild(div);
+    msgDiv.appendChild(row);
+
+    const time = document.createElement('div');
+    time.className = 'message-time';
+    time.textContent = now();
+    msgDiv.appendChild(time);
+
+    messagesEl.appendChild(msgDiv);
     scrollToBottom();
   }
 
@@ -44,11 +80,16 @@
     const div = document.createElement('div');
     div.className = 'message bot typing';
     div.id = 'typing-indicator';
+
+    const row = document.createElement('div');
+    row.className = 'message-row';
+
     const avatar = document.createElement('div');
     avatar.className = 'avatar';
     avatar.setAttribute('aria-hidden', 'true');
-    avatar.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4v2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-2V6a4 4 0 0 0-4-4z"/><path d="M9 14h6"/><path d="M12 11v6"/></svg>`;
-    div.appendChild(avatar);
+    avatar.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4v2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-2V6a4 4 0 0 0-4-4z"/><path d="M9 14h6"/><path d="M12 11v6"/></svg>`;
+    row.appendChild(avatar);
+
     const bubble = document.createElement('div');
     bubble.className = 'bubble';
     for (let i = 0; i < 3; i++) {
@@ -56,7 +97,8 @@
       dot.className = 'dot';
       bubble.appendChild(dot);
     }
-    div.appendChild(bubble);
+    row.appendChild(bubble);
+    div.appendChild(row);
     messagesEl.appendChild(div);
     scrollToBottom();
   }
@@ -67,22 +109,27 @@
   }
 
   function updatePlaceholder() {
-    input.placeholder = nameSet ? 'Type your message...' : 'Type your name...';
+    input.placeholder = nameSet ? "Share what's on your mind..." : 'What should I call you?';
   }
 
-  function updateTimestamp() {
-    const now = new Date();
-    const opts = { month: 'long', day: 'numeric', year: 'numeric' };
-    timestamp.textContent = now.toLocaleDateString('en-US', opts);
+  function setChips(chips) {
+    chipsEl.innerHTML = '';
+    chips.forEach(text => {
+      const btn = document.createElement('button');
+      btn.className = 'chip';
+      btn.textContent = text;
+      btn.type = 'button';
+      btn.addEventListener('click', () => sendMessage(text));
+      chipsEl.appendChild(btn);
+    });
   }
-
-  let lastRequestId = 0;
 
   async function sendMessage(text) {
     if (!text.trim() || loading) return;
     loading = true;
     const reqId = ++lastRequestId;
 
+    chipsEl.innerHTML = '';
     addMessage(text, 'user');
     input.value = '';
     showTyping();
@@ -104,6 +151,9 @@
         nameSet = true;
         updatePlaceholder();
       }
+      if (nameSet) {
+        setChips(SUGGESTED_CHIPS);
+      }
     } catch {
       if (reqId === lastRequestId) {
         removeTyping();
@@ -124,6 +174,7 @@
       });
       const data = await resp.json();
       removeTyping();
+      addDateDivider();
       addMessage(data.reply, 'bot');
     } catch {
       removeTyping();
@@ -135,18 +186,6 @@
     if (text) sendMessage(text);
   }
 
-  function resetChat() {
-    if (loading) return;
-    fetch('/reset', { method: 'POST' }).catch(() => {});
-    messagesEl.innerHTML = '';
-    nameSet = false;
-    lastRequestId++;
-    updatePlaceholder();
-    updateTimestamp();
-    loadGreeting();
-    input.focus();
-  }
-
   input.addEventListener('keydown', (e) => {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
@@ -156,50 +195,23 @@
 
   sendBtn.addEventListener('click', handleSend);
 
-  resetBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    resetChat();
-  });
-
-  document.getElementById('close-btn').addEventListener('click', () => {
-    window.close();
-  });
-
   document.getElementById('emoji-btn').addEventListener('click', () => {
     input.focus();
   });
 
-  document.getElementById('attach-btn').addEventListener('click', () => {
-    input.focus();
+  document.getElementById('crisis-btn').addEventListener('click', (e) => {
+    e.stopPropagation();
   });
 
-  let lastScrollHeight = 0;
-
-  function onResize() {
-    const height = chatArea.scrollHeight;
-    if (height !== lastScrollHeight) {
-      lastScrollHeight = height;
-      scrollToBottom(false);
-    }
-  }
-
-  const resizeObserver = new ResizeObserver(onResize);
-  resizeObserver.observe(chatArea);
-
-  let keyboardActive = false;
-
   if ('visualViewport' in window) {
-    const origHeight = window.visualViewport.height;
     window.visualViewport.addEventListener('resize', () => {
-      const diff = origHeight - window.visualViewport.height;
-      keyboardActive = diff > 100;
-      if (keyboardActive) {
-        setTimeout(() => scrollToBottom(false), 100);
-      }
+      setTimeout(() => scrollToBottom(false), 150);
     });
   }
 
-  updateTimestamp();
+  const resizeObserver = new ResizeObserver(() => scrollToBottom(false));
+  resizeObserver.observe(chatArea);
+
   loadGreeting();
   input.focus();
 })();
