@@ -944,6 +944,59 @@ def build_from_knowledge_base(kb_dir=None):
     return df
 
 
+INTENT_TO_CATEGORY = {
+    "greeting": "general", "small_talk": "general", "introduce_name": "general",
+    "humor": "positive", "sarcasm": "general", "joke": "positive",
+    "roleplay": "general", "hypothetical": "general", "storytelling": "general",
+    "relationship_problem": "relationships", "breakup": "relationships",
+    "loneliness": "sadness", "academic_stress": "stress", "exam_anxiety": "anxiety",
+    "career_stress": "stress", "family_conflict": "relationships",
+    "friendship_issue": "relationships", "financial_stress": "stress",
+    "grief": "sadness", "loss": "sadness", "identity_question": "confusion",
+    "motivation_struggle": "general", "life_purpose": "confusion",
+    "depression_like": "sadness", "anxiety_like": "anxiety", "panic": "anxiety",
+    "trauma_discussion": "anxiety", "abuse_disclosure": "anxiety",
+    "self_harm_concern": "anxiety", "violence_disclosure": "anxiety",
+    "advice_seeking": "general", "reflection": "general", "clarification": "confusion",
+    "goodbye": "general", "venting": "general", "gratitude": "positive",
+    "burnout": "stress", "anger_expression": "anger", "jealousy": "anger",
+    "regret": "sadness", "guilt": "sadness", "shame": "sadness",
+    "boredom": "general", "excitement": "positive", "pride": "positive",
+    "hope": "positive", "physical_health_concern": "anxiety",
+}
+
+
+def build_from_jsonl_dataset(jsonl_path=None):
+    if jsonl_path is None:
+        jsonl_path = os.path.join(os.path.dirname(__file__), "dataset", "sage_training.jsonl")
+    if not os.path.exists(jsonl_path):
+        print(f"  JSONL dataset not found at {jsonl_path}, skipping.")
+        return None
+
+    rows = []
+    with open(jsonl_path, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            record = json.loads(line)
+            text = record.get("user_message", "").strip()
+            intent = record.get("detected_intent", "")
+            if text and intent:
+                category = INTENT_TO_CATEGORY.get(intent, "general")
+                rows.append({"text": text, "label": category, "source": "jsonl_dataset", "intent": intent})
+
+    if not rows:
+        print("  No rows extracted from JSONL dataset.")
+        return None
+
+    df = pd.DataFrame(rows)
+    df["label"] = df["label"].astype("category")
+    print(f"  JSONL dataset: {len(df)} samples")
+    print(f"  JSONL class distribution:\n{df['label'].value_counts()}")
+    return df
+
+
 def main():
     print("=" * 60)
     print("COUNSELOR MODEL TRAINING")
@@ -952,21 +1005,26 @@ def main():
     print("\n[1/6] Building synthetic dataset...")
     synthetic_df = build_synthetic_df()
 
-    print("\n[2/6] Building knowledge base dataset...")
+    print("\n[2/6] Building JSONL dataset...")
+    jsonl_df = build_from_jsonl_dataset()
+
+    print("\n[3/6] Building knowledge base dataset...")
     kb_df = build_from_knowledge_base()
 
-    print("\n[3/6] Combining datasets...")
+    print("\n[4/6] Combining datasets...")
     dfs = [synthetic_df]
+    if jsonl_df is not None:
+        dfs.append(jsonl_df)
     if kb_df is not None:
         dfs.append(kb_df)
     combined = pd.concat(dfs, ignore_index=True)
     print(f"  Combined dataset: {len(combined)} samples")
 
-    print("\n[4/6] Balancing dataset...")
+    print("\n[5/6] Balancing dataset...")
     per_class = int(max(len(combined) / len(combined["label"].unique()) * 1.2, 80))
     balanced = balance_dataset(combined, target_per_class=per_class)
 
-    print("\n[5/6] Training model...")
+    print("\n[6/6] Training model...")
     X = balanced["text"].to_numpy(dtype=str)
     y = balanced["label"].to_numpy(dtype=str)
     X_train, X_test, y_train, y_test = train_test_split(
@@ -975,7 +1033,7 @@ def main():
     print(f"  Train: {len(X_train)} samples, Test: {len(X_test)} samples")
     model = train_model(X_train, y_train)
 
-    print("\n[6/6] Evaluating model...")
+    print("\nEvaluating model...")
     y_pred = model.predict(X_test)
     y_proba = model.predict_proba(X_test)
     print(f"\n  Test accuracy: {np.mean(y_pred == y_test):.3f}")

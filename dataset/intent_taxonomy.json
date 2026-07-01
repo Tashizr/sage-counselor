@@ -1,0 +1,287 @@
+{
+  "description": "Comprehensive intent taxonomy for SAGE emotional support companion",
+  "intents": {
+    "greeting": {
+      "category": "conversation_start",
+      "patterns": ["hi", "hello", "hey", "sup", "yo", "whats up", "howdy", "good morning", "good evening"],
+      "emotions": ["neutral", "positive"],
+      "response_style": "warm_welcome"
+    },
+    "introduce_name": {
+      "category": "identity",
+      "patterns": ["my name is", "i am", "im", "call me", "name's", "this is"],
+      "emotions": ["neutral", "open"],
+      "response_style": "name_acknowledgment"
+    },
+    "small_talk": {
+      "category": "conversation_flow",
+      "patterns": ["how are you", "whats up", "not much", "just chilling", "how's it going"],
+      "emotions": ["neutral", "casual"],
+      "response_style": "light"
+    },
+    "humor": {
+      "category": "tone",
+      "patterns": ["lol", "lmao", "that's funny", "haha", "lmfao"],
+      "emotions": ["amusement", "lightness"],
+      "response_style": "playful"
+    },
+    "sarcasm": {
+      "category": "tone",
+      "patterns": ["oh great", "wonderful", "just what i needed", "fantastic"],
+      "emotions": ["frustration", "irony"],
+      "response_style": "acknowledge_tone"
+    },
+    "joke": {
+      "category": "tone",
+      "patterns": ["knock knock", "why did the", "what do you call", "a guy walks into"],
+      "emotions": ["playful", "light"],
+      "response_style": "playful"
+    },
+    "roleplay": {
+      "category": "tone",
+      "patterns": ["pretend", "imagine you're", "lets say", "what if you were"],
+      "emotions": ["creative", "curious"],
+      "response_style": "engage_curiosity"
+    },
+    "hypothetical": {
+      "category": "reasoning",
+      "patterns": ["what if", "imagine if", "suppose", "theoretically"],
+      "emotions": ["curious", "uncertain"],
+      "response_style": "explore"
+    },
+    "storytelling": {
+      "category": "expression",
+      "patterns": ["so this one time", "let me tell you", "this happened", "the other day"],
+      "emotions": ["narrative", "engaged"],
+      "response_style": "listen"
+    },
+    "relationship_problem": {
+      "category": "distress",
+      "patterns": ["my partner", "my boyfriend", "my girlfriend", "we keep fighting", "relationship issues"],
+      "emotions": ["frustration", "sadness", "confusion", "hurt"],
+      "response_style": "validate_explore"
+    },
+    "breakup": {
+      "category": "loss",
+      "patterns": ["broke up", "dumped me", "left me", "ended things", "its over", "we split"],
+      "emotions": ["heartbreak", "sadness", "grief", "rejection", "loneliness"],
+      "response_style": "grief_support"
+    },
+    "loneliness": {
+      "category": "distress",
+      "patterns": ["i feel lonely", "i have no friends", "im alone", "nobody cares", "no one understands"],
+      "emotions": ["loneliness", "sadness", "isolation", "emptiness"],
+      "response_style": "connection"
+    },
+    "academic_stress": {
+      "category": "pressure",
+      "patterns": ["exam", "test", "grades", "homework", "school", "college", "university", "assignment"],
+      "emotions": ["anxiety", "stress", "overwhelm", "fear"],
+      "response_style": "validate_breakdown"
+    },
+    "exam_anxiety": {
+      "category": "pressure",
+      "patterns": ["exam anxiety", "test anxiety", "i'm going to fail", "studying for"],
+      "emotions": ["anxiety", "fear", "panic", "self_doubt"],
+      "response_style": "calm_prepare"
+    },
+    "career_stress": {
+      "category": "pressure",
+      "patterns": ["my job", "career", "work stress", "boss", "colleagues", "laid off", "fired"],
+      "emotions": ["stress", "frustration", "anxiety", "inadequacy"],
+      "response_style": "validate_explore"
+    },
+    "family_conflict": {
+      "category": "distress",
+      "patterns": ["my parents", "my mom", "my dad", "my sibling", "family drama", "they dont understand"],
+      "emotions": ["frustration", "anger", "hurt", "confusion"],
+      "response_style": "validate_explore"
+    },
+    "friendship_issue": {
+      "category": "distress",
+      "patterns": ["my friend", "best friend", "friendship", "we fell out", "ghosted me"],
+      "emotions": ["hurt", "confusion", "loneliness", "betrayal"],
+      "response_style": "validate_explore"
+    },
+    "financial_stress": {
+      "category": "pressure",
+      "patterns": ["money", "bills", "debt", "rent", "bank account", "can't afford", "financial"],
+      "emotions": ["anxiety", "stress", "fear", "shame", "helplessness"],
+      "response_style": "validate_support"
+    },
+    "grief": {
+      "category": "loss",
+      "patterns": ["passed away", "died", "lost my", "i miss", "funeral", "death", "gone"],
+      "emotions": ["grief", "sadness", "yearning", "shock", "numbness"],
+      "response_style": "grief_support"
+    },
+    "loss": {
+      "category": "loss",
+      "patterns": ["i lost", "its gone", "not the same anymore", "everything changed"],
+      "emotions": ["sadness", "grief", "disorientation"],
+      "response_style": "grief_support"
+    },
+    "identity_question": {
+      "category": "existential",
+      "patterns": ["who am i", "i dont know myself", "what is my purpose", "what am i doing"],
+      "emotions": ["confusion", "existential_anxiety", "curiosity"],
+      "response_style": "explore_values"
+    },
+    "motivation_struggle": {
+      "category": "struggle",
+      "patterns": ["no motivation", "cant get started", "dont want to do anything", "procrastinating"],
+      "emotions": ["frustration", "apathy", "overwhelm"],
+      "response_style": "gentle_encourage"
+    },
+    "life_purpose": {
+      "category": "existential",
+      "patterns": ["what is the meaning", "purpose of life", "why am i here", "what should i do with my life"],
+      "emotions": ["existential_anxiety", "curiosity", "confusion"],
+      "response_style": "explore_values"
+    },
+    "depression_like": {
+      "category": "distress",
+      "patterns": ["i feel empty", "nothing matters", "i don't enjoy anything", "what's the point", "i give up"],
+      "emotions": ["hopelessness", "emptiness", "sadness", "numbness"],
+      "response_style": "gentle_support"
+    },
+    "anxiety_like": {
+      "category": "distress",
+      "patterns": ["im anxious", "i worry", "cant stop thinking", "what if", "overthinking", "racing thoughts"],
+      "emotions": ["anxiety", "fear", "overwhelm", "dread"],
+      "response_style": "ground_validate"
+    },
+    "panic": {
+      "category": "crisis",
+      "patterns": ["cant breathe", "heart racing", "panic attack", "im panicking", "freaking out"],
+      "emotions": ["panic", "terror", "overwhelm"],
+      "response_style": "grounding"
+    },
+    "trauma_discussion": {
+      "category": "trauma",
+      "patterns": ["trauma", "ptsd", "flashback", "triggered", "what happened to me"],
+      "emotions": ["fear", "vulnerability", "shame", "anger"],
+      "response_style": "trauma_informed"
+    },
+    "abuse_disclosure": {
+      "category": "safety",
+      "patterns": ["abused", "hit me", "hurts me", "controlling", "scared of"],
+      "emotions": ["fear", "shame", "vulnerability", "hopelessness"],
+      "response_style": "safety_first"
+    },
+    "self_harm_concern": {
+      "category": "crisis",
+      "patterns": ["self harm", "cutting", "hurt myself", "want to hurt"],
+      "emotions": ["despair", "numbness", "self_hatred"],
+      "response_style": "crisis_response"
+    },
+    "violence_disclosure": {
+      "category": "safety",
+      "patterns": ["killed", "murder", "hurt someone", "violent"],
+      "emotions": ["fear", "confusion", "shame"],
+      "response_style": "clarify_then_support"
+    },
+    "advice_seeking": {
+      "category": "support",
+      "patterns": ["what should i do", "any advice", "what would you do", "need help with"],
+      "emotions": ["confusion", "anxiety", "hopeful"],
+      "response_style": "explore_options"
+    },
+    "reflection": {
+      "category": "growth",
+      "patterns": ["i realized", "i think i understand", "looking back", "ive been thinking"],
+      "emotions": ["insight", "curiosity", "growth"],
+      "response_style": "reinforce_insight"
+    },
+    "clarification": {
+      "category": "meta",
+      "patterns": ["what do you mean", "can you explain", "i dont understand", "clarify"],
+      "emotions": ["confusion", "curiosity"],
+      "response_style": "clarify"
+    },
+    "goodbye": {
+      "category": "conversation_end",
+      "patterns": ["bye", "goodbye", "see you", "got to go", "talk later", "cya"],
+      "emotions": ["neutral", "gratitude"],
+      "response_style": "warm_close"
+    },
+    "venting": {
+      "category": "expression",
+      "patterns": ["i need to vent", "i just need to say", "let me get this off my chest"],
+      "emotions": ["frustration", "anger", "overwhelm"],
+      "response_style": "listen_validate"
+    },
+    "gratitude": {
+      "category": "positive",
+      "patterns": ["thank you", "thanks", "i appreciate", "you helped"],
+      "emotions": ["gratitude", "warmth"],
+      "response_style": "acknowledge_gratitude"
+    },
+    "physical_health_concern": {
+      "category": "health",
+      "patterns": ["sick", "pain", "diagnosed", "symptoms", "headache", "insomnia", "sleep"],
+      "emotions": ["fear", "anxiety", "frustration"],
+      "response_style": "validate_refer"
+    },
+    "burnout": {
+      "category": "pressure",
+      "patterns": ["burned out", "exhausted", "drained", "i cant anymore", "running on empty"],
+      "emotions": ["exhaustion", "hopelessness", "frustration"],
+      "response_style": "validate_rest"
+    },
+    "anger_expression": {
+      "category": "distress",
+      "patterns": ["im so angry", "i hate", "furious", "pissed off", "cant stand"],
+      "emotions": ["anger", "frustration", "rage"],
+      "response_style": "validate_explore"
+    },
+    "jealousy": {
+      "category": "distress",
+      "patterns": ["im jealous", "envious", "they have what i want", "why not me"],
+      "emotions": ["jealousy", "inadequacy", "sadness"],
+      "response_style": "validate_explore"
+    },
+    "regret": {
+      "category": "reflection",
+      "patterns": ["i regret", "i wish i had", "if only", "i should have"],
+      "emotions": ["regret", "sadness", "guilt"],
+      "response_style": "validate_reframe"
+    },
+    "guilt": {
+      "category": "distress",
+      "patterns": ["i feel guilty", "its my fault", "i shouldnt have", "i feel bad about"],
+      "emotions": ["guilt", "shame", "self_blame"],
+      "response_style": "validate_gentle"
+    },
+    "shame": {
+      "category": "distress",
+      "patterns": ["im ashamed", "im embarrassed", "i feel disgusting", "im a bad person"],
+      "emotions": ["shame", "worthlessness", "self_hatred"],
+      "response_style": "shame_sensitive"
+    },
+    "boredom": {
+      "category": "neutral",
+      "patterns": ["im bored", "nothing to do", "boring", "this is dull"],
+      "emotions": ["boredom", "restlessness"],
+      "response_style": "light_explore"
+    },
+    "excitement": {
+      "category": "positive",
+      "patterns": ["im excited", "i cant wait", "looking forward", "so happy"],
+      "emotions": ["excitement", "joy", "anticipation"],
+      "response_style": "celebrate"
+    },
+    "pride": {
+      "category": "positive",
+      "patterns": ["im proud", "i did it", "i accomplished", "i worked hard"],
+      "emotions": ["pride", "accomplishment", "confidence"],
+      "response_style": "celebrate"
+    },
+    "hope": {
+      "category": "positive",
+      "patterns": ["i feel hopeful", "things are looking up", "i see a way"],
+      "emotions": ["hope", "optimism", "relief"],
+      "response_style": "reinforce_hope"
+    }
+  }
+}
