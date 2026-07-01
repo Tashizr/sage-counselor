@@ -19,6 +19,60 @@ CRISIS_KEYWORDS = [
     "harm myself", "cut myself", "suicidal",
 ]
 
+SLANG_MAP = {
+    "fr": "for real", "frfr": "for real for real",
+    "ngl": "not going to lie", "lowkey": "somewhat", "highkey": "very much",
+    "rn": "right now", "atm": "at the moment",
+    "idk": "i don't know", "idc": "i don't care", "imo": "in my opinion",
+    "yk": "you know", "alr": "alright",
+    "nah": "no", "ye": "yes", "yuh": "yes",
+    "bet": "okay", "say less": "i understand",
+    "no cap": "no lie", "cap": "lie",
+    "deadass": "seriously",
+    "im cooked": "i'm in trouble",
+    "im tweaking": "i'm panicking",
+    "its wraps": "it's over",
+    "we ball": "we'll be fine",
+    "i sold": "i failed",
+    "i fumbled": "i made a mistake and lost something",
+    "ghosted": "stopped contacting without explanation",
+    "left me on delivered": "read my message but didn't reply",
+    "left on read": "read my message and didn't reply",
+    "friend zoned": "rejected as a romantic interest",
+    "down bad": "in a difficult situation",
+    "spiraling": "losing emotional control",
+    "crashing out": "losing control completely",
+    "bro": "friend", "bruh": "friend", "dawg": "friend",
+    "tf": "what the", "wtf": "what the",
+    "lmao": "laughing", "lol": "laughing",
+}
+
+SLANG_EMOJI_MAP = {
+    "😭": "crying", "💀": "dead", "🙏": "please",
+    "❤️": "love", "💔": "heartbreak",
+    "🥲": "tearful smile", "😔": "sad", "😕": "confused",
+    "🙂": "okay", "😊": "happy",
+}
+
+SHORT_ANSWER_SET = {
+    "yeah", "nah", "idk", "idc", "maybe", "sure", "kinda",
+    "not really", "probably", "alr", "ok", "okay", "ye",
+    "yuh", "ig", "i guess", "not sure", "i dunno",
+}
+
+SOFT_ENDINGS = {
+    "anxiety": ["I'm here with you.", "We can sit with this for a while.", "Take your time."],
+    "sadness": ["I'm here with you.", "We can stay with this for a bit.", "Take your time."],
+    "anger": ["I'm here with you.", "Let that sit for a moment.", "Take your time."],
+    "stress": ["We can slow down here.", "Take your time.", "I'm here with you."],
+    "sleep": ["Take your time.", "We can let that sit.", "I'm here with you."],
+    "relationships": ["I'm here with you.", "Take your time with this.", "We can sit with this."],
+    "work": ["Take your time.", "I'm here with you.", "We can slow down here."],
+    "confusion": ["Take your time.", "We can sit with the question.", "I'm here with you."],
+    "positive": ["That's really nice.", "I'm glad for you.", "That's good to hear."],
+    "general": ["Take your time.", "I'm here with you.", "We can sit with this."],
+}
+
 STOP_WORDS = {
     "i", "me", "my", "myself", "we", "our", "you", "your", "yourself",
     "he", "him", "she", "her", "it", "they", "them", "their",
@@ -47,58 +101,83 @@ STOP_WORDS = {
     "also", "though", "although", "however", "therefore",
     "well", "oh", "ah", "okay", "ok", "yeah", "yes", "no",
     "sure", "right", "fine", "good", "bad",
+    "im", "dont", "cant", "wont", "didnt", "wasnt", "isnt",
+    "arent", "couldnt", "wouldnt", "shouldnt", "havent",
+    "hasnt", "hadnt", "doesnt", "thats", "theres",
+    "its", "ive", "youve", "weve", "theyve",
+    "youre", "theyre", "were",
 }
 
 REFLECTION_STARTS = {
     "anxiety": [
-        "That anxiety sounds really unsettling.",
-        "I can hear the worry in what you're describing.",
-        "It sounds like your mind is working hard to protect you from something.",
+        "It sounds like there's a lot of weight in what you're describing.",
+        "I wonder if this has been sitting with you for a while now.",
+        "That worry sounds really present for you right now.",
+        "It seems like your mind is working hard to keep you alert.",
+        "I imagine that kind of unease is hard to shake off.",
     ],
     "sadness": [
-        "That heaviness you're describing — it sounds painful.",
-        "I hear the sadness in your voice.",
-        "That ache makes sense given what you're going through.",
+        "It sounds like there's a heaviness that's hard to put into words.",
+        "I wonder if this has been weighing on you more than you let on.",
+        "It seems like there's a deep ache in what you're sharing.",
+        "That kind of sadness sounds like it runs deep.",
+        "I imagine that leaves you feeling pretty drained.",
     ],
     "anger": [
-        "That sounds deeply frustrating.",
-        "I can feel how strongly this affects you.",
-        "That kind of frustration is completely understandable.",
+        "It sounds like something really got to you.",
+        "I wonder if there's more underneath that frustration.",
+        "It seems like this touched something important.",
+        "That kind of anger usually points to something that matters deeply.",
+        "I imagine that left you feeling pretty unheard.",
     ],
     "stress": [
-        "That sounds like a lot to carry right now.",
-        "It sounds like you're stretched thin.",
-        "I hear how much pressure you're under.",
+        "It sounds like you're carrying a lot right now.",
+        "I wonder if this has been building for a while.",
+        "It seems like there's a lot pulling at your attention.",
+        "That kind of pressure sounds exhausting.",
+        "I imagine it's hard to find a moment to breathe.",
     ],
     "sleep": [
-        "That struggle to rest sounds exhausting.",
-        "It sounds like your mind stays busy even at night.",
-        "That frustration with sleep is completely understandable.",
+        "It sounds like your mind doesn't quiet down when you need it to.",
+        "I wonder if there's something your mind is trying to process.",
+        "It seems like rest has been hard to come by.",
+        "That struggle to sleep sounds really draining.",
+        "I imagine lying awake with your thoughts is exhausting.",
     ],
     "relationships": [
-        "That tension in your relationship sounds painful.",
-        "I hear how much this connection matters to you.",
-        "That feeling of distance sounds really hard.",
+        "It sounds like there's something shifting in a relationship that matters to you.",
+        "I wonder if this has been on your mind for a while.",
+        "It seems like this connection means a lot to you.",
+        "That kind of tension in a relationship is hard to carry.",
+        "I imagine that leaves you feeling pretty torn.",
     ],
     "work": [
-        "That work situation sounds draining.",
-        "I hear how much this is weighing on you professionally.",
-        "That frustration with your work makes sense.",
+        "It sounds like work has been taking a lot out of you.",
+        "I wonder if this has been building up over time.",
+        "It seems like there's a mismatch between what you give and what you get.",
+        "That kind of work stress can affect everything else too.",
+        "I imagine that leaves you questioning things.",
     ],
     "confusion": [
-        "That uncertainty sounds disorienting.",
-        "Not having clarity is genuinely uncomfortable.",
-        "That feeling of being at a crossroads sounds confusing.",
+        "It sounds like you're at a place where things aren't clear yet.",
+        "I wonder if this uncertainty has been unsettling.",
+        "It seems like you're weighing something important.",
+        "That kind of not-knowing is genuinely uncomfortable.",
+        "I imagine it's hard to move forward when things feel unclear.",
     ],
     "positive": [
-        "That sounds genuinely uplifting.",
-        "It's nice to hear something positive is happening.",
-        "That warmth in your voice is really nice to hear.",
+        "It sounds like something good is happening for you.",
+        "I wonder if this has been a long time coming.",
+        "It seems like things are moving in a good direction.",
+        "That kind of positive energy is really nice to hear.",
+        "I imagine that feels pretty good.",
     ],
     "general": [
-        "I hear what you're sharing.",
-        "That sounds important to you.",
-        "I appreciate you telling me about this.",
+        "It sounds like there's something on your mind.",
+        "I wonder if this has been sitting with you for a while.",
+        "It seems like this is important to you.",
+        "I appreciate you sharing that with me.",
+        "I'm glad you're talking about this.",
     ],
 }
 
@@ -381,6 +460,54 @@ class Counselor:
 
         return self._generate(text)
 
+    def _translate_slang(self, text):
+        lower = text.lower()
+        translated = lower
+        for phrase, meaning in sorted(SLANG_MAP.items(), key=lambda x: -len(x[0])):
+            if phrase in translated:
+                translated = translated.replace(phrase, meaning)
+        for emoji, meaning in SLANG_EMOJI_MAP.items():
+            if emoji in text:
+                translated += f" {meaning}"
+        return translated, text if translated == lower else translated
+
+    def _is_short_answer(self, text):
+        lower = text.lower().strip(",.!? ")
+        if lower in SHORT_ANSWER_SET:
+            return True
+        words = lower.split()
+        if len(words) > 2:
+            return False
+        meaningful_keywords = {"anxious", "sad", "angry", "scared", "hurt", "tired",
+                               "lonely", "stressed", "depressed", "worried", "lost",
+                               "hopeless", "numb", "heartbroken", "grateful", "happy"}
+        if any(w.strip(",.!?") in meaningful_keywords for w in words):
+            return False
+        if lower in ("i don't know", "i dunno", "not sure", "i'm not sure"):
+            return True
+        return True
+
+    def _detect_secondary_emotion(self, text):
+        emotion_words = {
+            "anxiety": ["anxious", "worried", "nervous", "panic", "scared", "afraid", "dread"],
+            "sadness": ["sad", "sorrow", "grief", "depressed", "lonely", "empty"],
+            "anger": ["angry", "mad", "furious", "annoyed", "irritated"],
+            "stress": ["stressed", "overwhelmed", "burned out", "pressure"],
+            "confusion": ["confused", "lost", "unsure", "torn", "uncertain"],
+        }
+        lower = text.lower()
+        found = []
+        for topic, words in emotion_words.items():
+            for w in words:
+                if w in lower:
+                    found.append(topic)
+                    break
+        return found[:2]
+
+    def _build_soft_ending(self, topic):
+        opts = SOFT_ENDINGS.get(topic, SOFT_ENDINGS["general"])
+        return random.choice(opts)
+
     def _extract_key_phrases(self, text):
         words = text.lower().split()
         meaningful = [w.strip(",.!?;:'\"") for w in words
@@ -424,18 +551,51 @@ class Counselor:
         return None
 
     def _generate(self, text):
-        topic, confidence = self._predict_topic(text)
-        key_words = self._extract_key_phrases(text)
+        raw_text = text
+        translated_text, _ = self._translate_slang(text)
 
-        reflection = self._build_reflection(text, key_words, topic)
+        topic, confidence = self._predict_topic(translated_text)
+        key_words = self._extract_key_phrases(translated_text)
+
+        is_short = self._is_short_answer(raw_text)
+
+        if is_short:
+            prev = self._check_history()
+            if prev:
+                return self._handle_short_answer(topic, prev)
+
+        secondary = self._detect_secondary_emotion(translated_text)
+
+        reflection = self._build_reflection(translated_text, key_words, topic)
         validation = self._build_validation(topic)
         question = self._build_question(topic)
+        soft = self._build_soft_ending(topic)
 
         parts = [reflection]
         if validation:
             parts.append(validation)
+        if secondary and len(secondary) > 0 and secondary[0] != topic:
+            if random.random() < 0.3:
+                parts.append(f"And it sounds like there's some of that too.")
+
+        if random.random() < 0.25:
+            parts.append(soft)
+            return " ".join(parts)
+
         parts.append(question)
         return " ".join(parts)
+
+    def _handle_short_answer(self, topic, prev_text):
+        prev_key = self._extract_key_phrases(prev_text)
+        reflection = self._build_reflection(prev_text, prev_key, topic)
+        soft = self._build_soft_ending(topic)
+        short_prompts = [
+            f"{reflection} You don't have to find the perfect words. Take your time.",
+            f"It's okay not to know exactly what to say. {soft}",
+            f"{reflection} We can sit here with it. {soft}",
+            f"That's alright. Sometimes it's hard to put a name to what we feel. What's at the surface right now?",
+        ]
+        return random.choice(short_prompts)
 
     def goodbye(self):
         return (f"{self.user_name or 'Friend'}, thank you for talking with me. "
