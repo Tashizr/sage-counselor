@@ -60,6 +60,23 @@ SHORT_ANSWER_SET = {
     "yuh", "ig", "i guess", "not sure", "i dunno",
 }
 
+AMBIGUOUS_PATTERNS = [
+    (r"\bkilled\s+(a\s+)?(someone|somebody|my|him|her|them|a\s+guy|a\s+man|a\s+woman)\b", "violence"),
+    (r"\bmurder\w*\s+(a\s+)?(someone|somebody|my|him|her|them)\b", "violence"),
+    (r"\brobbed\s+(a\s+)?(bank|store|someone|somebody|him|her)\b", "crime"),
+    (r"\bstole?\s+(a\s+)?(car|money|jewelry|something)\b", "crime"),
+    (r"\bkidnapped\b", "violence"),
+    (r"\bbomb\s+(a|the|this|their)\b", "violence"),
+    (r"\bshoot\w*\s+(up|someone|somebody|a\s+place|a\s+school)\b", "violence"),
+    (r"\bjoin(ed)?\s+(a\s+)?(isis|mafia|cult|gang|terrorist|cartel)\b", "crime"),
+    (r"\bdrugs?\s+(deal|sell|traffick|push)\w*\b", "crime"),
+    (r"\b(hacked|hack)\s+(into|a\s+system|their\s+account)\b", "crime"),
+    (r"\b(started\s+a\s+)?(fight|riot|revolution)\b", "violence"),
+    (r"\bburn(ed)?\s+(down\s+)?(a\s+)?(house|building|car|place)\b", "violence"),
+    (r"\braped?\b", "violence"),
+    (r"\btortured?\b", "violence"),
+]
+
 SOFT_ENDINGS = {
     "anxiety": ["I'm here with you.", "We can sit with this for a while.", "Take your time."],
     "sadness": ["I'm here with you.", "We can stay with this for a bit.", "Take your time."],
@@ -396,6 +413,7 @@ class Counselor:
         self.user_name = None
         self.session_count = 0
         self.kb = KnowledgeBase()
+        self.awaiting_clarification = None
         if model_dir is None:
             model_dir = os.path.dirname(__file__)
         model_path = os.path.join(model_dir, "counselor_model.joblib")
@@ -444,10 +462,33 @@ class Counselor:
         self.history.append((USER, text))
 
         if detect_crisis(text):
+            self.awaiting_clarification = None
             return ("I'm really concerned about what you're saying. Please reach out to a crisis line now:\n"
                     "- National Suicide Prevention Lifeline: 988\n"
                     "- Crisis Text Line: Text HOME to 741741\n"
                     "There are people ready to help you through this.")
+
+        if self.awaiting_clarification is not None:
+            orig_text = self.awaiting_clarification
+            self.awaiting_clarification = None
+            lower = text.lower()
+            clarifying_words = {"real", "yes", "actually", "happened", "serious", "fr", "deadass"}
+            fictional_words = {"nah", "no", "not real", "fictional", "hypothetical", "story",
+                               "just a", "for a book", "for a story", "roleplay", "rp",
+                               "pretend", "imagination", "made up", "its not real"}
+            if any(w in lower for w in fictional_words):
+                return ("I appreciate you clarifying. That makes a lot more sense. "
+                        "What's actually on your mind that you'd like to talk about?")
+            if any(w in lower for w in clarifying_words) and len(lower.split()) < 8:
+                topic, _ = self._predict_topic(orig_text)
+                response = self._generate(orig_text)
+                return f"Thank you for being honest with me.\n\n{response}"
+            return self._generate(text)
+
+        ambig_category = self._is_ambiguous(text)
+        if ambig_category:
+            self.awaiting_clarification = text
+            return self._build_clarifying_question(text, ambig_category)
 
         if self.user_name is None:
             words = text.split()
@@ -470,6 +511,27 @@ class Counselor:
             if emoji in text:
                 translated += f" {meaning}"
         return translated, text if translated == lower else translated
+
+    def _is_ambiguous(self, text):
+        lower = text.lower()
+        for pattern, category in AMBIGUOUS_PATTERNS:
+            if re.search(pattern, lower):
+                return category
+        return None
+
+    def _build_clarifying_question(self, text, category):
+        starters = [
+            "Can you help me understand what you mean by that?",
+            "I want to make sure I understand you correctly.",
+            "Before I respond — can you help me understand the context of what you're sharing?",
+        ]
+        follow_ups = {
+            "violence": "Are you describing something that actually happened, a hypothetical scenario, or something else?",
+            "crime": "Are you talking about something real, or is this a hypothetical or fictional situation?",
+        }
+        start = random.choice(starters)
+        follow = follow_ups.get(category, "Are you describing a real situation or something else?")
+        return f"{start} {follow}"
 
     def _is_short_answer(self, text):
         lower = text.lower().strip(",.!? ")
