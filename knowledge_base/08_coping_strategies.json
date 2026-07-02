@@ -190,6 +190,306 @@
       "evidence_level": "moderate",
       "best_situations": ["repetitive unwanted thoughts", "worry spirals"],
       "contraindications": ["may not work for OCD without professional guidance", "suppression may worsen for some"]
+    },
+    {
+      "name": "4-7-8 breathing",
+      "target": ["anxiety", "insomnia", "stress"],
+      "difficulty": "easy",
+      "time_required": "5 minutes",
+      "instructions": "Inhale quietly through the nose for 4 seconds. Hold breath for 7 seconds. Exhale completely through the mouth for 8 seconds. Repeat 4 times.",
+      "evidence_level": "moderate",
+      "best_situations": ["before sleep", "during anxiety", "to calm nervous system"],
+      "contraindications": ["may be difficult with respiratory issues"]
+    },
+    {
+      "name": "worry tree",
+      "target": ["anxiety", "rumination", "worry"],
+      "difficulty": "moderate",
+      "time_required": "10 minutes",
+      "instructions": "When worry arises, ask: Is this problem solvable? If no, practice acceptance. If yes, list possible solutions, choose one, and take action. Schedule follow-up.",
+      "evidence_level": "moderate",
+      "best_situations": ["generalized anxiety", "decision-making", "chronic worry"],
+      "contraindications": ["may not address underlying anxiety disorders"]
+    },
+    {
+      "name": "exposure hierarchy",
+      "target": ["anxiety", "phobias", "avoidance"],
+      "difficulty": "hard",
+      "time_required": "variable",
+      "instructions": "List feared situations from least to most anxiety-provoking. Gradually expose yourself to each level while practicing coping skills. Rate anxiety before and after.",
+      "evidence_level": "strong",
+      "best_situations": ["specific phobias", "social anxiety", "avoidance behaviors"],
+      "contraindications": ["should be done with professional guidance for severe anxiety"]
+    },
+    {
+      "name": "time blocking",
+      "target": ["stress", "overwhelm", "procrastination"],
+      "difficulty": "moderate",
+      "time_required": "15 minutes daily",
+      "instructions": "Divide day into blocks for specific tasks. Include breaks. Prioritize high-energy times for difficult tasks. Protect blocks from interruptions.",
+      "evidence_level": "moderate",
+      "best_situations": ["work overwhelm", "student schedules", "time management"],
+      "contraindications": ["may feel rigid for some"]
+    },
+    {
+      "name": "boundary setting",
+      "target": ["stress", "resentment", "burnout"],
+      "difficulty": "moderate",
+      "time_required": "variable",
+      "instructions": "Identify where you feel drained or resentful. Practice saying 'no' or setting limits. Use clear, kind language. Start with small boundaries.",
+      "evidence_level": "strong",
+      "best_situations": ["work-life balance", "relationship stress", "people-pleasing"],
+      "contraindications": ["may cause conflict initially"]
+    },
+    {
+      "name": "digital detox",
+      "target": ["stress", "anxiety", "comparison", "insomnia"],
+      "difficulty": "moderate",
+      "time_required": "variable",
+      "instructions": "Set specific times to check devices. Turn off notifications. Create tech-free zones. Gradually increase detox periods.",
+      "evidence_level": "moderate",
+      "best_situations": ["social media stress", "information overload", "sleep hygiene"],
+      "contraindications": ["may not be feasible for work requirements"]
+    },
+    {
+      "name": "stress container",
+      "target": ["stress", "overwhelm"],
+      "difficulty": "easy",
+      "time_required": "10 minutes",
+      "instructions": "Imagine a container that holds your stress. Visualize what it looks like. Identify what's in it (worries, tasks). Decide what can be emptied now, later, or never.",
+      "evidence_level": "moderate",
+      "best_situations": ["when feeling overwhelmed", "stress organization"],
+      "contraindications": ["may be abstract for some"]
+    },
+    {
+      "name": "behavioral experiment",
+      "target": ["depression", "anxiety", "negative beliefs"],
+      "difficulty": "hard",
+      "time_required": "variable",
+      "instructions": "Identify a negative belief (e.g., 'I'm incompetent'). Design an experiment to test it. Predict outcome. Try the behavior. Record actual outcome. Compare.",
+      "evidence_level": "strong",
+      "best_situations": ["low self-esteem", "depression", "social anxiety"],
+      "contraindications": ["requires professional guidance for severe cases"]
+    },
+    {
+      "name": "connection planning",
+      "target": ["sadness", "loneliness", "depression"],
+      "difficulty": "moderate",
+      "time_required": "30 minutes",
+      "instructions": "Make a list of people you can reach out to. Categorize by support type (emotional, practical). Schedule regular check-ins. Start with low-stakes contacts.",
+      "evidence_level": "moderate",
+      "best_situations": ["social withdrawal", "after loss", "depression"],
+      "contraindications": ["if social anxiety is high, use graded exposure"]
+    },
+    {
+      "name": "STOP skill",
+      "target": ["anger", "impulsive reactions"],
+      "difficulty": "easy",
+      "time_required": "immediate",
+      "instructions": "Stop what you're doing. Take a breath. Observe your thoughts and feelings. Proceed mindfully. Use before responding in anger.",
+      "evidence_level": "moderate",
+      "best_situations": ["heated arguments", "frustration", "before reacting"],
+      "contraindications": ["may be hard in intense anger"]
+    },
+    {
+      "name": "anger thermometer",
+      "target": ["anger", "emotional awareness"],
+      "difficulty": "easy",
+      "time_required": "5 minutes",
+      "instructions": "Rate anger from 0 (calm) to 10 (furious). Notice physical cues at each level. Develop coping strategies for different levels. Use to track patterns.",
+      "evidence_level": "moderate",
+      "best_situations": ["anger management", "recognizing escalation"],
+      "contraindications": ["none significant"]
+    },
+    {
+      "name": "assertive communication",
+      "target": ["anger", "relationship conflict", "resentment"],
+      "difficulty": "moderate",
+      "time_required": "variable",
+      "instructions": "Use 'I' statements: 'I feel [emotion] when [behavior] because [reason]. I would like [request].' Be clear, direct, and respectful. Practice in low-stakes situations first.",
+      "evidence_level": "strong",
+      "best_situations": ["expressing needs", "conflict resolution", "setting boundaries"],
+      "contraindications": ["may be misinterpreted in high-conflict relationships"]
+    },
+    {
+      "name": "continuing bonds",
+      "target": ["grief", "loss", "sadness"],
+      "difficulty": "moderate",
+      "time_required": "variable",
+      "instructions": "Find ways to maintain a connection with the deceased (talk to them, write letters, visit meaningful places). Focus on positive memories and ongoing influence.",
+      "evidence_level": "moderate",
+      "best_situations": ["bereavement", "significant loss", "maintaining meaning"],
+      "contraindications": ["may delay acceptance if used to avoid grief"]
+    },
+    {
+      "name": "memory box",
+      "target": ["grief", "loss", "nostalgia"],
+      "difficulty": "easy",
+      "time_required": "1-2 hours",
+      "instructions": "Create a physical or digital collection of items that remind you of the person or thing lost (photos, letters, objects). Visit when missing them.",
+      "evidence_level": "moderate",
+      "best_situations": ["bereavement", "honoring memories", "processing loss"],
+      "contraindications": ["may increase sadness if used excessively"]
+    },
+    {
+      "name": "grief journaling",
+      "target": ["grief", "loss", "emotional processing"],
+      "difficulty": "moderate",
+      "time_required": "15-20 minutes",
+      "instructions": "Write about your feelings, memories, and thoughts related to the loss. No structure needed. Date entries. Review periodically to notice changes.",
+      "evidence_level": "moderate",
+      "best_situations": ["processing complex grief", "expressing emotions", "tracking grief journey"],
+      "contraindications": ["may be overwhelming in acute grief"]
+    },
+    {
+      "name": "recovery phases",
+      "target": ["burnout", "exhaustion", "chronic stress"],
+      "difficulty": "hard",
+      "time_required": "weeks to months",
+      "instructions": "Recognize stages: 1) Crisis (immediate relief), 2) Restoration (building new habits), 3) Renewal (redefining priorities). Progress gradually.",
+      "evidence_level": "moderate",
+      "best_situations": ["severe burnout", "long-term recovery", "career transitions"],
+      "contraindications": ["requires patience and often professional support"]
+    },
+    {
+      "name": "energy audit",
+      "target": ["burnout", "fatigue", "low energy"],
+      "difficulty": "moderate",
+      "time_required": "30 minutes",
+      "instructions": "Track activities for a week, rating each as energy-giving or draining. Identify patterns. Adjust schedule to increase energizers and reduce drainers.",
+      "evidence_level": "moderate",
+      "best_situations": ["burnout prevention", "energy management", "lifestyle redesign"],
+      "contraindications": ["may reveal difficult changes needed"]
+    },
+    {
+      "name": "micro-recovery",
+      "target": ["burnout", "stress", "fatigue"],
+      "difficulty": "easy",
+      "time_required": "1-5 minutes",
+      "instructions": "Take short breaks throughout the day (stretch, breathe, step outside). Use Pomodoro technique (25 min work, 5 min break). Prioritize recovery moments.",
+      "evidence_level": "moderate",
+      "best_situations": ["workday fatigue", "preventing overwhelm", "sustained productivity"],
+      "contraindications": ["may feel insufficient in severe burnout"]
+    },
+    {
+      "name": "social connection ladder",
+      "target": ["loneliness", "social anxiety", "isolation"],
+      "difficulty": "moderate",
+      "time_required": "variable",
+      "instructions": "Gradually increase social exposure: 1) Be around people (café), 2) Brief interactions (cashier), 3) Low-stakes conversations, 4) Meaningful connections. Step up when ready.",
+      "evidence_level": "moderate",
+      "best_situations": ["social anxiety", "rebuilding social skills", "chronic loneliness"],
+      "contraindications": ["may be too slow for acute loneliness"]
+    },
+    {
+      "name": "interest-based groups",
+      "target": ["loneliness", "finding community"],
+      "difficulty": "moderate",
+      "time_required": "1-2 hours weekly",
+      "instructions": "Join groups based on hobbies or interests (book clubs, sports teams, volunteer groups). Shared activity reduces social pressure. Commit to attending regularly.",
+      "evidence_level": "moderate",
+      "best_situations": ["shared interests", "natural conversation starters", "community building"],
+      "contraindications": ["requires initial courage to join"]
+    },
+    {
+      "name": "DEAR MAN",
+      "target": ["relationship conflict", "assertiveness", "communication"],
+      "difficulty": "hard",
+      "time_required": "variable",
+      "instructions": "Describe facts, Express feelings, Assert wishes, Reinforce positively. Be Mindful, Appear confident, Negotiate. Use for difficult conversations.",
+      "evidence_level": "strong",
+      "best_situations": ["relationship negotiations", "expressing needs", "conflict resolution"],
+      "contraindications": ["requires practice and emotional regulation"]
+    },
+    {
+      "name": "active listening",
+      "target": ["relationship conflict", "miscommunication"],
+      "difficulty": "moderate",
+      "time_required": "variable",
+      "instructions": "Focus fully on speaker. Paraphrase what you heard. Validate feelings ('I understand why you feel that'). Ask clarifying questions. Avoid interrupting.",
+      "evidence_level": "strong",
+      "best_situations": ["arguments", "feeling unheard", "deepening connection"],
+      "contraindications": ["may be difficult when emotionally triggered"]
+    },
+    {
+      "name": "Gottman repair",
+      "target": ["relationship conflict", "repair attempts"],
+      "difficulty": "moderate",
+      "time_required": "variable",
+      "instructions": "During conflict, make repair attempts: humor, affection, apology, meta-communication ('Can we start over?'). Accept partner's repair attempts.",
+      "evidence_level": "strong",
+      "best_situations": ["relationship distress", "after arguments", "preventing escalation"],
+      "contraindications": ["may not work in abusive dynamics"]
+    },
+    {
+      "name": "study wellness",
+      "target": ["academic pressure", "student stress", "burnout"],
+      "difficulty": "moderate",
+      "time_required": "ongoing",
+      "instructions": "Balance study with self-care: scheduled breaks, sleep, exercise, social time. Use active learning techniques. Seek help early. Maintain perspective.",
+      "evidence_level": "moderate",
+      "best_situations": ["exam periods", "heavy workloads", "academic stress"],
+      "contraindications": ["may require institutional support"]
+    },
+    {
+      "name": "exam anxiety toolkit",
+      "target": ["academic anxiety", "test anxiety", "performance stress"],
+      "difficulty": "moderate",
+      "time_required": "variable",
+      "instructions": "Prepare physically (sleep, nutrition), mentally (practice tests, positive self-talk), logistically (prepare materials). Use grounding during exam. Post-exam reflection.",
+      "evidence_level": "moderate",
+      "best_situations": ["before and during exams", "high-stakes testing", "performance situations"],
+      "contraindications": ["may need professional help for severe test anxiety"]
+    },
+    {
+      "name": "relaxation response",
+      "target": ["stress", "anxiety", "physiological arousal"],
+      "difficulty": "easy",
+      "time_required": "10-20 minutes",
+      "instructions": "Sit quietly. Focus on a word or phrase. Breathe slowly. Allow body to relax. Practice daily for cumulative effect.",
+      "evidence_level": "strong",
+      "best_situations": ["daily stress reduction", "high blood pressure", "chronic tension"],
+      "contraindications": ["may be difficult for highly anxious individuals initially"]
+    },
+    {
+      "name": "mindfulness meditation",
+      "target": ["stress", "anxiety", "rumination", "emotional regulation"],
+      "difficulty": "moderate",
+      "time_required": "5-20 minutes",
+      "instructions": "Sit comfortably. Focus on breath. Notice thoughts without judgment. Return attention to breath. Start with 5 minutes daily, increase gradually.",
+      "evidence_level": "strong",
+      "best_situations": ["daily practice", "emotional awareness", "stress prevention"],
+      "contraindications": ["may increase anxiety in some trauma survivors"]
+    },
+    {
+      "name": "mood tracking",
+      "target": ["depression", "emotional patterns", "self-awareness"],
+      "difficulty": "easy",
+      "time_required": "5 minutes daily",
+      "instructions": "Rate mood daily (1-10). Note activities, sleep, interactions. Look for patterns over time. Use apps or journals.",
+      "evidence_level": "moderate",
+      "best_situations": ["tracking depression", "identifying triggers", "treatment monitoring"],
+      "contraindications": ["may become obsessive for some"]
+    },
+    {
+      "name": "anger iceberg",
+      "target": ["anger", "underlying emotions"],
+      "difficulty": "moderate",
+      "time_required": "15 minutes",
+      "instructions": "When angry, ask: What's beneath the anger? Often anger masks hurt, fear, or shame. Identify the primary emotion. Address that instead.",
+      "evidence_level": "moderate",
+      "best_situations": ["recurring anger", "relationship conflicts", "emotional awareness"],
+      "contraindications": ["may require therapeutic exploration"]
+    },
+    {
+      "name": "relationship love maps",
+      "target": ["relationship conflict", "intimacy", "connection"],
+      "difficulty": "moderate",
+      "time_required": "30 minutes weekly",
+      "instructions": "Regularly update knowledge of partner's world: stresses, hopes, preferences. Ask open-ended questions. Show genuine interest. Build emotional bank account.",
+      "evidence_level": "strong",
+      "best_situations": ["relationship maintenance", "preventing disconnection", "strengthening bonds"],
+      "contraindications": ["requires mutual effort"]
     }
   ]
 }
