@@ -516,47 +516,136 @@ class Counselor:
         import re
         lower = text.lower().strip()
 
-        # Pattern: "my name is <name>"
-        m = re.match(r"my name(?:'s| is)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)", text.strip())
-        if m:
-            return m.group(1).strip()
+        # Skip emotional/counseling content - don't extract names from these
+        emotion_words = {
+            "sad", "happy", "anxious", "angry", "stressed", "scared", "nervous",
+            "worried", "depressed", "lonely", "tired", "exhausted", "confused",
+            "lost", "empty", "hopeless", "hurt", "broken", "numb", "fine",
+            "okay", "good", "bad", "great", "terrible", "awful", "amazing",
+            "feeling", "feel", "think", "know", "want", "need", "love",
+            "hate", "miss", "like", "trying", "struggling", "coping",
+        }
 
-        # Pattern: "I'm <name>" / "im <name>"
-        m = re.match(r"(?:i'm|im|iam)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)", text.strip())
+        def clean_name(name):
+            """Clean and validate extracted name."""
+            name = name.strip().rstrip(".!?")
+            words = name.split()
+            # Filter out emotion words
+            filtered = [w for w in words if w.lower() not in emotion_words]
+            if not filtered:
+                return None
+            # Don't accept single character names
+            if len(filtered) == 1 and len(filtered[0]) < 2:
+                return None
+            # Don't accept numbers
+            if all(w.isdigit() for w in filtered):
+                return None
+            return " ".join(filtered).title()
+
+        # Pattern: "my name is <name>" / "my name's <name>"
+        m = re.match(r"my\s+name(?:'s|\s+is)\s+(.+)", lower)
         if m:
-            return m.group(1).strip()
+            name = clean_name(m.group(1))
+            if name:
+                return name
+
+        # Pattern: "i'm <name>" / "im <name>" (with space before name)
+        m = re.match(r"i(?:'|'?\s*|\s+)m\s+(.+)", lower)
+        if m:
+            name = clean_name(m.group(1))
+            if name:
+                return name
+
+        # Pattern: "i am <name>" (with space between i and am)
+        m = re.match(r"i\s+am\s+(.+)", lower)
+        if m:
+            name = clean_name(m.group(1))
+            if name:
+                return name
 
         # Pattern: "call me <name>"
-        m = re.match(r"call\s+me\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)", text.strip(), re.IGNORECASE)
+        m = re.match(r"call\s+me\s+(.+)", lower)
         if m:
-            return m.group(1).strip().title()
+            name = clean_name(m.group(1))
+            if name:
+                return name
 
         # Pattern: "you can call me <name>"
-        m = re.match(r"you\s+can\s+call\s+me\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)", text.strip(), re.IGNORECASE)
+        m = re.match(r"you\s+can\s+call\s+me\s+(.+)", lower)
         if m:
-            return m.group(1).strip().title()
+            name = clean_name(m.group(1))
+            if name:
+                return name
 
-        # Pattern: "the name's <name>"
-        m = re.match(r"the\s+name(?:'s| is)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)", text.strip())
+        # Pattern: "the name's <name>" / "the name is <name>"
+        m = re.match(r"the\s+name(?:'s|\s+is)\s+(.+)", lower)
         if m:
-            return m.group(1).strip()
+            name = clean_name(m.group(1))
+            if name:
+                return name
 
-        # Pattern: "it's <name>"
-        m = re.match(r"it(?:'s| is)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)", text.strip())
+        # Pattern: "it's <name>" / "it is <name>"
+        m = re.match(r"it(?:'s|\s+is)\s+(.+)", lower)
         if m:
-            return m.group(1).strip()
+            name = clean_name(m.group(1))
+            if name:
+                return name
 
-        # Pattern: "hey i'm <name>" / "hi i'm <name>"
-        m = re.match(r"(?:hey|hi|hello|yo|sup)\s+(?:i'm|im)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)", text.strip())
+        # Pattern: "hey i'm <name>" / "hi i'm <name>" / "yo im <name>"
+        m = re.match(r"(?:hey|hi|hello|yo|sup)\s+i(?:'|'?\s*|\s+)m\s+(.+)", lower)
         if m:
-            return m.group(1).strip()
+            name = clean_name(m.group(1))
+            if name:
+                return name
 
-        # Pattern: just a name (single capitalized word, short message)
-        words = text.strip().split()
-        if len(words) <= 2:
-            first = words[0].strip(",.!?")
-            if first[0].isupper() and len(first) >= 2 and first.lower() not in self.COMMON_WORDS:
-                return first
+        # Pattern: "hey i am <name>"
+        m = re.match(r"(?:hey|hi|hello|yo|sup)\s+i\s+am\s+(.+)", lower)
+        if m:
+            name = clean_name(m.group(1))
+            if name:
+                return name
+
+        # Pattern: "hi there im <name>" / "hello there im <name>"
+        m = re.match(r"(?:hi|hello)\s+there\s+i(?:'|'?\s*|\s+)m\s+(.+)", lower)
+        if m:
+            name = clean_name(m.group(1))
+            if name:
+                return name
+
+        # Pattern: "btw i'm <name>" / "btw my name is <name>"
+        m = re.match(r"btw\s+(?:i(?:'|'?\s*|\s+)m|my\s+name(?:'s|\s+is))\s+(.+)", lower)
+        if m:
+            name = clean_name(m.group(1))
+            if name:
+                return name
+
+        # Pattern: "sup im <name>"
+        m = re.match(r"sup\s+i(?:'|'?\s*|\s+)m\s+(.+)", lower)
+        if m:
+            name = clean_name(m.group(1))
+            if name:
+                return name
+
+        # Pattern: "the names <name>" / "the name's <name>"
+        m = re.match(r"the\s+names?\s+(.+)", lower)
+        if m:
+            name = clean_name(m.group(1))
+            if name:
+                return name
+
+        # Pattern: "its me <name>" / "it's me <name>"
+        m = re.match(r"it(?:'|'?\s*)s\s+me\s+(.+)", lower)
+        if m:
+            name = clean_name(m.group(1))
+            if name:
+                return name
+
+        # Pattern: "hello my name is <name>" / "yo my name is <name>" / "hey my name is <name>"
+        m = re.match(r"(?:hey|hi|hello|yo|sup)\s+my\s+name(?:'s|\s+is)\s+(.+)", lower)
+        if m:
+            name = clean_name(m.group(1))
+            if name:
+                return name
 
         return None
 
