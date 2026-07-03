@@ -1084,32 +1084,43 @@ INTENT_TO_CATEGORY = {
 
 
 def build_from_jsonl_dataset(jsonl_path=None):
-    if jsonl_path is None:
-        jsonl_path = os.path.join(os.path.dirname(__file__), "dataset", "sage_training.jsonl")
-    if not os.path.exists(jsonl_path):
-        print(f"  JSONL dataset not found at {jsonl_path}, skipping.")
-        return None
+    import gzip
+    dataset_dir = os.path.join(os.path.dirname(__file__), "dataset")
+    jsonl_files = [
+        os.path.join(dataset_dir, "sage_massive_training.jsonl.gz"),
+        os.path.join(dataset_dir, "sage_massive_training.jsonl"),
+        os.path.join(dataset_dir, "sage_training.jsonl"),
+    ]
 
     rows = []
-    with open(jsonl_path, "r", encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            record = json.loads(line)
-            text = record.get("user_message", "").strip()
-            intent = record.get("detected_intent", "")
-            if text and intent:
-                category = INTENT_TO_CATEGORY.get(intent, "general")
-                rows.append({"text": text, "label": category, "source": "jsonl_dataset", "intent": intent})
+    for jsonl_path in jsonl_files:
+        if not os.path.exists(jsonl_path):
+            continue
+
+        count = 0
+        open_fn = gzip.open if jsonl_path.endswith(".gz") else open
+        mode = "rt" if jsonl_path.endswith(".gz") else "r"
+        with open_fn(jsonl_path, mode, encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                record = json.loads(line)
+                text = record.get("user_message", "").strip()
+                intent = record.get("detected_intent", "") or record.get("intent", "")
+                if text and intent:
+                    category = INTENT_TO_CATEGORY.get(intent, "general")
+                    rows.append({"text": text, "label": category, "source": "jsonl_dataset", "intent": intent})
+                    count += 1
+        print(f"  Loaded {count:,} samples from {os.path.basename(jsonl_path)}")
 
     if not rows:
-        print("  No rows extracted from JSONL dataset.")
+        print("  No rows extracted from JSONL datasets.")
         return None
 
     df = pd.DataFrame(rows)
     df["label"] = df["label"].astype("category")
-    print(f"  JSONL dataset: {len(df)} samples")
+    print(f"  JSONL dataset total: {len(df):,} samples")
     print(f"  JSONL class distribution:\n{df['label'].value_counts()}")
     return df
 
