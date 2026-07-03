@@ -124,14 +124,26 @@ INTENTS = {
             "i'm {name}, nice to meet you",
             "hey i'm {name}",
             "just so you know my name is {name}",
+            "hi im {name}",
+            "hello my name is {name}",
+            "hey my name's {name}",
+            "sup im {name}",
+            "yo im {name}",
+            "my name's {name}",
+            "im {name} btw",
+            "btw my name is {name}",
+            "just wanted to say hi im {name}",
+            "hi there im {name}",
         ],
         "responses": [
-            "Nice to meet you, {name}. What's been on your mind lately?",
-            "Good to meet you, {name}. I'm here to listen. What would you like to talk about?",
-            "{name} — glad to know you. What brings you here today?",
-            "Hey {name}, I'm here for you. What's going on?",
-            "Nice to meet you, {name}. I'm here whenever you want to share.",
-            "Good to meet you, {name}. What's been happening in your life?",
+            "Hi, {name}! It's nice to meet you. I'm SAGE. I'm glad you reached out today. What's been on your mind?",
+            "Hey, {name}! Welcome. I'm glad you're here. What's on your mind today?",
+            "Hi, {name}! It's great to meet you. Thanks for introducing yourself. How can I support you today?",
+            "Of course, {name}. It's nice to meet you. What would you like to talk about today?",
+            "Nice to meet you, {name}! I'm SAGE. I'm here to listen. What brings you here today?",
+            "Hey {name}, welcome! I'm glad you're here. What's been going on with you?",
+            "Hi {name}! It's nice to put a name to this conversation. What's on your mind?",
+            "Hello, {name}! I'm SAGE. Thanks for sharing your name. What would you like to talk about?",
         ],
     },
     "age_sharing": {
@@ -1064,6 +1076,145 @@ MULTI_TURN_TEMPLATES = [
             ]},
         ],
     },
+    # Introduction first, then open up
+    {
+        "intent_chain": ["introduction", "general_vent"],
+        "turns": [
+            {"intent": "introduction", "templates": [
+                "my name is {name}", "i'm {name}", "call me {name}",
+                "you can call me {name}", "hey i'm {name}", "hi im {name}",
+                "my name's {name}", "im {name} btw",
+            ]},
+            {"intent": "general_vent", "templates": [
+                "i've been going through a lot lately",
+                "there's something on my mind",
+                "i need someone to talk to",
+                "i've been feeling kind of down",
+                "i wanted to share something with you",
+            ]},
+        ],
+    },
+    # Introduction, age, then issue
+    {
+        "intent_chain": ["introduction", "age_sharing", "anxiety"],
+        "turns": [
+            {"intent": "introduction", "templates": ["my name is {name}", "i'm {name}"]},
+            {"intent": "age_sharing", "templates": ["i'm {age} years old", "im {age}", "im {age} btw"]},
+            {"intent": "anxiety", "templates": [
+                "i've been really anxious lately",
+                "my anxiety has been terrible",
+                "i can't stop worrying about everything",
+            ]},
+        ],
+    },
+    # Introduction, identity, then confusion
+    {
+        "intent_chain": ["introduction", "identity", "confusion"],
+        "turns": [
+            {"intent": "introduction", "templates": ["im {name}", "my name is {name}"]},
+            {"intent": "identity", "templates": [
+                "im nonbinary and use they/them pronouns",
+                "im figuring out my gender identity",
+                "i use she/her pronouns",
+            ]},
+            {"intent": "confusion", "templates": [
+                "i feel so lost trying to figure myself out",
+                "everyone has opinions about who i should be",
+                "i don't know who i really am",
+            ]},
+        ],
+    },
+    # Introduction, occupation, then stress
+    {
+        "intent_chain": ["introduction", "occupation", "stress"],
+        "turns": [
+            {"intent": "introduction", "templates": ["im {name}", "my name is {name}", "call me {name}"]},
+            {"intent": "occupation", "templates": [
+                "im a college student", "im a teacher", "im in high school",
+                "i just started a new job", "im a programmer",
+            ]},
+            {"intent": "stress", "templates": [
+                "and im so stressed about everything",
+                "the pressure is overwhelming",
+                "i feel like im drowning",
+            ]},
+        ],
+    },
+    # Just introduction, nothing else
+    {
+        "intent_chain": ["introduction"],
+        "turns": [
+            {"intent": "introduction", "templates": [
+                "my name is {name}", "im {name}", "call me {name}",
+                "you can call me {name}", "hey im {name}", "hi im {name}",
+                "my name's {name}", "im {name} btw", "sup im {name}",
+                "yo im {name}", "hello my name is {name}",
+                "hey my name's {name}", "btw my name is {name}",
+                "hi there im {name}", "just wanted to say hi im {name}",
+            ]},
+        ],
+    },
+    # Introduction with casual greeting
+    {
+        "intent_chain": ["greeting", "introduction"],
+        "turns": [
+            {"intent": "greeting", "templates": ["hey", "hi", "hello", "yo", "sup"]},
+            {"intent": "introduction", "templates": [
+                "im {name}", "my name is {name}", "call me {name}",
+                "you can call me {name}", "btw im {name}",
+            ]},
+        ],
+    },
+    # Introduction then positive
+    {
+        "intent_chain": ["introduction", "positive"],
+        "turns": [
+            {"intent": "introduction", "templates": ["im {name}", "my name is {name}"]},
+            {"intent": "positive", "templates": [
+                "i feel really happy today",
+                "things have been going well",
+                "i just wanted to share some good news",
+                "im feeling grateful today",
+            ]},
+        ],
+    },
+    # Introduction then relationships
+    {
+        "intent_chain": ["introduction", "relationships"],
+        "turns": [
+            {"intent": "introduction", "templates": ["im {name}", "my name is {name}", "call me {name}"]},
+            {"intent": "relationships", "templates": [
+                "my partner and i are having issues",
+                "i feel like my relationship is falling apart",
+                "my girlfriend broke up with me",
+                "i miss someone and it hurts",
+            ]},
+        ],
+    },
+    # Introduction then sleep
+    {
+        "intent_chain": ["introduction", "sleep"],
+        "turns": [
+            {"intent": "introduction", "templates": ["im {name}", "my name is {name}"]},
+            {"intent": "sleep", "templates": [
+                "i cant sleep at night",
+                "ive been having insomnia",
+                "my mind wont shut off",
+            ]},
+        ],
+    },
+    # Introduction then family
+    {
+        "intent_chain": ["introduction", "family"],
+        "turns": [
+            {"intent": "introduction", "templates": ["im {name}", "my name is {name}"]},
+            {"intent": "family", "templates": [
+                "my parents are always fighting",
+                "i dont get along with my dad",
+                "my family is going through a hard time",
+            ]},
+        ],
+    },
 ]
 
 # ============================================================
@@ -1438,7 +1589,10 @@ def generate_multi_turn(template_idx=None):
 
     turns = template["turns"]
     # Optionally truncate to create shorter conversations
-    num_turns = random.randint(2, len(turns))
+    if len(turns) <= 2:
+        num_turns = len(turns)
+    else:
+        num_turns = random.randint(2, len(turns))
     selected_turns = turns[:num_turns]
 
     for i, turn in enumerate(selected_turns):
@@ -1822,6 +1976,7 @@ def generate_context_memory_example():
                 {"user": random.choice(["how are you", "whats up", "hey"]), "intent": "small_talk"},
             ],
             "response_template": lambda n: f"Nice to see you again, {n}. What's been on your mind?",
+            "intro_response": lambda n: random.choice(INTENTS["introduction"]["responses"]).replace("{name}", n),
         },
         # Age + name recall
         {
@@ -1831,6 +1986,7 @@ def generate_context_memory_example():
                 {"user": random.choice(["i feel anxious", "im stressed", "im sad"]), "intent": "anxiety"},
             ],
             "response_template": lambda n: f"Thanks for sharing that, {n}. I'm here. What's been going on?",
+            "intro_response": lambda n: random.choice(INTENTS["introduction"]["responses"]).replace("{name}", n),
         },
         # Pronoun recall
         {
@@ -1840,6 +1996,7 @@ def generate_context_memory_example():
                 {"user": random.choice(["i feel lost", "im confused"]), "intent": "confusion"},
             ],
             "response_template": lambda n: f"I appreciate you sharing that, {n}. What's been on your mind?",
+            "intro_response": lambda n: random.choice(INTENTS["introduction"]["responses"]).replace("{name}", n),
         },
         # Topic recall
         {
@@ -1849,6 +2006,7 @@ def generate_context_memory_example():
                 {"user": random.choice(["yeah it's been really hard", "i miss her so much"]), "intent": "sadness"},
             ],
             "response_template": lambda n: f"I hear you, {n}. That sounds really painful. What's been the hardest part?",
+            "intro_response": lambda n: random.choice(INTENTS["introduction"]["responses"]).replace("{name}", n),
         },
     ]
 
@@ -1862,11 +2020,14 @@ def generate_context_memory_example():
         intent = turn["intent"]
 
         if i < len(scenario["turns"]) - 1:
-            # Generate intermediate response
-            resp_templates = INTENTS[intent]["responses"]
-            resp = random.choice(resp_templates)
-            if "{name}" in resp:
-                resp = resp.replace("{name}", name)
+            # Generate intermediate response - use intro_response for first turn
+            if i == 0 and "intro_response" in scenario:
+                resp = scenario["intro_response"](name)
+            else:
+                resp_templates = INTENTS[intent]["responses"]
+                resp = random.choice(resp_templates)
+                if "{name}" in resp:
+                    resp = resp.replace("{name}", name)
             history.append({"role": "assistant", "content": resp})
             memory = make_memory_update(intent, name=name, age=age)
 
@@ -1886,6 +2047,45 @@ def generate_context_memory_example():
         "quality_check": make_quality_check(uses_context=True),
     }
 
+
+def generate_introduction_example():
+    """Generate a standalone introduction example with proper acknowledgment."""
+    name = pick_name()
+
+    intro_templates = [
+        f"my name is {name}",
+        f"i'm {name}",
+        f"call me {name}",
+        f"you can call me {name}",
+        f"hey i'm {name}",
+        f"hi im {name}",
+        f"hello my name is {name}",
+        f"hey my name's {name}",
+        f"sup im {name}",
+        f"yo im {name}",
+        f"my name's {name}",
+        f"im {name} btw",
+        f"btw my name is {name}",
+        f"hi there im {name}",
+    ]
+
+    user_msg = random.choice(intro_templates)
+    if random.random() < 0.3:
+        user_msg = add_slang(user_msg, 0.2)
+
+    response = random.choice(INTENTS["introduction"]["responses"]).replace("{name}", name)
+
+    return {
+        "conversation_id": str(uuid.uuid4()),
+        "history": [],
+        "user_message": user_msg,
+        "intent": "introduction",
+        "entities": make_entities(name=name),
+        "assistant_response": response,
+        "memory_update": make_memory_update("introduction", name=name),
+        "quality_check": make_quality_check(),
+    }
+
 # ============================================================
 # MAIN GENERATION
 # ============================================================
@@ -1900,15 +2100,16 @@ def generate_dataset(target_count=TARGET_COUNT):
 
     # Distribution targets
     distribution = {
-        "single_turn": int(target_count * 0.35),
-        "multi_turn": int(target_count * 0.20),
-        "followup": int(target_count * 0.12),
+        "single_turn": int(target_count * 0.30),
+        "multi_turn": int(target_count * 0.18),
+        "followup": int(target_count * 0.10),
         "ambiguous": int(target_count * 0.08),
         "crisis": int(target_count * 0.05),
-        "slang_heavy": int(target_count * 0.08),
+        "slang_heavy": int(target_count * 0.07),
         "emoji_heavy": int(target_count * 0.04),
         "short_answer": int(target_count * 0.04),
         "context_memory": int(target_count * 0.04),
+        "introduction": int(target_count * 0.10),
     }
 
     # Adjust to hit target
@@ -1920,7 +2121,7 @@ def generate_dataset(target_count=TARGET_COUNT):
         print(f"  {k}: {v:,}")
 
     # Generate single-turn examples
-    print(f"\n[1/9] Generating {distribution['single_turn']:,} single-turn examples...")
+    print(f"\n[1/10] Generating {distribution['single_turn']:,} single-turn examples...")
     for i in range(distribution["single_turn"]):
         # Weighted random intent selection
         intent_key = random.choices(
@@ -1938,7 +2139,7 @@ def generate_dataset(target_count=TARGET_COUNT):
             print(f"  Generated {i + 1:,}...")
 
     # Generate multi-turn examples
-    print(f"\n[2/9] Generating {distribution['multi_turn']:,} multi-turn examples...")
+    print(f"\n[2/10] Generating {distribution['multi_turn']:,} multi-turn examples...")
     for i in range(distribution["multi_turn"]):
         example = generate_multi_turn()
         examples.append(example)
@@ -1947,7 +2148,7 @@ def generate_dataset(target_count=TARGET_COUNT):
             print(f"  Generated {i + 1:,}...")
 
     # Generate followup with history
-    print(f"\n[3/9] Generating {distribution['followup']:,} followup examples...")
+    print(f"\n[3/10] Generating {distribution['followup']:,} followup examples...")
     for i in range(distribution["followup"]):
         example = generate_followup_with_history()
         examples.append(example)
@@ -1956,40 +2157,49 @@ def generate_dataset(target_count=TARGET_COUNT):
             print(f"  Generated {i + 1:,}...")
 
     # Generate ambiguous examples
-    print(f"\n[4/9] Generating {distribution['ambiguous']:,} ambiguous examples...")
+    print(f"\n[4/10] Generating {distribution['ambiguous']:,} ambiguous examples...")
     for i in range(distribution["ambiguous"]):
         example = generate_ambiguous_example()
         examples.append(example)
 
     # Generate crisis examples
-    print(f"\n[5/9] Generating {distribution['crisis']:,} crisis examples...")
+    print(f"\n[5/10] Generating {distribution['crisis']:,} crisis examples...")
     for i in range(distribution["crisis"]):
         example = generate_crisis_example()
         examples.append(example)
 
     # Generate slang-heavy examples
-    print(f"\n[6/9] Generating {distribution['slang_heavy']:,} slang-heavy examples...")
+    print(f"\n[6/10] Generating {distribution['slang_heavy']:,} slang-heavy examples...")
     for i in range(distribution["slang_heavy"]):
         example = generate_slang_heavy_example()
         examples.append(example)
 
     # Generate emoji-heavy examples
-    print(f"\n[7/9] Generating {distribution['emoji_heavy']:,} emoji-heavy examples...")
+    print(f"\n[7/10] Generating {distribution['emoji_heavy']:,} emoji-heavy examples...")
     for i in range(distribution["emoji_heavy"]):
         example = generate_emoji_heavy_example()
         examples.append(example)
 
     # Generate short answer examples
-    print(f"\n[8/9] Generating {distribution['short_answer']:,} short answer examples...")
+    print(f"\n[8/10] Generating {distribution['short_answer']:,} short answer examples...")
     for i in range(distribution["short_answer"]):
         example = generate_short_answer_example()
         examples.append(example)
 
     # Generate context memory examples
-    print(f"\n[9/9] Generating {distribution['context_memory']:,} context memory examples...")
+    print(f"\n[9/10] Generating {distribution['context_memory']:,} context memory examples...")
     for i in range(distribution["context_memory"]):
         example = generate_context_memory_example()
         examples.append(example)
+
+    # Generate introduction examples
+    print(f"\n[10/10] Generating {distribution['introduction']:,} introduction examples...")
+    for i in range(distribution["introduction"]):
+        example = generate_introduction_example()
+        examples.append(example)
+
+        if (i + 1) % 5000 == 0:
+            print(f"  Generated {i + 1:,}...")
 
     # Shuffle
     random.shuffle(examples)

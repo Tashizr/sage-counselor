@@ -490,16 +490,75 @@ class Counselor:
             self.awaiting_clarification = text
             return self._build_clarifying_question(text, ambig_category)
 
+        # Check for user introduction
+        intro_name = self._extract_name_from_intro(text)
+        if intro_name and self.user_name is None:
+            self.user_name = intro_name
+            self.session_count += 1
+            return (f"Hi, {intro_name}! It's nice to meet you. I'm SAGE. "
+                    "I'm glad you reached out today. What's been on your mind?")
+
         if self.user_name is None:
+            # Fallback: if message is short and not counseling, treat as name
             words = text.split()
             if len(words) <= 3 and not self._is_counseling_content(text):
                 self.user_name = text.split()[0].strip(",.!?")
                 self.session_count += 1
-                return f"Nice to meet you, {self.user_name}. What's been on your mind lately?"
+                return (f"Hi, {self.user_name}! It's nice to meet you. I'm SAGE. "
+                        "I'm glad you're here. What would you like to talk about today?")
             self.user_name = "Friend"
             self.session_count += 1
 
         return self._generate(text)
+
+    def _extract_name_from_intro(self, text):
+        """Extract a name from introduction patterns like 'my name is X', 'I'm X', etc."""
+        import re
+        lower = text.lower().strip()
+
+        # Pattern: "my name is <name>"
+        m = re.match(r"my name(?:'s| is)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)", text.strip())
+        if m:
+            return m.group(1).strip()
+
+        # Pattern: "I'm <name>" / "im <name>"
+        m = re.match(r"(?:i'm|im|iam)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)", text.strip())
+        if m:
+            return m.group(1).strip()
+
+        # Pattern: "call me <name>"
+        m = re.match(r"call\s+me\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)", text.strip(), re.IGNORECASE)
+        if m:
+            return m.group(1).strip().title()
+
+        # Pattern: "you can call me <name>"
+        m = re.match(r"you\s+can\s+call\s+me\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)", text.strip(), re.IGNORECASE)
+        if m:
+            return m.group(1).strip().title()
+
+        # Pattern: "the name's <name>"
+        m = re.match(r"the\s+name(?:'s| is)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)", text.strip())
+        if m:
+            return m.group(1).strip()
+
+        # Pattern: "it's <name>"
+        m = re.match(r"it(?:'s| is)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)", text.strip())
+        if m:
+            return m.group(1).strip()
+
+        # Pattern: "hey i'm <name>" / "hi i'm <name>"
+        m = re.match(r"(?:hey|hi|hello|yo|sup)\s+(?:i'm|im)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)", text.strip())
+        if m:
+            return m.group(1).strip()
+
+        # Pattern: just a name (single capitalized word, short message)
+        words = text.strip().split()
+        if len(words) <= 2:
+            first = words[0].strip(",.!?")
+            if first[0].isupper() and len(first) >= 2 and first.lower() not in self.COMMON_WORDS:
+                return first
+
+        return None
 
     def _translate_slang(self, text):
         lower = text.lower()
