@@ -4,6 +4,7 @@ from flask import Flask, render_template, request, jsonify, session
 sys.path.insert(0, os.path.dirname(__file__))
 from counselor import Counselor
 
+# SAGE AI Counselor - v2.0 with proper introduction handling
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY", os.urandom(24).hex())
 app.config["SESSION_TYPE"] = "filesystem"
