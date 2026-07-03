@@ -1,0 +1,761 @@
+{
+  "description": "Open-ended questions for counseling and emotional support",
+  "question_types": [
+    {
+      "type": "exploratory",
+      "definition": "Broad, non-directive questions that invite clients to explore their inner world, experiences, and meaning-making.",
+      "description": "Exploratory questions are the foundation of person-centered therapy. They communicate genuine curiosity and invite clients to expand on their thoughts, feelings, and experiences without any predetermined direction. These questions signal that the client is the expert on their own life.",
+      "when_to_use": [
+        "At the beginning of a session to establish rapport and understand the client's frame of reference",
+        "When a client provides a brief or surface-level response",
+        "When the therapist senses there is more beneath the surface",
+        "When exploring values, beliefs, or identity",
+        "When the client seems stuck or unable to articulate their experience"
+      ],
+      "when_not_to_use": [
+        "When the client needs immediate psychoeducation or safety planning",
+        "When the client has clearly stated what they want to work on and needs focused intervention",
+        "When the client is in acute crisis and needs stabilization before exploration"
+      ],
+      "examples": [
+        {
+          "context": "Client says they feel 'weird' lately",
+          "question": "Tell me more about what 'weird' feels like for you.",
+          "purpose": "Invites elaboration on a vague descriptor, helping the client connect with specific sensations and emotions",
+          "follow_up": ["What do you notice happening in your body when that feeling shows up?", "Where did you first notice this feeling?"]
+        },
+        {
+          "context": "Client mentions they 'should' have handled a situation differently",
+          "question": "What would handling it differently have looked like to you?",
+          "purpose": "Explores the client's internal standards and expectations without judgment",
+          "follow_up": ["Whose voice do you hear when you say 'should'?", "What makes that the 'right' way in your mind?"]
+        },
+        {
+          "context": "Client is quiet and withdrawn",
+          "question": "What's going through your mind right now?",
+          "purpose": "Gently brings attention to present-moment experience without pressure",
+          "follow_up": ["Is it hard to put into words?", "What would it be like to say whatever comes to mind?"]
+        },
+        {
+          "context": "Client describes a major life change",
+          "question": "How has this change reshaped the way you see yourself?",
+          "purpose": "Explores identity impact and meaning-making around transitions",
+          "follow_up": ["What parts of you have stayed the same through this?", "What have you discovered about yourself that surprised you?"]
+        },
+        {
+          "context": "Client minimizes their own struggles",
+          "question": "If your best friend described going through exactly what you're going through, what would you say to them?",
+          "purpose": "Uses perspective-taking to bypass self-minimization and access self-compassion",
+          "follow_up": ["What makes it easier to be kind to others than to yourself?", "Can you turn that same compassion toward yourself right now?"]
+        }
+      ],
+      "common_mistakes": [
+        "Asking too many exploratory questions in succession (feels like an interrogation)",
+        "Asking 'why' questions that can feel judgmental or put clients on the defensive",
+        "Not waiting long enough after asking for the client to process and respond",
+        "Following up with your own interpretation instead of letting the client lead"
+      ],
+      "things_to_avoid": [
+        "Avoid 'why' phrasing — use 'what' or 'how' instead (e.g., 'What led to that?' rather than 'Why did you do that?')",
+        "Avoid stacking multiple questions — ask one at a time",
+        "Avoid exploratory questions when the client needs concrete problem-solving"
+      ],
+      "confidence_level": 0.95,
+      "references": ["Rogers, 1951, On Becoming a Person", "Rogers, 1961, Client-Centered Therapy", "Miller & Rollnick, 2013, Motivational Interviewing (3rd ed.)"]
+    },
+    {
+      "type": "clarifying",
+      "definition": "Questions designed to deepen understanding of a specific point, uncover ambiguity, or ensure therapist comprehension.",
+      "description": "Clarifying questions are precision tools. They help the therapist accurately understand what the client means, and they help the client hear their own words reflected back with more specificity. This reduces misattunement and strengthens the therapeutic alliance.",
+      "when_to_use": [
+        "When the client uses vague language or abstract statements",
+        "When the therapist wants to verify their understanding before responding",
+        "When a statement seems internally contradictory",
+        "When the client's emotional tone doesn't match their words",
+        "When you need to narrow down a broad concern into something workable"
+      ],
+      "when_not_to_use": [
+        "When the vagueness itself is meaningful (e.g., dissociation, avoidance)",
+        "When clarifying would feel like cross-examination",
+        "When the client is already over-explaining and the session needs to move forward"
+      ],
+      "examples": [
+        {
+          "context": "Client says 'everything is just wrong'",
+          "question": "When you say everything is wrong, can you help me understand what specifically feels off to you right now?",
+          "purpose": "Transforms a global statement into identifiable, addressable components",
+          "follow_up": ["If you had to pick one thing that feels most wrong, what would it be?", "Has 'everything' always felt this way, or is there a particular area that's shifted?"]
+        },
+        {
+          "context": "Client states 'I'm fine' but appears tearful",
+          "question": "I notice you're saying you're fine, but I also see some tears. I'm curious about what's happening for you right now.",
+          "purpose": "Respectfully highlights the discrepancy between verbal and nonverbal communication without challenging the client",
+          "follow_up": ["It's okay if 'fine' is the best word right now — is there another word that might capture more of what you're feeling?", "What would it be like to let yourself not be fine in this room?"]
+        },
+        {
+          "context": "Client says 'my partner doesn't understand me'",
+          "question": "What does 'understand' mean to you in the context of your relationship?",
+          "purpose": "Gets at the specific relational need beneath a general complaint",
+          "follow_up": ["When was the last time you felt truly understood by them?", "What would it look like if they did understand?"]
+        },
+        {
+          "context": "Client describes 'anxiety' without specifics",
+          "question": "When you say anxiety, I want to make sure I'm picturing this right — are you more thinking of the racing thoughts, the physical sensations like a tight chest, or something else entirely?",
+          "purpose": "Narrows the symptom to a specific domain so treatment can be targeted",
+          "follow_up": ["Which of those bothers you the most?", "Does the thinking part or the body part tend to show up first?"]
+        },
+        {
+          "context": "Client says 'I don't know what I want'",
+          "question": "It sounds like you're in a place of not knowing — and that's okay. When you imagine a moment when you feel at peace, what does that look like?",
+          "purpose": "Validates the uncertainty while gently redirecting toward values-based imagery",
+          "follow_up": ["Is the not-knowing more confusing or more freeing for you right now?", "What would help you feel ready to know?"]
+        }
+      ],
+      "common_mistakes": [
+        "Using clarifying questions as a way to redirect toward the therapist's agenda",
+        "Clarifying every statement, which disrupts the client's flow",
+        "Phrasing clarification as a challenge ('Are you sure that's what you mean?')",
+        "Clarifying emotions before the client has finished sharing the narrative"
+      ],
+      "things_to_avoid": [
+        "Don't use clarifying questions to impose your own framework on the client's experience",
+        "Avoid rapid-fire clarifying questions — one at a time, with pauses",
+        "Don't clarify when silence or reflection would serve the client better"
+      ],
+      "confidence_level": 0.9,
+      "references": ["Miller & Rollnick, 2013, Motivational Interviewing (3rd ed.)", "Eells, 2013, Handbook of Psychotherapy Case Formulation", "Beck, 1979, Cognitive Therapy and the Emotional Disorders"]
+    },
+    {
+      "type": "scaling",
+      "definition": "Questions that ask clients to quantify subjective experiences on a numerical scale, making abstract feelings concrete and measurable.",
+      "description": "Scaling questions are a cornerstone of motivational interviewing and solution-focused therapy. They externalize the problem, create a shared language between therapist and client, and naturally open the door to exploring what 'one point higher' would look like — a gateway to solution-building.",
+      "when_to_use": [
+        "When a client describes a feeling, motivation, or confidence level in vague terms",
+        "To track progress across sessions",
+        "To explore the gap between current state and desired state",
+        "When building a client's awareness of their own resources",
+        "In motivational interviewing to assess importance and confidence"
+      ],
+      "when_not_to_use": [
+        "When the client is in acute distress and needs immediate emotional support",
+        "When the client has difficulty with abstract numerical concepts",
+        "When the client has expressed frustration with being measured or evaluated",
+        "When the therapeutic context calls for deeper emotional processing, not quantification"
+      ],
+      "examples": [
+        {
+          "context": "Client expresses uncertainty about making a change",
+          "question": "On a scale from 0 to 10, where 0 means 'not at all important to me' and 10 means 'extremely important,' where would you rate how important this change is to you?",
+          "purpose": "Assesses the client's perceived importance of change using the importance ruler from MI",
+          "follow_up": ["Why are you at a [number] and not lower?", "What would it take to move one number higher?"]
+        },
+        {
+          "context": "Client doubts their ability to cope",
+          "question": "On a scale of 1 to 10, how confident are you that you can handle this situation? Let's say 1 is 'not confident at all' and 10 is 'completely confident.'",
+          "purpose": "Evaluates self-efficacy and opens discussion about what supports confidence",
+          "follow_up": ["What's already at a [number]? What are you already doing that's keeping you there?", "What would move you from a [number] to a [number + 1]?"]
+        },
+        {
+          "context": "Client says they feel 'overwhelmed'",
+          "question": "If 10 represents the most overwhelmed you've ever felt, and 1 is barely noticeable — where are you right now?",
+          "purpose": "Makes the overwhelming feeling specific and allows for tracking change over time",
+          "follow_up": ["What does the difference between a [number] and a [number - 1] look like?", "What brings you down from a 10?"]
+        },
+        {
+          "context": "Client describes their relationship satisfaction",
+          "question": "On a scale from 1 to 10, how satisfied are you with the closeness in your relationship right now?",
+          "purpose": "Quantifies relational experience and opens targeted discussion about what 'higher' looks like",
+          "follow_up": ["What does a [number] look like in your relationship?", "When was the last time it was a [number + 2], and what was different then?"]
+        },
+        {
+          "context": "Client expresses motivation to change behavior",
+          "question": "Where are you on a scale from 0 to 10 in terms of how ready you feel to make this change?",
+          "purpose": "Readiness ruler from MI — assesses stage of change without confrontation",
+          "follow_up": ["What puts you at [number] and not lower?", "You're at [number] — that's not nothing. What's contributing to that readiness?"]
+        }
+      ],
+      "common_mistakes": [
+        "Rushing past the client's number to push toward a higher one",
+        "Using the scale as a pass/fail metric rather than an exploration tool",
+        "Not anchoring both ends of the scale clearly",
+        "Focusing only on the current number and ignoring what's already working at that level"
+      ],
+      "things_to_avoid": [
+        "Don't use scaling to minimize the client's experience ('So you're only at a 3, that's not too bad')",
+        "Avoid using scales when the client is emotionally flooding — process first, measure later",
+        "Don't make the scale feel like a test or evaluation"
+      ],
+      "confidence_level": 0.95,
+      "references": ["Miller & Rollnick, 2013, Motivational Interviewing (3rd ed.)", "de Shazer, 1988, Clues: Investigating Solutions in Brief Therapy", "Bannink, 2010, 1001 Solution-Focused Questions"]
+    },
+    {
+      "type": "reflective",
+      "definition": "Questions that mirror back or deepen what the client has expressed, inviting them to verify, expand, or refine the therapist's understanding.",
+      "description": "Reflective questions are built on the foundation of reflective listening. Rather than purely reflecting content, they add a gentle questioning edge that invites the client to go deeper. They communicate empathy while also promoting self-exploration and insight.",
+      "when_to_use": [
+        "After a significant client statement to deepen processing",
+        "When you sense emotional depth beneath the surface content",
+        "When a client seems to be circling around something without naming it",
+        "To highlight contradictions or patterns the client may not see",
+        "When shifting from content to meaning or emotion"
+      ],
+      "when_not_to_use": [
+        "When the client has just had a powerful insight and needs space, not more questions",
+        "When reflective questions feel repetitive or formulaic",
+        "When the client is already deeply self-reflective and needs action-oriented work"
+      ],
+      "examples": [
+        {
+          "context": "Client describes feeling disconnected from friends",
+          "question": "It sounds like you're feeling a deep sense of isolation — and I'm wondering, what do you think is underneath that disconnect for you?",
+          "purpose": "Reflects the emotional core and invites deeper exploration of root causes",
+          "follow_up": ["Is the disconnect something that happened, or something that grew over time?", "What would connection feel like if it came back?"]
+        },
+        {
+          "context": "Client minimizes a painful childhood experience",
+          "question": "You're describing it as 'just how things were,' but I notice your voice changes when you talk about it. What do you make of that?",
+          "purpose": "Gently invites awareness of embodied emotion without challenging the client's narrative",
+          "follow_up": ["Has the way you see that time changed as you've gotten older?", "What would it mean to acknowledge how much it affected you?"]
+        },
+        {
+          "context": "Client expresses anger about a work situation",
+          "question": "The frustration you're describing seems to go beyond just this one incident. I'm curious — what do you think this situation is really about for you?",
+          "purpose": "Reflects the depth of emotion and opens exploration of deeper meaning",
+          "follow_up": ["Does this remind you of anything else in your life?", "What need of yours isn't being met here?"]
+        },
+        {
+          "context": "Client talks about being 'strong' for everyone",
+          "question": "You carry so much for others. I'm curious — who carries things for you?",
+          "purpose": "Reflects the client's relational pattern and gently highlights an imbalance",
+          "follow_up": ["What would it feel like to let someone carry something for you?", "Is it hard to receive, or is it hard to trust that it's offered?"]
+        },
+        {
+          "context": "Client says they're 'used to' their anxiety",
+          "question": "Being used to something and being okay with it are different things. What's it like to live with something you've gotten used to but never asked for?",
+          "purpose": "Distinguishes normalization from acceptance, inviting the client to re-examine a chronic experience",
+          "follow_up": ["What would it mean to not have to be 'used to' it anymore?", "What has anxiety cost you that you haven't fully acknowledged?"]
+        }
+      ],
+      "common_mistakes": [
+        "Turning every reflection into a question (reflective statements are often more powerful)",
+        "Reflecting content when the client needs emotional validation first",
+        "Asking reflective questions in a tone that feels analytical rather than warm",
+        "Overusing 'I wonder' as a prefix, which can feel evasive"
+      ],
+      "things_to_avoid": [
+        "Don't use reflective questions to test the client or prove a point",
+        "Avoid reflective questions that impose meaning the client hasn't arrived at",
+        "Don't rush past grief or anger to get to insight"
+      ],
+      "confidence_level": 0.9,
+      "references": ["Rogers, 1951, On Becoming a Person", "Miller & Rollnick, 2013, Motivational Interviewing (3rd ed.)", "Prochaska & Norcross, 2018, Systems of Psychotherapy"]
+    },
+    {
+      "type": "solution_focused",
+      "definition": "Questions that redirect attention from problems to solutions, exceptions, resources, and preferred futures.",
+      "description": "Solution-focused questions are designed to shift the client's cognitive frame from problem-saturated thinking to possibility-oriented thinking. They assume that the client already has resources and exceptions within their experience — the questions help surface them.",
+      "when_to_use": [
+        "When the client is stuck in problem-focused rumination",
+        "When the client has identified what they want to change",
+        "To build motivation by connecting to preferred futures",
+        "When exceptions to the problem already exist but haven't been recognized",
+        "In brief therapy or when sessions are time-limited"
+      ],
+      "when_not_to_use": [
+        "When the client needs to feel heard about their pain before moving to solutions",
+        "When the problem is complex and requires deep processing (e.g., trauma)",
+        "When the client explicitly wants to talk about and process the problem",
+        "When skipping to solutions feels dismissive"
+      ],
+      "examples": [
+        {
+          "context": "Client feels hopeless about their depression",
+          "question": "I'm going to ask you a somewhat unusual question. Imagine you woke up tomorrow and the problem that brought you here was solved — but you were asleep and didn't notice it happen. What would be the first small sign that things were different?",
+          "purpose": "The Miracle Question (de Shazer) bypasses the 'how' and focuses the client on a vivid preferred future",
+          "follow_up": ["What else would be different?", "What would you do first on that morning?", "What does that tell you about what matters most to you?"]
+        },
+        {
+          "context": "Client says their anxiety is constant",
+          "question": "You've described feeling anxious most of the time. I'm curious — has there been even one moment in the past week where the anxiety was a little less intense, even briefly?",
+          "purpose": "Exception question — surfaces times when the problem was not present or less severe",
+          "follow_up": ["What was different about that moment?", "What were you doing or thinking right before that happened?", "Is there anything in that moment you could recreate?"]
+        },
+        {
+          "context": "Client is overwhelmed by a conflict at work",
+          "question": "Despite everything going on at work, you're still showing up every day and managing your responsibilities. How have you managed to keep going?",
+          "purpose": "Coping question — acknowledges survival and resourcefulness even in difficulty",
+          "follow_up": ["What strength or resource are you drawing on right now?", "What does that tell you about yourself?"]
+        },
+        {
+          "context": "Client is ambivalent about leaving a relationship",
+          "question": "If you could design the perfect outcome for this situation — one that you'd be at peace with — what would it look like?",
+          "purpose": "Future-oriented question that connects the client to their values and preferences",
+          "follow_up": ["What part of that outcome feels most important to you?", "What would need to happen for that to be possible?"]
+        },
+        {
+          "context": "Client says nothing ever works for them",
+          "question": "I hear that nothing has worked so far. Can you think of a time, even a small one, when something did work — even a little bit?",
+          "purpose": "Challenges the 'nothing works' narrative by finding counter-examples",
+          "follow_up": ["What was different about that time?", "What did you do differently, even slightly?"]
+        }
+      ],
+      "common_mistakes": [
+        "Using solution-focused questions before the client feels validated and heard",
+        "Asking 'why don't you try...' instead of discovering what the client already does well",
+        "Skipping the exception exploration and jumping to action planning",
+        "Applying the miracle question too early in the therapeutic relationship"
+      ],
+      "things_to_avoid": [
+        "Don't use solution-focused questions to minimize genuine suffering",
+        "Avoid implying that the client should already be solving their own problem",
+        "Don't force positive reframes on clients who need to sit with their pain"
+      ],
+      "confidence_level": 0.9,
+      "references": ["de Shazer, 1988, Clues: Investigating Solutions in Brief Therapy", "de Shazer & Berg, 1997, What Works? Solutions in Brief Therapy", "Miller & Rollnick, 2013, Motivational Interviewing (3rd ed.)", "O'Hanlon & Weiner-Davis, 1989, In Search of Solutions"]
+    },
+    {
+      "type": "strengths_based",
+      "definition": "Questions that explicitly direct attention to the client's competencies, resilience, values, and existing resources.",
+      "description": "Strengths-based questions are rooted in the belief that every client brings assets and capabilities to therapy. These questions help clients recognize their own strengths, build self-efficacy, and generate solutions from a foundation of competence rather than deficit.",
+      "when_to_use": [
+        "When the client's self-talk is overwhelmingly negative",
+        "When building rapport and confidence early in therapy",
+        "When the client has survived significant adversity",
+        "To reinforce progress and consolidate gains",
+        "When the client needs to reconnect with their sense of agency"
+      ],
+      "when_not_to_use": [
+        "When the client needs to process grief, loss, or trauma without redirection",
+        "When strengths-based questions feel like toxic positivity",
+        "When the client is not ready to hear about their strengths (feels invalidating)"
+      ],
+      "examples": [
+        {
+          "context": "Client feels like a failure after job loss",
+          "question": "You've been through a lot this year, and yet here you are, sitting in this room, working on this. What does that say about who you are?",
+          "purpose": "Highlights the client's courage and agency in seeking help",
+          "follow_up": ["What personal quality helped you get to this point?", "What would that quality say to you right now?"]
+        },
+        {
+          "context": "Client describes surviving a difficult childhood",
+          "question": "Given everything you've been through, what do you think has helped you survive and even thrive in some areas of your life?",
+          "purpose": "Directs attention to resilience and adaptive strategies the client already possesses",
+          "follow_up": ["What would you tell someone going through what you went through?", "What strength did you develop that you wouldn't have otherwise?"]
+        },
+        {
+          "context": "Client doubts their parenting abilities",
+          "question": "Tell me about a moment recently when you felt like you got it right as a parent — even a small moment.",
+          "purpose": "Surfaces concrete evidence of competence to counter global self-criticism",
+          "follow_up": ["What were you doing in that moment?", "What does that moment tell you about your values as a parent?"]
+        },
+        {
+          "context": "Client says they can't handle stress",
+          "question": "You've handled a lot of difficult situations in your life. Can you think of a time when you dealt with something really stressful and came through it?",
+          "purpose": "Challenges the 'I can't' narrative with evidence from the client's own history",
+          "follow_up": ["What helped you get through that?", "How is this situation similar to or different from that one?"]
+        },
+        {
+          "context": "Client feels they have nothing to offer",
+          "question": "If I asked the people who know you best what your best qualities are, what do you think they'd say?",
+          "purpose": "Uses social perspective-taking to access strengths the client cannot see in themselves",
+          "follow_up": ["What would you say to that — is it accurate?", "Is it hard to see in yourself what others see?"]
+        }
+      ],
+      "common_mistakes": [
+        "Offering strengths before the client has been fully heard",
+        "Framing strengths as a way to minimize the client's struggle",
+        "Listing strengths generically rather than discovering them with the client",
+        "Using strengths-based questions to avoid difficult emotional territory"
+      ],
+      "things_to_avoid": [
+        "Don't use strengths language as a form of dismissal ('But you're so strong!')",
+        "Avoid implying that the client should be able to handle everything because they have strengths",
+        "Don't impose strengths the client doesn't identify with"
+      ],
+      "confidence_level": 0.9,
+      "references": ["Saleebey, 2006, The Strengths Perspective in Social Work Practice", "Rogers, 1951, On Becoming a Person", "Linehan, 1993, Cognitive-Behavioral Treatment of Borderline Personality Disorder", "Miller & Rollnick, 2013, Motivational Interviewing (3rd ed.)"]
+    }
+  ],
+  "questions_by_topic": {
+    "anxiety": [
+      {
+        "question": "When the anxiety shows up, what's the first thing that happens — do you notice the thoughts first, the body sensations first, or both at the same time?",
+        "purpose": "Helps the client identify their anxiety signature and build awareness of their experience",
+        "confidence_level": 0.9,
+        "references": ["Beck, 1976, Cognitive Therapy and the Emotional Disorders", "Linehan, 1993, DBT Skills Training Manual"]
+      },
+      {
+        "question": "What is your anxiety trying to protect you from?",
+        "purpose": "Reframes anxiety as a (misguided) protective mechanism, reducing shame and opening curiosity",
+        "confidence_level": 0.85,
+        "references": ["Hayes, Strosahl, & Wilson, 2012, Acceptance and Commitment Therapy"]
+      },
+      {
+        "question": "If you could describe your anxiety as a character or a voice, what would it look like, and what would it say to you?",
+        "purpose": "Externalizes the anxiety using narrative techniques, creating distance and enabling observation",
+        "confidence_level": 0.85,
+        "references": ["White & Epston, 1990, Narrative Means to Therapeutic Ends", "Linehan, 1993, DBT"]
+      },
+      {
+        "question": "On a scale from 1 to 10, how intense is the anxiety right now? What would make it one point less intense?",
+        "purpose": "Uses scaling to quantify the experience and naturally opens a solution-focused direction",
+        "confidence_level": 0.9,
+        "references": ["Miller & Rollnick, 2013, Motivational Interviewing", "Bannink, 2010, 1001 Solution-Focused Questions"]
+      },
+      {
+        "question": "Has there been a time recently when the anxiety was quieter or absent? What was happening then?",
+        "purpose": "Exception-finding question that helps the client discover conditions that reduce anxiety",
+        "confidence_level": 0.9,
+        "references": ["de Shazer, 1988, Clues: Investigating Solutions in Brief Therapy"]
+      },
+      {
+        "question": "What would your life look like if anxiety wasn't running the show?",
+        "purpose": "Future-focused question that connects the client to their values and desired life",
+        "confidence_level": 0.85,
+        "references": ["Hayes et al., 2012, ACT", "de Shazer, 1988, Solution-Focused Therapy"]
+      }
+    ],
+    "depression": [
+      {
+        "question": "When you say you feel nothing or feel numb, what's that nothing like? Is it empty, heavy, foggy, or something else?",
+        "purpose": "Distinguishes between different forms of emotional numbing, which have different clinical implications",
+        "confidence_level": 0.9,
+        "references": ["Beck, 1967, Depression: Clinical, Experimental, and Theoretical Aspects"]
+      },
+      {
+        "question": "I imagine it's hard to find energy for anything right now. What is one small thing that still gets you out of bed in the morning?",
+        "purpose": "Identifies a spark of motivation or meaning even in severe depression",
+        "confidence_level": 0.85,
+        "references": ["Miller & Rollnick, 2013, Motivational Interviewing", "Seligman, 2006, Learned Optimism"]
+      },
+      {
+        "question": "If depression were a season, which one would it be? And what would the season after it look like?",
+        "purpose": "Uses metaphor to make the experience tangible and implies that change is natural and inevitable",
+        "confidence_level": 0.8,
+        "references": ["Rogers, 1951, On Becoming a Person", "Neimeyer, 2001, Meaning Reconstruction and the Experience of Loss"]
+      },
+      {
+        "question": "You mentioned feeling worthless. Can you help me understand where that belief came from? When did you first start believing that about yourself?",
+        "purpose": "Traces the cognitive schema to its origin, following CBT principles for core belief work",
+        "confidence_level": 0.9,
+        "references": ["Beck, 1979, Cognitive Therapy and the Emotional Disorders", "Young, Klosko, & Weishaar, 2003, Schema Therapy"]
+      },
+      {
+        "question": "What would it mean for you to treat yourself with the same kindness you'd show someone you love?",
+        "purpose": "Introduces self-compassion using perspective-taking, a core component of compassionate mind work",
+        "confidence_level": 0.85,
+        "references": ["Neff, 2011, Self-Compassion", "Gilbert, 2009, The Compassionate Mind"]
+      },
+      {
+        "question": "On a scale from 1 to 10, how connected do you feel to the people in your life right now?",
+        "purpose": "Assesses social connectedness, a key factor in depression recovery",
+        "confidence_level": 0.85,
+        "references": ["Miller & Rollnick, 2013, Motivational Interviewing", "Cacioppo & Patrick, 2008, Loneliness"]
+      }
+    ],
+    "anger": [
+      {
+        "question": "What is the anger protecting you from feeling?",
+        "purpose": "Explores the underlying emotion beneath anger, which is often hurt, fear, or powerlessness",
+        "confidence_level": 0.9,
+        "references": ["Beck, 1999, Prisoners of Hate", "Linehan, 1993, DBT"]
+      },
+      {
+        "question": "When you feel that surge of anger in your body, where do you feel it first, and what does it want you to do?",
+        "purpose": "Builds body awareness and connects physical sensations to impulse patterns",
+        "confidence_level": 0.85,
+        "references": ["Linehan, 1993, DBT Skills Training Manual", "van der Kolk, 2014, The Body Keeps the Score"]
+      },
+      {
+        "question": "If you took a step back from the anger and looked at the situation, what would an outside observer notice that you might not be seeing right now?",
+        "purpose": "Encourages perspective-taking and cognitive reappraisal",
+        "confidence_level": 0.85,
+        "references": ["Beck, 1976, Cognitive Therapy and the Emotional Disorders", "Linehan, 1993, DBT"]
+      },
+      {
+        "question": "What would it look like to respond to this situation rather than react to it?",
+        "purpose": "Distinguishes between automatic reaction and deliberate response, a key DBT concept",
+        "confidence_level": 0.9,
+        "references": ["Linehan, 1993, DBT", "Goleman, 2005, Emotional Intelligence"]
+      },
+      {
+        "question": "Has the anger always been this intense, or did it build over time? What do you think turned up the volume?",
+        "purpose": "Explores escalation patterns and identifies triggers and contributing factors",
+        "confidence_level": 0.85,
+        "references": ["Novaco, 1978, Anger and Anxiety", "Beck, 1999, Prisoners of Hate"]
+      },
+      {
+        "question": "When you think about the situation that made you angry, what does the anger say about what matters most to you?",
+        "purpose": "Connects anger to underlying values, using anger as information about what's important",
+        "confidence_level": 0.85,
+        "references": ["Miller & Rollnick, 2013, Motivational Interviewing", "Hayes et al., 2012, ACT"]
+      }
+    ],
+    "grief": [
+      {
+        "question": "What do you want people to know about the person you lost that they might not understand?",
+        "purpose": "Honors the unique relationship and gives the client voice for what feels unsaid",
+        "confidence_level": 0.9,
+        "references": ["Worden, 2009, Grief Counseling and Grief Therapy", "Neimeyer, 2001, Meaning Reconstruction"]
+      },
+      {
+        "question": "When you think about the loss, what's the hardest part — the absence itself, the memories, the future without them, or something else?",
+        "purpose": "Helps the client identify the specific dimension of grief they most need to address",
+        "confidence_level": 0.9,
+        "references": ["Stroebe & Schut, 1999, Dual Process Model of Coping with Bereavement"]
+      },
+      {
+        "question": "How has this loss changed the way you see the world or yourself?",
+        "purpose": "Explores shattered assumptions and meaning-making, central to post-loss identity reconstruction",
+        "confidence_level": 0.85,
+        "references": ["Neimeyer, 2001, Meaning Reconstruction and the Experience of Loss", "Janoff-Bulman, 1992, Shattered Assumptions"]
+      },
+      {
+        "question": "Is there a ritual, habit, or way of keeping them close that helps you feel connected?",
+        "purpose": "Explores continuing bonds and healthy ways of maintaining a relationship with the deceased",
+        "confidence_level": 0.85,
+        "references": ["Klass, Silverman, & Nickman, 1996, Continuing Bonds"]
+      },
+      {
+        "question": "What has grief taught you about yourself that you didn't know before?",
+        "purpose": "Opens the door to post-traumatic growth and meaning-making within grief",
+        "confidence_level": 0.8,
+        "references": ["Tedeschi & Calhoun, 2004, Posttraumatic Growth", "Neimeyer, 2001, Meaning Reconstruction"]
+      },
+      {
+        "question": "If you could have one more conversation with them, what would you want to say?",
+        "purpose": "Facilitates unfinished business work and emotional expression",
+        "confidence_level": 0.85,
+        "references": ["Worden, 2009, Grief Counseling and Grief Therapy", "Perls, 1969, Gestalt Therapy Verbatim"]
+      }
+    ],
+    "relationships": [
+      {
+        "question": "When you think about what makes a relationship feel safe to you, what comes to mind?",
+        "purpose": "Explores the client's attachment needs and relational blueprint",
+        "confidence_level": 0.9,
+        "references": ["Bowlby, 1988, A Secure Base", "Johnson, 2008, Hold Me Tight"]
+      },
+      {
+        "question": "What role do you usually take in your relationships — the one who gives, the one who leads, the peacemaker? And how does that work for you?",
+        "purpose": "Brings awareness to relational patterns and their costs/benefits",
+        "confidence_level": 0.85,
+        "references": ["Harris, 1967, I'm OK — You're OK", "Satir, 1988, Peoplemaking"]
+      },
+      {
+        "question": "What's the story you tell yourself about what your partner/friend/family member is thinking or feeling?",
+        "purpose": "Surface cognitive distortions or assumptions in relationships (CBT-informed)",
+        "confidence_level": 0.9,
+        "references": ["Beck, 1979, Cognitive Therapy and the Emotional Disorders", "Ehrenreich, Britton, & Goldfried, 2012, Cognitive-Behavioral Couple Therapy"]
+      },
+      {
+        "question": "If you could change one thing about how you and [person] communicate, what would it be?",
+        "purpose": "Focuses the client on a concrete, actionable relational goal",
+        "confidence_level": 0.85,
+        "references": ["Gottman & Silver, 1999, The Seven Principles for Making Marriage Work"]
+      },
+      {
+        "question": "What does feeling loved look like to you? What does feeling disconnected look like?",
+        "purpose": "Explores the client's love language and attachment cues",
+        "confidence_level": 0.85,
+        "references": ["Johnson, 2008, Hold Me Tight", "Chapman, 1992, The Five Love Languages"]
+      },
+      {
+        "question": "When the conflict happens, what is it really about beneath the surface?",
+        "purpose": "Explores the deeper needs or fears driving relational conflict",
+        "confidence_level": 0.85,
+        "references": ["Johnson, 2008, Hold Me Tight", "Gottman & Silver, 1999, The Seven Principles"]
+      }
+    ],
+    "stress": [
+      {
+        "question": "If you could draw a line between what's within your control and what isn't, where would the line fall right now?",
+        "purpose": "Helps the client distinguish between manageable and unmanageable stressors, reducing overwhelm",
+        "confidence_level": 0.9,
+        "references": ["Linehan, 1993, DBT Skills Training Manual", "Covey, 1989, The 7 Habits of Highly Effective People"]
+      },
+      {
+        "question": "When stress peaks, what's the first thing that gets neglected — your sleep, your eating, your relationships, or something else?",
+        "purpose": "Identifies the stress ripple effect and its earliest warning signs",
+        "confidence_level": 0.85,
+        "references": ["McEwen, 1998, Protective and Damaging Effects of Stress", "Selye, 1956, The Stress of Life"]
+      },
+      {
+        "question": "What's one thing you could let go of or delegate that would immediately take some pressure off?",
+        "purpose": "Practical, solution-focused question that invites the client to reclaim agency",
+        "confidence_level": 0.85,
+        "references": ["de Shazer, 1988, Clues: Investigating Solutions in Brief Therapy", "Miller & Rollnick, 2013, Motivational Interviewing"]
+      },
+      {
+        "question": "How do you know when you've reached your limit? What does your body or mind tell you?",
+        "purpose": "Builds interoceptive awareness and helps the client recognize burnout signals early",
+        "confidence_level": 0.85,
+        "references": ["Linehan, 1993, DBT", "Porges, 2011, The Polyvagal Theory"]
+      },
+      {
+        "question": "When you've managed stress well in the past, what were you doing differently?",
+        "purpose": "Accesses the client's own history of effective coping, building on existing strengths",
+        "confidence_level": 0.9,
+        "references": ["de Shazer, 1988, Clues", "Miller & Rollnick, 2013, Motivational Interviewing"]
+      },
+      {
+        "question": "What would it feel like to give yourself permission to not have it all together right now?",
+        "purpose": "Challenges perfectionism and self-imposed pressure that amplifies stress",
+        "confidence_level": 0.8,
+        "references": ["Neff, 2011, Self-Compassion", "Brown, 2012, Daring Greatly"]
+      }
+    ],
+    "self_esteem": [
+      {
+        "question": "What are three things you know to be true about yourself that no one can take away?",
+        "purpose": "Grounds the client in an internal locus of self-worth that isn't dependent on external validation",
+        "confidence_level": 0.85,
+        "references": ["Rogers, 1951, On Becoming a Person", "Branden, 1994, The Six Pillars of Self-Esteem"]
+      },
+      {
+        "question": "Whose voice do you hear in your head when you criticize yourself? And is that voice one you'd choose to listen to?",
+        "purpose": "Externalizes the inner critic and invites evaluation of whose standards are being applied",
+        "confidence_level": 0.9,
+        "references": ["Beck, 1979, Cognitive Therapy and the Emotional Disorders", "Young et al., 2003, Schema Therapy"]
+      },
+      {
+        "question": "What would you need to believe about yourself to feel worthy of the life you want?",
+        "purpose": "Identifies the core belief that needs to shift for self-esteem work to take root",
+        "confidence_level": 0.85,
+        "references": ["Beck, 1979, Cognitive Therapy", "Burns, 1980, Feeling Good"]
+      },
+      {
+        "question": "When you think about yourself positively, what happens? Does a counter-voice show up?",
+        "purpose": "Explores the resistance to positive self-regard, a common pattern in low self-esteem",
+        "confidence_level": 0.85,
+        "references": ["Rogers, 1951, On Becoming a Person", "Linehan, 1993, DBT"]
+      },
+      {
+        "question": "How would your best friend describe you? And how does that compare to how you describe yourself?",
+        "purpose": "Uses perspective-taking to reveal the gap between external perception and internal self-criticism",
+        "confidence_level": 0.85,
+        "references": ["Rogers, 1951, On Becoming a Person", "Neff, 2011, Self-Compassion"]
+      },
+      {
+        "question": "What accomplishment or moment in your life are you most proud of, even if you don't usually let yourself feel proud?",
+        "purpose": "Surfaces suppressed pride and provides concrete evidence of competence and worth",
+        "confidence_level": 0.85,
+        "references": ["Branden, 1994, The Six Pillars of Self-Esteem", "Seligman, 2006, Learned Optimism"]
+      }
+    ],
+    "trauma": [
+      {
+        "question": "What does your body do when the memory comes up? And what does it need right now to feel safe in this room?",
+        "purpose": "Centers the body's response (a core DBT/trauma principle) and establishes safety",
+        "confidence_level": 0.9,
+        "references": ["van der Kolk, 2014, The Body Keeps the Score", "Linehan, 1993, DBT"]
+      },
+      {
+        "question": "If you could go back to the moment before the trauma, what would you say to that version of yourself?",
+        "purpose": "Facilitates self-compassion and addresses the shame and self-blame that often accompany trauma",
+        "confidence_level": 0.85,
+        "references": ["Neimeyer, 2001, Meaning Reconstruction", "Herman, 1992, Trauma and Recovery"]
+      },
+      {
+        "question": "What has the trauma taken from you that you want to reclaim?",
+        "purpose": "Reframes recovery as reclamation rather than repair, empowering the client's sense of agency",
+        "confidence_level": 0.85,
+        "references": ["Herman, 1992, Trauma and Recovery", "Resick, 1992, The Impact of Cognitive Processing Therapy"]
+      },
+      {
+        "question": "What parts of your life has the trauma NOT touched?",
+        "purpose": "Identifies preserved areas of functioning and self, counteracting the all-consuming narrative of trauma",
+        "confidence_level": 0.85,
+        "references": ["Herman, 1992, Trauma and Recovery", "Saleebey, 2006, The Strengths Perspective"]
+      },
+      {
+        "question": "What would healing look like for you — not the end goal, but what does the path toward it feel like?",
+        "purpose": "Makes the abstract concept of healing tangible and process-oriented rather than outcome-dependent",
+        "confidence_level": 0.8,
+        "references": ["Herman, 1992, Trauma and Recovery", "Levine, 1997, Waking the Tiger"]
+      },
+      {
+        "question": "When the trauma happened, who did you tell, and what did they do with your story?",
+        "purpose": "Explores disclosure experiences and therapeutic betrayal, which profoundly shape recovery",
+        "confidence_level": 0.85,
+        "references": ["Herman, 1992, Trauma and Recovery", "Freyd, 1996, Betrayal Trauma"]
+      }
+    ],
+    "burnout": [
+      {
+        "question": "When did you first notice that the things that used to energize you started feeling like obligations?",
+        "purpose": "Identifies the inflection point where passion became depletion",
+        "confidence_level": 0.9,
+        "references": ["Maslach & Leiter, 2016, Understanding the Burnout Experience", "Freudenberger, 1974, Staff Burn-Out"]
+      },
+      {
+        "question": "What are you giving energy to right now that isn't giving anything back to you?",
+        "purpose": "Maps the client's energy economy and identifies the sources of depletion",
+        "confidence_level": 0.85,
+        "references": ["Maslach & Leiter, 2016, Understanding the Burnout Experience"]
+      },
+      {
+        "question": "If you could redesign your day-to-day life with no constraints, what would you keep and what would you cut?",
+        "purpose": "Clarifies values and reveals what truly matters versus what is draining",
+        "confidence_level": 0.85,
+        "references": ["Hayes et al., 2012, ACT", "de Shazer, 1988, Solution-Focused Therapy"]
+      },
+      {
+        "question": "What does rest actually look like for you — not scrolling or distracting, but genuine restoration?",
+        "purpose": "Distinguishes between numbing and genuine self-care",
+        "confidence_level": 0.85,
+        "references": ["Neff, 2011, Self-Compassion", "Brown, 2012, Daring Greatly"]
+      },
+      {
+        "question": "What would it take to set a boundary that protects your energy, even if it feels uncomfortable at first?",
+        "purpose": "Connects burnout recovery to assertiveness and boundary-setting skills",
+        "confidence_level": 0.85,
+        "references": ["Linehan, 1993, DBT", "Cloud & Townsend, 1992, Boundaries"]
+      },
+      {
+        "question": "What part of burnout is about the work itself, and what part is about how you relate to the work?",
+        "purpose": "Distinguishes between situational burnout and dispositional patterns",
+        "confidence_level": 0.85,
+        "references": ["Maslach & Leiter, 2016, Understanding the Burnout Experience", "Beck, 1979, Cognitive Therapy"]
+      }
+    ],
+    "confusion": [
+      {
+        "question": "When you sit with the confusion, does it feel more like 'I don't have enough information' or 'I have too many conflicting options'?",
+        "purpose": "Distinguishes between informational confusion and values conflict, which require different interventions",
+        "confidence_level": 0.85,
+        "references": ["Miller & Rollnick, 2013, Motivational Interviewing", "Hayes et al., 2012, ACT"]
+      },
+      {
+        "question": "If you set aside what you 'should' do and just checked in with your gut, what does it tell you?",
+        "purpose": "Bypasses cognitive overwhelm and accesses Wise Mind (DBT concept)",
+        "confidence_level": 0.9,
+        "references": ["Linehan, 1993, DBT Skills Training Manual"]
+      },
+      {
+        "question": "What would your wisest self — the part of you that has navigated hard decisions before — say about this?",
+        "purpose": "Accesses the client's own inner wisdom and past decision-making resources",
+        "confidence_level": 0.85,
+        "references": ["Linehan, 1993, DBT", "Rogers, 1951, On Becoming a Person"]
+      },
+      {
+        "question": "What's the worst that could happen if you made the 'wrong' choice? And could you live with that?",
+        "purpose": "Reduces the stakes of decision-making and challenges all-or-nothing thinking",
+        "confidence_level": 0.85,
+        "references": ["Beck, 1979, Cognitive Therapy and the Emotional Disorders"]
+      },
+      {
+        "question": "If you didn't have to be perfect about this decision, what would you choose?",
+        "purpose": "Lowers the perfectionism that often underlies decision paralysis",
+        "confidence_level": 0.85,
+        "references": ["Beck, 1979, Cognitive Therapy", "Burns, 1980, Feeling Good"]
+      },
+      {
+        "question": "Is there a decision that feels scary because it's truly wrong, or because it's truly different from what others expect?",
+        "purpose": "Separates genuine risk from social anxiety and people-pleasing patterns",
+        "confidence_level": 0.8,
+        "references": ["Rogers, 1951, On Becoming a Person", "Linehan, 1993, DBT"]
+      }
+    ]
+  }
+}

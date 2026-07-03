@@ -851,8 +851,10 @@ def build_from_knowledge_base(kb_dir=None):
 
     files_to_process = [
         "01_emotions.json", "02_life_events.json", "03_cognitive_patterns.json",
-        "04_behavior_patterns.json", "06_conversation_examples.jsonl",
+        "04_behavior_patterns.json", "05_counseling_skills.json", "06_conversation_examples.jsonl",
         "07_crisis_detection.json", "08_coping_strategies.json", "09_language_patterns.json",
+        "10_active_listening.json", "11_validation_examples.json", "12_open_questions.json",
+        "13_reflection_examples.json", "14_boundary_setting.json", "15_goal_setting.json",
     ]
 
     for fname in files_to_process:
@@ -929,6 +931,121 @@ def build_from_knowledge_base(kb_dir=None):
                     if phrase and emo:
                         t = EMOTION_TOPIC_MAP.get(emo.lower(), "general")
                         rows.append({"text": phrase, "label": t, "source": fname})
+            elif fname == "05_counseling_skills.json":
+                with open(fpath, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                for skill in data.get("skills", []):
+                    for ex in skill.get("example_dialogue", []) if isinstance(skill.get("example_dialogue"), list) else [skill.get("example_dialogue", "")]:
+                        if ex and isinstance(ex, str) and len(ex) > 10:
+                            rows.append({"text": ex, "label": "general", "source": fname})
+                    purpose = skill.get("purpose", "")
+                    if purpose:
+                        rows.append({"text": purpose, "label": "general", "source": fname})
+            elif fname == "10_active_listening.json":
+                with open(fpath, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                for tech in data.get("techniques", []):
+                    for ex in tech.get("examples", []):
+                        user_text = ex.get("user_says", "")
+                        response = ex.get("listening_response", "")
+                        if user_text:
+                            topic = EMOTION_TOPIC_MAP.get(tech.get("category", "").lower(), "general")
+                            rows.append({"text": user_text, "label": topic, "source": fname})
+                        if response:
+                            rows.append({"text": response, "label": "general", "source": fname})
+            elif fname == "11_validation_examples.json":
+                with open(fpath, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                for ex in data.get("validation_examples", []):
+                    user_text = ex.get("invalidating_response", "")
+                    valid = ex.get("validating_response", "")
+                    emotion = ex.get("emotion", "")
+                    if user_text:
+                        t = EMOTION_TOPIC_MAP.get(emotion.lower(), "general")
+                        rows.append({"text": user_text, "label": t, "source": fname})
+                    if valid:
+                        rows.append({"text": valid, "label": "general", "source": fname})
+                for level in data.get("validation_levels", []):
+                    for ex in level.get("examples", []):
+                        user_text = ex.get("user_says", "")
+                        response = ex.get("validation_response", "")
+                        if user_text:
+                            rows.append({"text": user_text, "label": "general", "source": fname})
+                        if response:
+                            rows.append({"text": response, "label": "general", "source": fname})
+            elif fname == "12_open_questions.json":
+                with open(fpath, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                for qtype in data.get("question_types", []):
+                    for ex in qtype.get("examples", []):
+                        question = ex.get("question", "")
+                        context = ex.get("context", "")
+                        if question:
+                            rows.append({"text": question, "label": "general", "source": fname})
+                for topic, questions in data.get("questions_by_topic", {}).items():
+                    t = EMOTION_TOPIC_MAP.get(topic.lower(), "general")
+                    for q in questions:
+                        question = q.get("question", "")
+                        if question:
+                            rows.append({"text": question, "label": t, "source": fname})
+            elif fname == "13_reflection_examples.json":
+                with open(fpath, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                for rtype in data.get("reflection_types", []):
+                    for ex in rtype.get("examples", []):
+                        user_text = ex.get("user_says", "")
+                        reflection = ex.get("reflection", "")
+                        if user_text:
+                            rows.append({"text": user_text, "label": "general", "source": fname})
+                        if reflection:
+                            rows.append({"text": reflection, "label": "general", "source": fname})
+                for emotion, examples in data.get("reflection_examples_by_emotion", {}).items():
+                    t = EMOTION_TOPIC_MAP.get(emotion.lower(), "general")
+                    for ex in examples:
+                        user_text = ex.get("user_says", "")
+                        if user_text:
+                            rows.append({"text": user_text, "label": t, "source": fname})
+                        for key in ["simple_reflection", "complex_reflection", "radical_reflection"]:
+                            ref = ex.get(key, "")
+                            if ref:
+                                rows.append({"text": ref, "label": "general", "source": fname})
+            elif fname == "14_boundary_setting.json":
+                with open(fpath, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                for btype in data.get("boundary_types", []):
+                    for ex in btype.get("examples", []):
+                        user_text = ex.get("user_says", "")
+                        response = ex.get("boundary_response", "")
+                        if user_text:
+                            rows.append({"text": user_text, "label": "general", "source": fname})
+                        if response:
+                            rows.append({"text": response, "label": "general", "source": fname})
+                for relationship, examples in data.get("boundary_examples_by_relationship", {}).items():
+                    for ex in examples:
+                        script = ex.get("boundary_script", "")
+                        if script:
+                            rows.append({"text": script, "label": "general", "source": fname})
+            elif fname == "15_goal_setting.json":
+                with open(fpath, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                for framework in data.get("goal_frameworks", []):
+                    for ex in framework.get("examples", []):
+                        user_text = ex.get("user_says", "")
+                        response = ex.get("goal_response", "")
+                        goal = ex.get("goal_example", "")
+                        if user_text:
+                            rows.append({"text": user_text, "label": "general", "source": fname})
+                        if response:
+                            rows.append({"text": response, "label": "general", "source": fname})
+                        if goal:
+                            rows.append({"text": goal, "label": "positive", "source": fname})
+                for topic, areas in data.get("goals_by_topic", {}).items():
+                    t = EMOTION_TOPIC_MAP.get(topic.lower(), "general")
+                    for area in areas:
+                        for goal_ex in area.get("goal_examples", []):
+                            goal_text = goal_ex.get("goal", "")
+                            if goal_text:
+                                rows.append({"text": goal_text, "label": t, "source": fname})
         except Exception as e:
             print(f"  Error processing {fname}: {e}")
             continue

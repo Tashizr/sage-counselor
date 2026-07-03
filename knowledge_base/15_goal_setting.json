@@ -1,0 +1,788 @@
+{
+  "description": "Goal setting techniques and examples for counseling",
+  "goal_frameworks": [
+    {
+      "framework": "SMART",
+      "definition": "A structured goal-setting framework ensuring goals are Specific, Measurable, Achievable, Relevant, and Time-bound",
+      "description": "SMART goals provide clarity and direction by translating broad aspirations into concrete, actionable objectives. Each element serves a purpose: Specificity reduces ambiguity, Measurability enables tracking, Achievability maintains motivation, Relevance ensures alignment with values, and Time-boundness creates urgency and accountability. This framework is one of the most widely validated approaches in goal-setting research.",
+      "psychological_background": "Locke and Latham's goal-setting theory demonstrates that specific, challenging goals lead to higher performance than vague 'do your best' goals. Their research across hundreds of studies confirms that clear goals enhance motivation, focus attention, increase persistence, and improve strategy development. The framework has robust empirical support in both organizational and clinical settings.",
+      "components": ["Specific", "Measurable", "Achievable", "Relevant", "Time-bound"],
+      "examples": [
+        {
+          "context": "Client wants to reduce anxiety but has no clear direction",
+          "user_says": "I just want to feel less anxious, but I don't know where to start",
+          "goal_response": "Let's take that desire and shape it into something concrete we can work toward. What if we set a specific goal around anxiety? For example, reducing panic episodes from daily to a few times a week, or being able to do something you avoid?",
+          "goal_example": "I will practice deep breathing for 10 minutes each morning before work for the next 4 weeks to reduce my daily panic episodes from 5 to 2 or fewer per week",
+          "why_it_works": "Transforms a vague wish into a concrete action plan with clear measurement criteria, giving the client something tangible to work toward and track",
+          "follow_up": ["What would success look like for you in 4 weeks?", "How will you know this goal is working?"]
+        },
+        {
+          "context": "Client is overwhelmed by the scope of life changes needed",
+          "user_says": "Everything is falling apart — my marriage, my job, my health. I need to fix everything",
+          "goal_response": "I can see how much you're carrying right now. Rather than trying to fix everything at once, what if we pick the one area that feels most urgent and set a focused goal there first?",
+          "goal_example": "Over the next 3 weeks, I will have one honest conversation with my partner each week about how I'm feeling, using 'I feel' statements instead of criticism",
+          "why_it_works": "Narrowing focus prevents overwhelm and builds momentum. Small successes in one area often create positive spillover effects in other areas",
+          "follow_up": ["Which of these areas feels most urgent to you right now?", "What's one small step you could take this week?"]
+        },
+        {
+          "context": "Client wants to improve self-esteem but frames it abstractly",
+          "user_says": "I want to stop hating myself, but that feels impossible",
+          "goal_response": "Self-compassion is something we can absolutely build toward. Rather than going from self-hatred to self-love overnight, what if we set a goal around specific self-critical behaviors you could change?",
+          "goal_example": "When I notice negative self-talk, I will pause and write down one thing I did well that day, doing this at least 5 times per week for the next month",
+          "why_it_works": "Makes the abstract concept of self-esteem concrete through observable behaviors, and creates a measurable habit that builds self-awareness over time",
+          "follow_up": ["What triggers your negative self-talk most often?", "What would it feel like to treat yourself the way you treat a friend?"]
+        }
+      ],
+      "common_mistakes": [
+        "Setting goals that are too vague ('be happier')",
+        "Making goals too large and overwhelming",
+        "Not including measurement criteria",
+        "Setting goals based on others' expectations rather than client values",
+        "Ignoring the client's readiness for change"
+      ],
+      "things_to_avoid": [
+        "Imposing your own goals on the client",
+        "Setting punitive or shame-based goals",
+        "Skipping the 'achievable' check — unrealistic goals erode motivation",
+        "Treating SMART goals as rigid rather than iterative — adjust as needed",
+        "Using goals as a form of behavioral control"
+      ],
+      "confidence_level": 0.95,
+      "references": ["Locke, E. A., & Latham, G. P. (2002). Building a practically useful theory of goal setting and task motivation. American Psychologist, 57(9), 705–717"]
+    },
+    {
+      "framework": "solution_focused",
+      "definition": "A brief therapeutic approach that focuses on what clients want to achieve rather than the problems that brought them to therapy, using techniques like the miracle question, scaling, and exception-finding",
+      "description": "Solution-Focused Brief Therapy (SFBT) shifts attention from problem analysis to solution construction. Rather than understanding why problems exist, it explores what life would look like without them. The miracle question envisions an ideal future, scaling questions track incremental progress, and exception-finding identifies times when the problem is absent or less severe. This approach assumes clients already have strengths and resources — therapy helps them recognize and amplify what works.",
+      "psychological_background": "Developed by Steve de Shazer and Insoo Kim Berg at the Brief Family Therapy Center in the 1980s, SFBT emerged from the observation that focusing on problems often reinforced them. Research shows SFBT is effective for depression, anxiety, relationship issues, and behavioral problems. It typically achieves outcomes in fewer sessions than traditional approaches, with effects that maintain over time.",
+      "components": ["Miracle Question", "Scaling Questions", "Exception-Finding", "Coping Questions", "Compliments", "Goal Identification"],
+      "examples": [
+        {
+          "context": "Client is stuck in problem-focused thinking and can't envision change",
+          "user_says": "Nothing ever gets better. I've been depressed for years and I can't see how anything will change",
+          "goal_response": "I hear how stuck you feel right now. Let me ask you something — if tonight, while you slept, a miracle happened and the problem that brought you here was solved, but you were asleep so you didn't know it happened. What would be different tomorrow morning when you woke up?",
+          "goal_example": "After the miracle: I wake up feeling rested, I look forward to talking to a coworker at lunch, and I come home and play with my kids without feeling drained",
+          "why_it_works": "The miracle question bypasses resistance and problem-saturated thinking by creating a vivid picture of the desired future. It shifts from 'what's wrong' to 'what do you want instead,' which naturally generates goals",
+          "follow_up": ["What's the smallest sign that the miracle might have already started?", "On a scale of 1-10, where are you now compared to that miracle morning?"]
+        },
+        {
+          "context": "Client feels completely stuck and hopeless about making progress",
+          "user_says": "I don't think I can change. I've tried so many times and failed",
+          "goal_response": "I respect how hard you've been trying. Sometimes when we feel stuck, it helps to look for exceptions — times when the problem isn't quite as bad, even briefly. Can you think of a recent time when things felt even slightly more manageable?",
+          "goal_example": "Last Tuesday I went grocery shopping without having a panic attack, which is the first time in weeks",
+          "why_it_works": "Exception-finding reveals that the client already has moments of success, which builds evidence against the belief that change is impossible. These exceptions become building blocks for goals",
+          "follow_up": ["What was different about that day?", "What did you do differently, even in a small way?", "How could you create more of those moments this week?"]
+        },
+        {
+          "context": "Client has made some progress but can't see it",
+          "user_says": "I still feel terrible, nothing has changed",
+          "goal_response": "Sometimes progress is hard to see when we're in the middle of it. On a scale of 1 to 10, where 1 is the worst you've felt and 10 is the day of the miracle we talked about, where would you say you are today?",
+          "goal_example": "Current: 3. Goal: Move from 3 to 5 over the next month by attending therapy, practicing one coping skill daily, and calling one friend per week",
+          "why_it_works": "Scaling questions make abstract progress concrete and measurable. Even moving from 3 to 3.5 represents real change, and scaling helps clients notice incremental gains they might otherwise overlook",
+          "follow_up": ["What moved you from where you were to a 3?", "What would it take to move from 3 to 4?", "What's the smallest step you could take this week toward that 4?"]
+        }
+      ],
+      "common_mistakes": [
+        "Spending too long exploring the problem before shifting to solutions",
+        "Asking the miracle question without sufficient rapport",
+        "Using scaling as a judgment rather than an exploration tool",
+        "Not honoring small exceptions and steps forward",
+        "Assuming the client knows what they want their life to look like"
+      ],
+      "things_to_avoid": [
+        "Dismissing or minimizing the client's pain before offering hope",
+        "Using the miracle question as a gimmick rather than a genuine exploration",
+        "Forcing solutions the client hasn't identified themselves",
+        "Skipping the scaling follow-up — the follow-up questions are where the real work happens",
+        "Using SFBT exclusively when deeper trauma work is needed"
+      ],
+      "confidence_level": 0.85,
+      "references": ["de Shazer, S. (1988). Keys to solution in brief therapy. W. W. Norton & Company"]
+    },
+    {
+      "framework": "values_based",
+      "definition": "Goal-setting rooted in the client's core values, ensuring that goals reflect what truly matters to them rather than external pressures or avoidance-based motivations",
+      "description": "Values-based goal setting connects therapeutic objectives to the client's deepest sense of meaning and purpose. Unlike outcome goals (achieving a specific result), values-based goals focus on the direction of travel — living in alignment with what matters most. This approach draws from Acceptance and Commitment Therapy (ACT) and Dialectical Behavior Therapy (DBT), where values serve as a compass for committed action. Goals become expressions of values rather than tasks to complete.",
+      "psychological_background": "Research in ACT demonstrates that values-based action increases psychological flexibility, reduces experiential avoidance, and improves well-being even in the presence of difficult emotions. Hayes et al. (2012) show that values clarification is a core process in psychological health, and that goals aligned with intrinsic values produce greater sustained motivation than externally imposed goals. DBT similarly emphasizes values as the foundation for life worth living.",
+      "components": ["Values Clarification", "Committed Action", "Willingness", "Present-Moment Awareness", "Defusion from Unhelpful Thoughts"],
+      "examples": [
+        {
+          "context": "Client is pursuing goals driven by fear, obligation, or others' expectations",
+          "user_says": "I keep setting goals to please my parents, but I feel empty inside even when I achieve them",
+          "goal_response": "It sounds like those goals don't feel like yours. Let's take a step back — what genuinely matters to you, separate from what anyone else thinks? If no one were judging, what would you want your life to be about?",
+          "goal_example": "My value: creativity and self-expression. Committed action goal: I will spend 30 minutes each weekend working on my art portfolio, even when anxiety tells me it's a waste of time",
+          "why_it_works": "When goals are aligned with intrinsic values, motivation comes from within rather than external pressure. This creates sustainable change because the 'why' is personally meaningful",
+          "follow_up": ["What would it mean to you to live by your own values?", "What's one small action this week that would feel like it's truly yours?"]
+        },
+        {
+          "context": "Client struggles with depression and can't find motivation",
+          "user_says": "I don't care about anything anymore. Nothing seems worth doing",
+          "goal_response": "I hear that nothing feels worth it right now. That numbness is real and valid. Even so, I wonder — if you could choose, what kind of person would you want to be? What would matter to you if depression weren't in the way?",
+          "goal_example": "Value: connection with family. Committed action: Even when I don't feel like it, I will eat dinner with my family at least 4 nights this week, staying present and listening",
+          "why_it_works": "Values-based goals work even when motivation is absent because they're about direction, not feeling. The client doesn't need to feel like doing it — they choose to act in service of what matters, and feelings often follow action",
+          "follow_up": ["You don't have to feel motivated to act on what matters. What's one value-consistent action you could take even in this low state?", "What would your best self do today, regardless of how you feel?"]
+        },
+        {
+          "context": "Client is stuck between competing life demands",
+          "user_says": "I can't balance work and family. Something always gives",
+          "goal_response": "When values conflict, it's like being pulled in multiple directions — and that's exhausting. Let's clarify what matters most to you in each area, then find goals that honor both rather than sacrificing one entirely",
+          "goal_example": "Value: professional excellence AND family presence. Goal: I will block 6–8 PM as device-free family time on weekdays, and I will prepare my work plan on Sunday evenings so I can be fully present during family hours",
+          "why_it_works": "Values clarification helps clients see that balance isn't about equal time but about intentional allocation. When goals reflect multiple values, they become more sustainable and less guilt-inducing",
+          "follow_up": ["What would 'good enough' look like in both areas?", "What's one boundary you could set this week that honors both values?"]
+        }
+      ],
+      "common_mistakes": [
+        "Assuming you know the client's values",
+        "Conflating values with goals (values are directions, goals are destinations)",
+        "Not checking whether goals are value-aligned or avoidance-driven",
+        "Setting values-based goals without addressing barriers",
+        "Implying values hierarchy (one value is 'better' than another)"
+      ],
+      "things_to_avoid": [
+        "Projecting your own values onto the client",
+        "Using values to dismiss the importance of concrete outcomes",
+        "Creating goals that require the absence of difficult emotions",
+        "Ignoring cultural context in values work",
+        "Rushing values clarification without exploration"
+      ],
+      "confidence_level": 0.9,
+      "references": ["Hayes, S. C., Strosahl, K. D., & Wilson, K. G. (2012). Acceptance and commitment therapy: The process and practice of mindful change (2nd ed.). Guilford Press", "Linehan, M. M. (2015). DBT skills training manual (2nd ed.). Guilford Press"]
+    },
+    {
+      "framework": "coping",
+      "definition": "Goal-setting focused on developing and applying specific coping strategies to manage distressing symptoms, situations, or emotions",
+      "description": "Coping-oriented goals target the skills and behaviors needed to handle life's challenges more effectively. Rather than eliminating distress (which may be unrealistic), coping goals build capacity to tolerate, manage, and respond to difficulty. This approach is particularly relevant for anxiety disorders, trauma recovery, chronic stress, and emotional dysregulation. Goals emphasize both problem-focused coping (changing the situation) and emotion-focused coping (changing the response).",
+      "psychological_background": "Lazarus and Folkman's transactional model of stress and coping distinguishes between problem-focused and emotion-focused coping strategies. Research shows that developing a diverse coping repertoire improves resilience and reduces psychological distress. CBT and DBT both incorporate coping skill development as a core therapeutic component, with extensive evidence supporting the effectiveness of coping-oriented interventions for anxiety, depression, PTSD, and borderline personality disorder.",
+      "components": ["Distress Tolerance", "Emotion Regulation", "Problem-Solving", "Social Support Seeking", "Cognitive Reappraisal", "Behavioral Coping"],
+      "examples": [
+        {
+          "context": "Client is overwhelmed by anxiety and panic attacks",
+          "user_says": "My panic attacks are destroying my life. I'm afraid to leave the house",
+          "goal_response": "Panic attacks can feel incredibly overwhelming and scary. Rather than trying to eliminate them entirely right now, what if we focused on building your ability to ride them out? What coping tools have you tried, or would you like to learn?",
+          "goal_example": "When I notice panic building, I will use the 5-4-3-2-1 grounding technique before leaving any situation, and I will practice this skill 3 times daily for 2 weeks even when not panicking",
+          "why_it_works": "Building coping skills during calm moments makes them available during crisis. Practicing before panic peaks creates automaticity, so the skill is accessible when needed most",
+          "follow_up": ["What does panic feel like in your body right before it peaks?", "What's one situation this week where you could practice the grounding technique?"]
+        },
+        {
+          "context": "Client uses unhealthy coping mechanisms (substance use, avoidance)",
+          "user_says": "I drink to deal with my anxiety. I know it's not helping, but I don't know what else to do",
+          "goal_response": "The drinking is serving a purpose — it's helping you cope, even if it creates other problems. That takes awareness to recognize. What if we found other ways to meet that same need for relief? What would feel tolerable as an alternative?",
+          "goal_example": "Instead of drinking when work anxiety peaks at 6 PM, I will go for a 15-minute walk and then use a breathing exercise, tracking how I feel before and after each alternative for 2 weeks",
+          "why_it_works": "Replacing harmful coping with adaptive coping works best when the alternative meets a similar need. Tracking helps build evidence that alternatives can work, and the walk + breathing addresses both physical and cognitive aspects of anxiety",
+          "follow_up": ["What does the alcohol do for you that nothing else does?", "What's the hardest moment in your day, and what alternative could you try?"]
+        },
+        {
+          "context": "Client shuts down emotionally and can't function during conflict",
+          "user_says": "When my partner and I argue, I just shut down. I can't think or speak",
+          "goal_response": "That shutdown response is your nervous system protecting you — it's not a character flaw. What if we worked on a 'time-out' strategy that lets you step away, regulate, and then return to the conversation when you're ready?",
+          "goal_example": "During conflict with my partner, I will use a pre-agreed signal ('I need 20 minutes') to step away, practice box breathing for 5 minutes, then return to the conversation when I can think clearly",
+          "why_it_works": "Creating a structured pause interrupts the shutdown cycle without avoiding the conversation entirely. The time limit prevents prolonged avoidance, and the breathing exercise activates the parasympathetic nervous system",
+          "follow_up": ["What does your body do right before you shut down?", "Would your partner be willing to support this time-out approach?"]
+        }
+      ],
+      "common_mistakes": [
+        "Focusing only on symptom elimination rather than coping capacity",
+        "Teaching coping skills without practicing them in session",
+        "Not matching coping strategy to the type of stressor",
+        "Ignoring the client's existing coping strengths",
+        "Setting unrealistic expectations for coping immediately"
+      ],
+      "things_to_avoid": [
+        "Dismissing the client's current coping strategies as 'wrong'",
+        "Teaching too many skills at once",
+        "Assuming one coping strategy works for everyone",
+        "Neglecting to address when professional support is needed beyond coping",
+        "Using coping goals to avoid processing underlying issues entirely"
+      ],
+      "confidence_level": 0.9,
+      "references": ["Beck, A. T. (1979). Cognitive therapy and the emotional disorders. Penguin Books", "Linehan, M. M. (2015). DBT skills training manual (2nd ed.). Guilford Press"]
+    },
+    {
+      "framework": "mastery",
+      "definition": "Goal-setting focused on building competence, confidence, and self-efficacy through progressive skill development and challenge",
+      "description": "Mastery goals draw from self-efficacy theory and social cognitive theory, emphasizing the development of competence through graduated challenges. Unlike performance goals (which compare to others), mastery goals focus on personal improvement and skill acquisition. This approach builds confidence through demonstrated capability, creating a positive feedback loop where success breeds further success. Mastery-oriented goals are particularly effective for clients with low self-efficacy, learned helplessness, or avoidance patterns.",
+      "psychological_background": "Bandura's self-efficacy theory demonstrates that mastery experiences are the most powerful source of self-efficacy beliefs. When clients successfully accomplish challenging tasks, their belief in their ability to handle future challenges increases. Locke and Latham also found that mastery-oriented goals lead to deeper learning and greater persistence than performance goals. Dweck's growth mindset research further supports that emphasizing learning and improvement over fixed ability enhances motivation and resilience.",
+      "components": ["Graduated Exposure", "Skill Building", "Self-Efficacy Enhancement", "Progressive Challenge", "Self-Comparison", "Competence Recognition"],
+      "examples": [
+        {
+          "context": "Client has social anxiety and avoids all social situations",
+          "user_says": "I can't talk to people. I freeze up and say something stupid. I just avoid everyone",
+          "goal_response": "Social anxiety can make even simple interactions feel like a test you're going to fail. What if instead of jumping into the deep end, we built your social skills gradually — starting with something that feels challenging but possible?",
+          "goal_example": "Over 6 weeks, I will progress through: Week 1-2: Make eye contact and say hello to 3 strangers daily; Week 3-4: Have brief 2-minute conversations with coworkers; Week 5-6: Attend one social event and stay for 30 minutes",
+          "why_it_works": "Graduated mastery builds confidence incrementally. Each step provides evidence of capability, rewiring the brain's threat response to social situations. The progression is challenging enough to promote growth but not so overwhelming it triggers avoidance",
+          "follow_up": ["What's the least anxiety-provoking social situation you can imagine?", "What would it mean to you to be able to handle that situation comfortably?"]
+        },
+        {
+          "context": "Client wants to overcome procrastination but feels paralyzed",
+          "user_says": "I procrastinate on everything important. I feel lazy and incompetent",
+          "goal_response": "Procrastination usually isn't about laziness — it's often about fear of failure or perfectionism. Let's set a mastery goal that builds your confidence in completing tasks, starting very small so success is almost guaranteed",
+          "goal_example": "This week, I will complete one 15-minute task I've been avoiding each day, then gradually increase to 30-minute tasks over the next 2 weeks, tracking completion in a journal",
+          "why_it_works": "Starting with guaranteed success (15 minutes is short enough to feel achievable) builds the experience of mastery. The gradual increase stretches capacity while maintaining confidence. Tracking provides concrete evidence against the 'lazy and incompetent' narrative",
+          "follow_up": ["What task have you been putting off that feels manageable in 15 minutes?", "How will it feel to check that off your list today?"]
+        },
+        {
+          "context": "Client with low self-esteem has given up on personal goals",
+          "user_says": "I used to have dreams, but I've failed so many times I don't bother trying anymore",
+          "goal_response": "Those past failures make it feel risky to try again, and that's completely understandable. What if we found something you care about — even a small thing — and built a track record of success around it? No big dreams yet, just proof that you can follow through",
+          "goal_example": "I will commit to learning one new cooking recipe each week for a month, documenting what I learn and what worked, building evidence that I can set a goal and achieve it",
+          "why_it_works": "Low-stakes mastery experiences rebuild self-efficacy without the emotional risk of pursuing major life goals. The cooking context is safe enough that 'failure' doesn't confirm the client's negative beliefs, while success challenges them",
+          "follow_up": ["What's something you've always been curious about but never tried?", "What would it mean to prove to yourself that you can learn and grow?"]
+        }
+      ],
+      "common_mistakes": [
+        "Setting goals too far beyond current capacity",
+        "Comparing the client to others instead of to their own past",
+        "Not celebrating incremental progress",
+        "Focusing only on outcomes rather than the process of learning",
+        "Using mastery goals to push clients before they're ready"
+      ],
+      "things_to_avoid": [
+        "Using mastery to create competitive or comparative frameworks",
+        "Ignoring the client's fear of failure that underlies avoidance",
+        "Setting goals that require perfection for 'success'",
+        "Skipping the graduated approach and jumping to advanced challenges",
+        "Using mastery to override the need for acceptance and self-compassion"
+      ],
+      "confidence_level": 0.9,
+      "references": ["Locke, E. A., & Latham, G. P. (2002). Building a practically useful theory of goal setting and task motivation. American Psychologist, 57(9), 705–717", "Bandura, A. (1997). Self-efficacy: The exercise of control. W. H. Freeman"]
+    }
+  ],
+  "goals_by_topic": {
+    "anxiety": [
+      {
+        "area": "Panic disorder",
+        "challenge": "Panic attacks create a cycle of fear of fear, leading to avoidance that reinforces the disorder. The unpredictability of attacks makes planning and confidence difficult.",
+        "goal_examples": [
+          {
+            "goal": "I will practice diaphragmatic breathing for 10 minutes daily for 4 weeks, reducing my panic attack frequency from daily to 3 times per week",
+            "breakdown": ["Learn proper breathing technique in session", "Practice 3 times daily for 1 week", "Begin reducing to 2 times daily in week 2", "Track panic frequency weekly", "Review progress at week 4"],
+            "measurement": "Panic attack frequency log (daily entries), breathing practice completion rate, self-rated anxiety before and after practice sessions",
+            "timeline": "4 weeks with weekly check-ins",
+            "confidence_level": 0.85,
+            "references": ["Craske, M. G., & Barlow, D. H. (2014). Mastery of your anxiety and panic (5th ed.). Oxford University Press"]
+          },
+          {
+            "goal": "I will gradually re-enter avoided situations using a fear hierarchy, completing 3 exposures per week for 6 weeks",
+            "breakdown": ["Create a fear hierarchy of 10 avoided situations rated 1-10", "Begin with situations rated 2-3", "Practice exposure using SUDS tracking", "Progress to higher-rated situations as tolerance builds", "Review hierarchy and adjust as needed"],
+            "measurement": "Subjective Units of Distress Scale (SUDS) ratings before/during/after each exposure, number of exposures completed per week, avoidance inventory",
+            "timeline": "6 weeks, 3 exposures per week",
+            "confidence_level": 0.8,
+            "references": ["Craske, M. G., & Barlow, D. H. (2014). Mastery of your anxiety and panic (5th ed.). Oxford University Press"]
+          }
+        ]
+      },
+      {
+        "area": "Generalized anxiety",
+        "challenge": "Chronic worry across multiple life domains creates pervasive tension and difficulty relaxing. Clients often believe worry is protective or productive, making it hard to change.",
+        "goal_examples": [
+          {
+            "goal": "I will schedule a daily 20-minute 'worry period' where I contain all worrying to that time, reducing scattered worry throughout the day by 50% in 3 weeks",
+            "breakdown": ["Identify worry triggers and patterns for 3 days", "Designate a consistent worry time", "Postpone all worry to the scheduled time", "During worry time, problem-solve or practice acceptance", "Track adherence and worry intensity"],
+            "measurement": "Daily worry log (frequency, intensity, duration), number of worry episodes outside scheduled time, self-rated tension level 1-10",
+            "timeline": "3 weeks with daily tracking",
+            "confidence_level": 0.8,
+            "references": ["Borkovec, T. D., et al. (1983). Effective treatments for generalized anxiety disorder. Journal of Consulting and Clinical Psychology"]
+          },
+          {
+            "goal": "I will challenge at least 3 catastrophic thoughts per day using a thought record, reducing my average worry intensity from 8/10 to 5/10 over 4 weeks",
+            "breakdown": ["Learn the ABC model in session", "Record automatic thoughts daily", "Identify cognitive distortions", "Develop balanced alternative thoughts", "Rate belief in original vs. alternative thought"],
+            "measurement": "Thought record completion rate, intensity ratings, number of distortions identified",
+            "timeline": "4 weeks with weekly review",
+            "confidence_level": 0.85,
+            "references": ["Beck, A. T. (1979). Cognitive therapy and the emotional disorders. Penguin Books"]
+          }
+        ]
+      },
+      {
+        "area": "Social anxiety",
+        "challenge": "Fear of negative evaluation leads to avoidance of social situations, which prevents disconfirmation of feared outcomes and maintains the anxiety.",
+        "goal_examples": [
+          {
+            "goal": "I will initiate one brief social interaction per day (under 2 minutes) for 3 weeks, progressing to 5-minute interactions in weeks 4-6",
+            "breakdown": ["Identify 10 low-risk social situations", "Practice opening lines", "Initiate interaction and observe outcome", "Rate anxiety before and after", "Debrief: what happened vs. what you feared"],
+            "measurement": "Interaction log (who, what, duration, anxiety before/after), avoided vs. completed interactions ratio, self-rated social confidence weekly",
+            "timeline": "6 weeks, progressive difficulty",
+            "confidence_level": 0.8,
+            "references": ["Clark, D. M., & Wells, A. (1995). A cognitive model of social phobia. In Social phobia: Diagnosis, assessment, and treatment"]
+          }
+        ]
+      }
+    ],
+    "depression": [
+      {
+        "area": "Behavioral activation",
+        "challenge": "Depression reduces motivation, energy, and interest, creating a downward spiral of withdrawal and inactivity that reinforces low mood. Clients feel they need to feel better before acting, but action often precedes feeling better.",
+        "goal_examples": [
+          {
+            "goal": "I will engage in one pleasurable activity and one necessary task each day for 2 weeks, tracking mood before and after each activity",
+            "breakdown": ["Create a list of 10 pleasurable and 10 necessary activities", "Rate each for mastery and pleasure potential", "Schedule one of each daily", "Record mood before and after (1-10)", "Adjust activities based on results"],
+            "measurement": "Daily activity log with mood ratings, completion rate, average mood change per activity",
+            "timeline": "2 weeks with daily check-in",
+            "confidence_level": 0.85,
+            "references": ["Martell, C. R., Dimidjian, S., & Herman-Dunn, R. (2010). Behavioral activation for depression: A clinician's guide. Guilford Press"]
+          },
+          {
+            "goal": "I will re-establish a consistent wake time of 7 AM and 30 minutes of morning light exposure daily for 4 weeks to regulate my circadian rhythm",
+            "breakdown": ["Set consistent alarm for 7 AM", "Go outside or use light box within 30 minutes of waking", "Track wake time and morning mood", "Gradually reduce snoozing over 2 weeks", "Add morning activity (walk, stretch) by week 3"],
+            "measurement": "Wake time log, morning mood rating, light exposure duration, sleep quality rating",
+            "timeline": "4 weeks",
+            "confidence_level": 0.8,
+            "references": ["Lewy, A. J., et al. (2006). Circadian effects of bright light in depressed patients. Journal of Clinical Psychiatry"]
+          }
+        ]
+      },
+      {
+        "area": "Hopelessness",
+        "challenge": "Hopelessness — the belief that things won't improve — is both a symptom and a maintaining factor of depression. It undermines motivation for goal pursuit and increases suicide risk.",
+        "goal_examples": [
+          {
+            "goal": "I will write down one piece of evidence each day that contradicts my belief that 'nothing will ever change,' compiling 14 pieces of evidence over 2 weeks",
+            "breakdown": ["Identify the core hopeless belief", "Each evening, record one thing that was different or positive today", "Include even tiny shifts (a moment of calm, a kind word)", "Review the compiled evidence weekly", "Rate belief in hopeless statement before and after 2 weeks"],
+            "measurement": "Daily evidence log, belief rating (0-100%) before and after 2 weeks, number of entries completed",
+            "timeline": "2 weeks with weekly review",
+            "confidence_level": 0.85,
+            "references": ["Beck, A. T., et al. (1979). Cognitive therapy of depression. Guilford Press"]
+          },
+          {
+            "goal": "I will identify and complete one small, achievable goal each day that provides evidence of my ability to influence my life, for 4 weeks",
+            "breakdown": ["Start with goals rated 2-3 out of 10 difficulty", "Examples: make the bed, send one email, water a plant", "Record the goal, completion, and resulting feeling", "Gradually increase difficulty as confidence builds", "Review the accumulated evidence of agency"],
+            "measurement": "Goal completion rate, difficulty rating trend, self-efficacy rating weekly",
+            "timeline": "4 weeks",
+            "confidence_level": 0.8,
+            "references": ["Bandura, A. (1997). Self-efficacy: The exercise of control. W. H. Freeman"]
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "area": "Communication patterns",
+        "challenge": "Negative communication patterns (criticism, contempt, defensiveness, stonewalling) erode relationship satisfaction and create escalating conflict cycles.",
+        "goal_examples": [
+          {
+            "goal": "I will replace criticism with 'I feel' statements in at least 3 conflicts per week for 4 weeks, tracking whether conversations improve",
+            "breakdown": ["Learn the difference between criticism and 'I feel' statements", "Practice reframing complaints in session", "Use the new pattern in 3 real conflicts per week", "Debrief with partner after each conversation", "Track partner's response and own satisfaction"],
+            "measurement": "Number of conflicts using new pattern, partner feedback, self-rated communication satisfaction (1-10), escalation frequency",
+            "timeline": "4 weeks with weekly couples check-in",
+            "confidence_level": 0.8,
+            "references": ["Gottman, J. M., & Silver, N. (1999). The seven principles for making marriage work. Harmony Books"]
+          },
+          {
+            "goal": "I will have one meaningful, distraction-free conversation with my partner for 20 minutes each evening for 3 weeks",
+            "breakdown": ["Agree on phone-free time with partner", "Prepare 2-3 open-ended questions", "Practice active listening and reflecting", "Note topics that create connection vs. distance", "Evaluate and adjust conversation approach"],
+            "measurement": "Duration of distraction-free conversations, self and partner rated connection (1-10), number of conversations completed",
+            "timeline": "3 weeks",
+            "confidence_level": 0.75,
+            "references": ["Gottman, J. M., & Silver, N. (1999). The seven principles for making marriage work. Harmony Books"]
+          }
+        ]
+      },
+      {
+        "area": "Boundary setting",
+        "challenge": "Clients who struggle with boundaries often have difficulty saying no, feel responsible for others' emotions, or have blurred relationship roles. This leads to resentment, burnout, and loss of self.",
+        "goal_examples": [
+          {
+            "goal": "I will practice saying 'no' to one request per week that I would normally accept reluctantly, for 6 weeks, starting with low-stakes situations",
+            "breakdown": ["Identify requests I reluctantly accept", "Practice a kind but firm 'no' in session", "Start with low-stakes requests (e.g., declined invitations)", "Progress to moderate requests by week 3", "Track feelings before, during, and after saying no"],
+            "measurement": "Number of 'no' responses, anxiety level during refusal (1-10), self-rated boundary satisfaction, resentment tracking",
+            "timeline": "6 weeks with gradual difficulty increase",
+            "confidence_level": 0.8,
+            "references": ["Cloud, H., & Townsend, J. (1992). Boundaries: When to say yes, how to say no. Zondervan"]
+          }
+        ]
+      },
+      {
+        "area": "Attachment and trust",
+        "challenge": "Insecure attachment patterns (anxious, avoidant, disorganized) create recurring relationship difficulties. Clients may oscillate between clinging and withdrawing, or struggle to trust partners.",
+        "goal_examples": [
+          {
+            "goal": "I will identify one anxious attachment behavior per week and practice a grounding self-soothing response instead, for 8 weeks",
+            "breakdown": ["Map anxious attachment triggers and behaviors", "Develop a self-soothing toolkit (breathing, journaling, grounding)", "When triggered, pause for 5 minutes before responding", "Record the trigger, response, and outcome", "Gradually reduce reassurance-seeking behaviors"],
+            "measurement": "Frequency of anxious behaviors, self-soothing skill usage, partner relationship satisfaction, self-rated security (1-10)",
+            "timeline": "8 weeks",
+            "confidence_level": 0.75,
+            "references": ["Johnson, S. M. (2008). Hold me tight: Seven conversations for a lifetime of love. Little, Brown"]
+          }
+        ]
+      }
+    ],
+    "stress": [
+      {
+        "area": "Work-related stress",
+        "challenge": "Chronic workplace stress leads to burnout, physical health problems, and reduced quality of life. Clients often feel trapped by financial obligations or career identity.",
+        "goal_examples": [
+          {
+            "goal": "I will establish clear work-life boundaries by leaving work by 6 PM on at least 4 days per week for 4 weeks, using an evening transition ritual",
+            "breakdown": ["Identify what keeps you at work past 6 PM", "Create a shutdown ritual (write tomorrow's tasks, close laptop, change clothes)", "Set a physical alarm at 5:45 PM", "Practice saying 'I'll address this tomorrow' to after-hours requests", "Track adherence and stress levels"],
+            "measurement": "Daily departure time, completion of shutdown ritual, evening stress rating (1-10), number of boundary violations",
+            "timeline": "4 weeks",
+            "confidence_level": 0.8,
+            "references": ["Maslach, C., & Leiter, M. P. (2016). Understanding the burnout experience. World Psychiatry, 15(2), 103-111"]
+          },
+          {
+            "goal": "I will delegate or renegotiate at least 2 tasks per week that are beyond my capacity, for 6 weeks",
+            "breakdown": ["Audit current workload and identify overload", "Practice assertive communication for delegation", "Identify tasks that can be delegated, reduced, or removed", "Have 2 delegation conversations per week", "Track workload and stress changes"],
+            "measurement": "Number of tasks delegated, workload rating (1-10), stress level, quality of delegation conversations",
+            "timeline": "6 weeks",
+            "confidence_level": 0.75,
+            "references": ["Greenhaus, J. H., & Allen, T. D. (2011). Work-family balance: A review and extension of the literature. In Handbook of occupational health psychology"]
+          }
+        ]
+      },
+      {
+        "area": "Life transitions",
+        "challenge": "Major life transitions (relocation, divorce, retirement, new parenthood) disrupt routines, identity, and social support, creating cumulative stress even when the changes are positive.",
+        "goal_examples": [
+          {
+            "goal": "I will establish 3 new routines within my first month at the new location (morning, evening, and weekly) to create a sense of stability",
+            "breakdown": ["Identify routines that provided comfort before the move", "Design new versions adapted to current context", "Implement morning routine first (highest control)", "Add evening routine in week 2", "Add weekly routine in week 3"],
+            "measurement": "Routine completion rate, sense of stability rating (1-10), comfort in new environment, social connection",
+            "timeline": "4 weeks, progressive implementation",
+            "confidence_level": 0.8,
+            "references": ["Holmes, T. H., & Rahe, R. H. (1967). The Social Readjustment Rating Scale. Journal of Psychosomatic Research, 11(2), 213-218"]
+          }
+        ]
+      }
+    ],
+    "self_esteem": [
+      {
+        "area": "Negative self-concept",
+        "challenge": "Low self-esteem involves a pervasive negative self-view that filters experience through a lens of inadequacy. Successes are minimized, failures are magnified, and the inner critic is relentless.",
+        "goal_examples": [
+          {
+            "goal": "I will write down 3 things I did well each day for 4 weeks, challenging my tendency to dismiss or minimize my accomplishments",
+            "breakdown": ["Set a daily reminder for evening reflection", "Write down 3 accomplishments (even small ones)", "For each, note: what I did, why it mattered, and what skill it required", "When I want to dismiss one, write why I'm dismissing it", "Review weekly for patterns"],
+            "measurement": "Daily completion rate, quality of entries (specific vs. vague), self-esteem rating weekly (using Rosenberg scale), dismissal frequency",
+            "timeline": "4 weeks",
+            "confidence_level": 0.8,
+            "references": ["Fennell, P. A. (1997). Overcoming low self-esteem. New Harbinger Publications"]
+          },
+          {
+            "goal": "I will practice one act of self-compassion per day for 3 weeks, using Kristin Neff's three components: kindness, common humanity, and mindfulness",
+            "breakdown": ["Learn the three components of self-compassion", "When self-criticism arises, place hand on heart and offer kind words", "Remind yourself that suffering is part of shared human experience", "Name the emotion without judgment", "Record the self-compassion practice and its effect"],
+            "measurement": "Daily self-compassion practice log, self-criticism frequency, self-compassion scale score weekly",
+            "timeline": "3 weeks",
+            "confidence_level": 0.8,
+            "references": ["Neff, K. D. (2011). Self-compassion: The proven power of being kind to yourself. William Morrow"]
+          }
+        ]
+      },
+      {
+        "area": "People-pleasing",
+        "challenge": "Clients who derive self-worth from others' approval sacrifice their own needs, struggle to set boundaries, and feel worthless when they can't make everyone happy.",
+        "goal_examples": [
+          {
+            "goal": "I will make one decision each day based solely on my own preferences (without consulting others) for 3 weeks, tracking how it feels",
+            "breakdown": ["Identify daily decisions I defer to others", "Start with low-stakes choices (what to eat, what to watch)", "Make the decision without asking for input", "Notice and record the anxiety and any guilt", "Gradually increase decision stakes over 3 weeks"],
+            "measurement": "Number of self-directed decisions, anxiety during decision-making (1-10), guilt level, self-worth rating independent of others' approval",
+            "timeline": "3 weeks",
+            "confidence_level": 0.75,
+            "references": ["Hutchinson, M. (2012). People-pleasing and its effects on self-esteem. Psychology Today"]
+          }
+        ]
+      }
+    ],
+    "career": [
+      {
+        "area": "Career indecision",
+        "challenge": "Career indecision often stems from fear of making the wrong choice, unclear values, external pressures, or perfectionism about finding the 'perfect' career.",
+        "goal_examples": [
+          {
+            "goal": "I will complete a values-card sort exercise and identify my top 5 career values within 2 weeks, then research 3 careers that align with those values",
+            "breakdown": ["Complete a values-card sort with 50 career-related values", "Narrow to top 10, then top 5 through forced choice", "Research what each value looks like in daily work", "Identify 3 careers that honor top 5 values", "Conduct 2 informational interviews per career"],
+            "measurement": "Values-card sort completion, career research log, informational interview count, clarity rating (1-10)",
+            "timeline": "2 weeks for values work, 4 weeks for career exploration",
+            "confidence_level": 0.8,
+            "references": ["Savickas, M. L. (2012). Career construction theory and practice. In Career development and counseling (2nd ed.)"]
+          },
+          {
+            "goal": "I will take one concrete career exploration step per week for 6 weeks (informational interviews, job shadowing, volunteer work, skill-building)",
+            "breakdown": ["Brainstorm 10 possible career exploration activities", "Select one per week based on energy and availability", "Complete the activity and reflect on the experience", "Rate alignment with values and interests", "Adjust exploration direction based on findings"],
+            "measurement": "Weekly exploration activity log, reflection quality, values-career alignment rating, confidence in career direction",
+            "timeline": "6 weeks",
+            "confidence_level": 0.8,
+            "references": ["Krumboltz, J. D. (2009). The happenstance learning theory. Journal of Career Assessment, 17(2), 135-154"]
+          }
+        ]
+      },
+      {
+        "area": "Career burnout",
+        "challenge": "Career burnout involves emotional exhaustion, depersonalization, and reduced personal accomplishment. Clients often feel trapped between financial needs and wellbeing.",
+        "goal_examples": [
+          {
+            "goal": "I will implement 3 specific burnout-reduction strategies (boundary setting, skill development, and meaning-making) over 8 weeks",
+            "breakdown": ["Complete a burnout assessment to identify primary drivers", "Week 1-2: Set 2 work boundaries (email hours, meeting limits)", "Week 3-4: Identify and pursue 1 skill development activity", "Week 5-6: Connect current work to personal meaning", "Week 7-8: Evaluate and adjust strategies"],
+            "measurement": "Maslach Burnout Inventory scores, weekly energy levels, job satisfaction rating, boundary compliance",
+            "timeline": "8 weeks",
+            "confidence_level": 0.75,
+            "references": ["Maslach, C., & Leiter, M. P. (2016). Understanding the burnout experience. World Psychiatry, 15(2), 103-111"]
+          }
+        ]
+      }
+    ],
+    "sleep": [
+      {
+        "area": "Insomnia",
+        "challenge": "Chronic insomnia involves hyperarousal, maladaptive sleep habits, and often conditioned wakefulness. Poor sleep exacerbates anxiety, depression, and physical health problems.",
+        "goal_examples": [
+          {
+            "goal": "I will follow sleep restriction therapy protocols by limiting time in bed to 6 hours for 2 weeks, then gradually increase as sleep efficiency improves to 85%+",
+            "breakdown": ["Track current sleep for 1 week (sleep diary)", "Calculate average total sleep time", "Set bedtime to allow only that many hours in bed", "Maintain consistent wake time regardless of sleep quality", "Add 15 minutes to bed time each week if sleep efficiency > 85%"],
+            "measurement": "Sleep diary (bedtime, wake time, total sleep, sleep efficiency), daytime sleepiness rating, energy level",
+            "timeline": "2 weeks initial restriction, 4-6 weeks gradual expansion",
+            "confidence_level": 0.85,
+            "references": ["Spielman, A. J., et al. (1987). Treatment of chronic insomnia by restriction of time in bed. Sleep, 10(1), 45-56"]
+          },
+          {
+            "goal": "I will establish a consistent wind-down routine and sleep environment modifications over 3 weeks to improve sleep quality",
+            "breakdown": ["Create a 60-minute wind-down routine (no screens, dim lights, relaxation)", "Optimize sleep environment (temperature, darkness, noise)", "Establish consistent bedtime and wake time", "Avoid caffeine after 2 PM and alcohol within 3 hours of bedtime", "Track sleep quality and adjust routine"],
+            "measurement": "Sleep quality rating (1-10), time to fall asleep, number of night wakings, morning refreshment rating",
+            "timeline": "3 weeks",
+            "confidence_level": 0.8,
+            "references": ["Morin, C. M., & Espie, C. A. (2003). Insomnia: A clinical guide to assessment and treatment. Springer"]
+          }
+        ]
+      },
+      {
+        "area": "Anxiety-related sleep disruption",
+        "challenge": "Racing thoughts and physical tension at bedtime prevent sleep onset, creating a cycle of sleep anxiety that further disrupts sleep.",
+        "goal_examples": [
+          {
+            "goal": "I will create a 'worry dump' ritual 2 hours before bed, writing all concerns in a notebook so they're 'stored' for tomorrow, reducing bedtime rumination by 50% over 3 weeks",
+            "breakdown": ["Set alarm for 2 hours before target bedtime", "Spend 15 minutes writing all worries and next steps", "Close the notebook and say 'these are stored for tomorrow'", "Practice progressive muscle relaxation in bed", "Track bedtime worry intensity before and after"],
+            "measurement": "Bedtime worry intensity (1-10), time to fall asleep, number of worry-related awakenings, worry dump completion",
+            "timeline": "3 weeks",
+            "confidence_level": 0.8,
+            "references": ["Harvey, A. G. (2002). A cognitive model of insomnia. Behaviour Research and Therapy, 40(8), 869-893"]
+          }
+        ]
+      }
+    ],
+    "anger": [
+      {
+        "area": "Anger management",
+        "challenge": "Chronic anger damages relationships, physical health, and quality of life. Clients often feel justified in their anger while not recognizing its costs or underlying triggers.",
+        "goal_examples": [
+          {
+            "goal": "I will implement a 4-step anger management protocol (pause, identify trigger, choose response, act) in at least 3 anger-provoking situations per week for 4 weeks",
+            "breakdown": ["Learn the 4-step protocol in session", "Identify my top 5 anger triggers", "Practice the pause (10 deep breaths) in low-stakes situations", "Apply to higher-stakes situations in weeks 2-4", "Debrief each incident: what happened, what I chose, outcome"],
+            "measurement": "Number of anger incidents, intensity before and after using protocol, relationship impact rating, physical symptoms",
+            "timeline": "4 weeks",
+            "confidence_level": 0.8,
+            "references": ["Deffenbacher, J. L. (1999). Cognitive-behavioral approaches to anger reduction. In Cognitive-behavioral strategies in crisis intervention"]
+          },
+          {
+            "goal": "I will identify the emotion beneath my anger (hurt, fear, helplessness) in at least 2 situations per week for 3 weeks, building emotional awareness",
+            "breakdown": ["After anger subsides, ask: 'What was I really feeling?'", "Write down the anger event and the underlying emotion", "Notice patterns: which underlying emotions trigger anger most", "Practice naming the underlying emotion in real-time", "Share findings with therapist for pattern recognition"],
+            "measurement": "Underlying emotion identification rate, anger intensity, emotional vocabulary expansion, relationship conflict frequency",
+            "timeline": "3 weeks",
+            "confidence_level": 0.75,
+            "references": ["Tavris, C. (1989). Anger: The misunderstood emotion. Simon & Schuster"]
+          }
+        ]
+      },
+      {
+        "area": "Intermittent explosive disorder",
+        "challenge": "Sudden, intense outbursts of anger that are disproportionate to the situation, often followed by remorse. The unpredictability creates fear in relationships and self-distrust.",
+        "goal_examples": [
+          {
+            "goal": "I will track anger buildup patterns for 2 weeks, identifying early warning signs and implementing a prevention plan to reduce outbursts from 3 per week to 1 or fewer",
+            "breakdown": ["Track anger episodes: situation, trigger, body cues, intensity, duration", "Identify 3-5 early warning signs (physical and emotional)", "Create a prevention plan for each warning sign", "Practice the prevention plan for 2 weeks", "Evaluate reduction in outbursts"],
+            "measurement": "Outburst frequency and intensity, warning sign identification rate, prevention plan usage, remorse severity",
+            "timeline": "4 weeks",
+            "confidence_level": 0.75,
+            "references": ["Monson, C. M., & Snyder, D. K. (2006). anger mastery: A cognitive-behavioral approach to anger management. In Clinical handbook of couple therapy"]
+          }
+        ]
+      }
+    ],
+    "grief": [
+      {
+        "area": "Complicated grief",
+        "challenge": "Grief that becomes stuck, preventing the person from adapting to the loss. Characterized by persistent yearning, difficulty accepting the loss, emotional numbness, and feeling that life is meaningless without the deceased.",
+        "goal_examples": [
+          {
+            "goal": "I will write a letter to my loved one each week for 6 weeks, expressing what I miss, what I've learned, and how I'm continuing to live, gradually integrating the loss",
+            "breakdown": ["Write the first letter expressing raw grief and loss", "Second letter: share a memory and what it meant", "Third letter: express anger or guilt about the loss", "Fourth letter: share what you've been doing since they died", "Fifth letter: express how you want to honor their memory", "Sixth letter: express what you want for your future"],
+            "measurement": "Letter completion, emotional processing depth, grief intensity before and after each letter, functioning level",
+            "timeline": "6 weeks",
+            "confidence_level": 0.8,
+            "references": ["Neimeyer, R. A. (2001). Meaning reconstruction and the experience of loss. American Psychological Association"]
+          },
+          {
+            "goal": "I will re-engage with one social activity or relationship per week for 8 weeks, rebuilding the social connection that grief has disrupted",
+            "breakdown": ["List relationships and activities I've withdrawn from", "Start with the least threatening (e.g., a text to a friend)", "Progress to in-person interactions by week 3", "Attend one group activity by week 5", "Evaluate and continue expanding social engagement"],
+            "measurement": "Social interactions per week, self-rated social connection (1-10), avoidance tracking, mood before and after socializing",
+            "timeline": "8 weeks",
+            "confidence_level": 0.75,
+            "references": ["Stroebe, M., & Schut, H. (1999). The dual process model of coping with bereavement. Death Studies, 23(3), 197-224"]
+          }
+        ]
+      },
+      {
+        "area": "Anticipatory grief",
+        "challenge": "Grieving a loss that hasn't yet occurred (terminal illness of a loved one, impending divorce, anticipated job loss) creates unique challenges of living between present reality and future loss.",
+        "goal_examples": [
+          {
+            "goal": "I will practice 'both/and' thinking — acknowledging both the grief of what's coming and the value of what remains — by journaling 3 times per week for 4 weeks",
+            "breakdown": ["Write about what you're losing (the grief)", "Write about what you still have (the gratitude)", "Write about how you want to spend the remaining time", "Notice when 'either/or' thinking dominates (it's all bad OR I should be positive)", "Practice holding both truths simultaneously"],
+            "measurement": "Journal entries, balance of grief and gratitude content, anxiety level, quality of remaining time with loved one",
+            "timeline": "4 weeks",
+            "confidence_level": 0.8,
+            "references": ["Worden, J. W. (2009). Grief counseling and grief therapy (4th ed.). Springer"]
+          }
+        ]
+      }
+    ],
+    "life_purpose": [
+      {
+        "area": "Meaning-making",
+        "challenge": "When clients feel their life lacks meaning or purpose, motivation plummets and existential distress rises. This can follow major life events (retirement, empty nest, loss) or emerge gradually.",
+        "goal_examples": [
+          {
+            "goal": "I will complete a life-purpose exploration over 4 weeks, including values clarification, strengths identification, and legacy writing, to identify 2-3 directions for meaningful engagement",
+            "breakdown": ["Week 1: Complete values-card sort and identify top 5 values", "Week 2: Identify top strengths through feedback and self-assessment", "Week 3: Write a legacy statement (what you want to be remembered for)", "Week 4: Brainstorm 10 activities that align with values, strengths, and legacy", "Select 2-3 to pursue in the next month"],
+            "measurement": "Values clarity rating (1-10), strengths identified, legacy statement quality, number of aligned activities identified, commitment to pursue",
+            "timeline": "4 weeks",
+            "confidence_level": 0.8,
+            "references": ["Steger, M. F. (2012). Making meaning in an meaningless world. Existence in Cinema"]
+          },
+          {
+            "goal": "I will engage in one 'meaningful action' per day for 4 weeks — an activity that connects to my values and makes a difference, however small",
+            "breakdown": ["Identify activities that connect to core values", "Start with small, daily actions (kindness, creativity, learning)", "Record the action and the sense of meaning it provided", "Gradually increase the scale of meaningful actions", "Review at 4 weeks for patterns and direction"],
+            "measurement": "Daily meaningful action log, meaning rating (1-10), values alignment score, overall life satisfaction",
+            "timeline": "4 weeks",
+            "confidence_level": 0.8,
+            "references": ["Frankl, V. E. (1959/2006). Man's search for meaning. Beacon Press"]
+          }
+        ]
+      },
+      {
+        "area": "Identity reconstruction",
+        "challenge": "After major life changes (retirement, divorce, children leaving, career change), clients may struggle with 'Who am I now?' — the loss of a defining role or identity.",
+        "goal_examples": [
+          {
+            "goal": "I will explore 3 new aspects of my identity over 6 weeks (a new skill, a new social role, and a new creative pursuit) to discover who I am beyond my previous role",
+            "breakdown": ["Identify aspects of identity lost or diminished", "Brainstorm 10 possible new identity-expanding activities", "Select one from each category: skill, social role, creative pursuit", "Dedicate 2 hours per week to each", "Reflect on how each new activity changes self-perception"],
+            "measurement": "New activities explored, self-concept clarity rating, identity flexibility score, enjoyment and engagement levels",
+            "timeline": "6 weeks",
+            "confidence_level": 0.75,
+            "references": ["Erikson, E. H. (1968). Identity: Youth and crisis. W. W. Norton"]
+          }
+        ]
+      },
+      {
+        "area": "Spiritual growth",
+        "challenge": "Clients may feel disconnected from a sense of transcendence, purpose beyond themselves, or spiritual practice. This can manifest as existential emptiness, loss of faith, or searching for meaning in a materialistic world.",
+        "goal_examples": [
+          {
+            "goal": "I will dedicate 15 minutes each day for 4 weeks to a contemplative practice (meditation, prayer, nature walks, or journaling) to explore and deepen my spiritual connection",
+            "breakdown": ["Identify what 'spiritual connection' means to you personally", "Choose a practice that resonates with your beliefs and lifestyle", "Schedule a consistent daily time for the practice", "Keep a spiritual journal noting insights, feelings, and experiences", "Review after 4 weeks and adjust the practice based on what felt meaningful"],
+            "measurement": "Daily practice completion, spiritual journal entries, self-rated spiritual connectedness (1-10), weekly reflection on meaning and purpose",
+            "timeline": "4 weeks with weekly review",
+            "confidence_level": 0.8,
+            "references": ["Pargament, K. I. (2007). Spiritually integrated psychotherapy: Understanding and addressing the sacred. Guilford Press"]
+          }
+        ]
+      }
+    ]
+  },
+  "scaling_questions": [
+    {
+      "topic": "anxiety",
+      "question": "On a scale of 1 to 10, where 1 is the most anxious you've ever felt and 10 is completely calm, where would you say you are right now?",
+      "purpose": "Quantifies subjective anxiety experience, making it easier to track changes and identify small steps forward. Also helps identify what's already working at the current level.",
+      "follow_up": ["What keeps you from being a 1 instead of where you are?", "What would it take to move up one number?", "What's different on the days you're at a higher number?"],
+      "confidence_level": 0.85,
+      "references": ["de Shazer, S. (1988). Keys to solution in brief therapy. W. W. Norton & Company"]
+    },
+    {
+      "topic": "depression",
+      "question": "On a scale of 1 to 10, where 1 is the worst you've felt during this depression and 10 is the day you feel ready to leave therapy, where are you today?",
+      "purpose": "Creates a personal frame of reference rather than absolute judgment. Allows recognition of small improvements and provides a concrete direction for next steps.",
+      "follow_up": ["What has helped you get to where you are?", "What would move you from [current] to [current + 1]?", "When have you been at a [current + 1] even briefly?"],
+      "confidence_level": 0.85,
+      "references": ["de Shazer, S., & Berg, I. K. (1997). What works? What matters? What counts? Solving problems in the brief therapy. W. W. Norton"]
+    },
+    {
+      "topic": "relationships",
+      "question": "On a scale of 1 to 10, how satisfied are you with your most important relationship right now? Where 1 is as bad as it could be and 10 is exactly what you want it to be.",
+      "purpose": "Makes relationship satisfaction concrete and provides a starting point for targeted improvement. The scale invites reflection on what 'good enough' looks like for this client.",
+      "follow_up": ["What would be different if you were one point higher?", "What's working well enough that you're not at a 1?", "What's one thing your partner does that keeps you from being lower?"],
+      "confidence_level": 0.8,
+      "references": ["Gottman, J. M., & Silver, N. (1999). The seven principles for making marriage work. Harmony Books"]
+    },
+    {
+      "topic": "stress",
+      "question": "On a scale of 1 to 10, where 1 is completely overwhelmed and 10 is perfectly managing everything, how would you rate your stress management right now?",
+      "purpose": "Differentiates between stress level and stress management ability. Focuses on what the client can control (management) rather than what they can't (stressors).",
+      "follow_up": ["What's keeping you from being a 2 instead of a 1?", "What does a 5 look like for you?", "What's one thing you could do this week to move up half a point?"],
+      "confidence_level": 0.8,
+      "references": ["Lazarus, R. S., & Folkman, S. (1984). Stress, appraisal, and coping. Springer"]
+    },
+    {
+      "topic": "self_esteem",
+      "question": "On a scale of 1 to 10, how much do you value yourself as a person — not your achievements, but your inherent worth? Where 1 is 'I have no value' and 10 is 'I fully accept myself.'",
+      "purpose": "Separates self-worth from performance, which is crucial for clients whose self-esteem is contingent on external validation. Invites reflection on unconditional self-acceptance.",
+      "follow_up": ["What would it feel like to be one point higher?", "What's the voice in your head that keeps you at [current]?", "Who in your life sees you at a higher number, and what do they see?"],
+      "confidence_level": 0.8,
+      "references": ["Neff, K. D. (2011). Self-compassion: The proven power of being kind to yourself. William Morrow"]
+    },
+    {
+      "topic": "career",
+      "question": "On a scale of 1 to 10, how aligned is your current work with your deepest values? Where 1 is 'completely misaligned' and 10 is 'my work is a perfect expression of what matters to me.'",
+      "purpose": "Shifts focus from job satisfaction (which may be about salary or status) to values alignment, which is a stronger predictor of meaning and fulfillment in work.",
+      "follow_up": ["What value is most missing from your current work?", "What would one step toward alignment look like?", "Is there a way to bring more of your values into your current role?"],
+      "confidence_level": 0.8,
+      "references": ["Savickas, M. L. (2012). Career construction theory and practice. In Career development and counseling (2nd ed.)"]
+    },
+    {
+      "topic": "sleep",
+      "question": "On a scale of 1 to 10, how would you rate your overall sleep quality this past week? Where 1 is 'I barely slept at all' and 10 is 'I sleep deeply and wake refreshed.'",
+      "purpose": "Provides a concrete baseline for sleep improvement goals. Weekly rating captures variability and helps identify patterns.",
+      "follow_up": ["What's different about your best sleep nights?", "What's the biggest obstacle to better sleep?", "What would a 1-point improvement look like in practice?"],
+      "confidence_level": 0.85,
+      "references": ["Morin, C. M., & Espie, C. A. (2003). Insomnia: A clinical guide to assessment and treatment. Springer"]
+    },
+    {
+      "topic": "anger",
+      "question": "On a scale of 1 to 10, how much control do you feel over your anger right now? Where 1 is 'it controls me completely' and 10 is 'I can feel it without acting on it.'",
+      "purpose": "Reframes anger from 'bad emotion' to 'manageable experience.' Focuses on the gap between feeling and acting, which is the target of anger management.",
+      "follow_up": ["What helps you stay at [current] instead of lower?", "What happens when you move below [current]?", "What would it take to feel one point more in control?"],
+      "confidence_level": 0.8,
+      "references": ["Deffenbacher, J. L. (1999). Cognitive-behavioral approaches to anger reduction. In Cognitive-behavioral strategies in crisis intervention"]
+    },
+    {
+      "topic": "grief",
+      "question": "On a scale of 1 to 10, where 1 is 'the grief completely overwhelms me and I can't function' and 10 is 'I've found a way to carry the grief and still live fully,' where are you today?",
+      "purpose": "Acknowledges that grief doesn't disappear but can be carried. The scale normalizes ongoing grief while pointing toward adaptation and functioning.",
+      "follow_up": ["What has helped you get to [current]?", "What would it feel like to be one point higher?", "On your best days recently, what was different?"],
+      "confidence_level": 0.8,
+      "references": ["Worden, J. W. (2009). Grief counseling and grief therapy (4th ed.). Springer"]
+    },
+    {
+      "topic": "life_purpose",
+      "question": "On a scale of 1 to 10, how meaningful does your daily life feel right now? Where 1 is 'nothing matters' and 10 is 'every day has purpose and direction.'",
+      "purpose": "Makes the abstract concept of meaning concrete and trackable. Invites the client to identify what currently provides meaning and what's missing.",
+      "follow_up": ["What moments this week felt even slightly meaningful?", "What would a 1-point increase in meaning look like?", "What value or activity used to give you more meaning?"],
+      "confidence_level": 0.8,
+      "references": ["Steger, M. F. (2012). Making meaning in an meaningless world. Existence in Cinema"]
+    },
+    {
+      "topic": "motivation",
+      "question": "On a scale of 1 to 10, how important is it to you to make this change? And on a separate scale, how confident are you that you can make this change?",
+      "purpose": "The importance-confidence ruler from Motivational Interviewing. Separates desire from ability, revealing whether the barrier is motivation or self-efficacy. Guides intervention focus.",
+      "follow_up": ["Why is it a [number] and not lower?", "What would it take to move the confidence up one point?", "If you were one point more important, what would be different?"],
+      "confidence_level": 0.9,
+      "references": ["Miller, W. R., & Rollnick, S. (2013). Motivational interviewing: Helping people change (3rd ed.). Guilford Press"]
+    },
+    {
+      "topic": "readiness",
+      "question": "On a scale of 1 to 10, how ready are you to make this change in your life right now?",
+      "purpose": "Assesses stage of change readiness without judgment. The follow-up focuses on what's working (precontemplation/contemplation) rather than pushing for action before the client is ready.",
+      "follow_up": ["Why are you at a [number] and not a 1?", "What would need to happen for you to be ready?", "What's the smallest step you'd be willing to take this week?"],
+      "confidence_level": 0.85,
+      "references": ["Prochaska, J. O., & DiClemente, C. C. (1983). Stages and processes of self-change of smoking. Journal of Consulting and Clinical Psychology, 51(3), 390-395"]
+    }
+  ]
+}

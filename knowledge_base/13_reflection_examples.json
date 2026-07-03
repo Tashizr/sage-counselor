@@ -1,0 +1,541 @@
+{
+  "description": "Reflective listening examples and techniques for counseling",
+  "reflection_types": [
+    {
+      "type": "simple",
+      "definition": "Restating the client's words or phrases back to them to confirm understanding",
+      "description": "Simple reflection is the most basic form of reflective listening. It involves echoing the client's own words, phrases, or key terms back to them. This technique demonstrates active listening and encourages the client to continue sharing. It is particularly useful in early stages of rapport building or when the client needs space to elaborate.",
+      "psychological_background": "Rooted in Carl Rogers' person-centered therapy, simple reflections communicate unconditional positive regard and accurate empathy. They signal to the client that the counselor is truly present and attuned to their experience. Research shows that even basic reflection increases client disclosure and therapeutic alliance quality (Rogers, 1951; Miller & Rollnick, 2013).",
+      "examples": [
+        {
+          "context": "Client describing a stressful work situation",
+          "user_says": "I've been feeling completely overwhelmed at work lately.",
+          "reflection": "Completely overwhelmed at work.",
+          "depth_level": "surface",
+          "why_it_works": "Repeating the key emotional phrase validates the client's experience and invites elaboration without imposing the counselor's interpretation.",
+          "what_it_adds": "Signals active listening and creates space for the client to expand on what overwhelmed means to them."
+        },
+        {
+          "context": "Client discussing relationship difficulties",
+          "user_says": "My partner just doesn't understand what I'm going through.",
+          "reflection": "Your partner doesn't understand.",
+          "depth_level": "surface",
+          "why_it_works": "Echoing the core complaint validates the feeling of being unseen and encourages the client to explore the disconnect further.",
+          "what_it_adds": "Demonstrates the counselor heard the central issue, prompting the client to provide more detail about the misunderstanding."
+        },
+        {
+          "context": "Client expressing frustration about a decision",
+          "user_says": "I keep going back and forth on whether to quit my job.",
+          "reflection": "Going back and forth.",
+          "depth_level": "surface",
+          "why_it_works": "Mirroring the ambivalence acknowledges the internal conflict without judgment, which is especially effective in motivational interviewing contexts.",
+          "what_it_adds": "Holds space for ambivalence and signals the counselor recognizes the difficulty of the decision."
+        },
+        {
+          "context": "Client describing grief",
+          "user_says": "It's been a year since my mother passed and I still cry every morning.",
+          "reflection": "You still cry every morning.",
+          "depth_level": "surface",
+          "why_it_works": "Reflecting the ongoing nature of grief validates that healing is not linear and that continued sadness is normal.",
+          "what_it_adds": "Normalizes the client's timeline for grief and encourages exploration of what the mornings mean to them."
+        }
+      ],
+      "common_mistakes": [
+        "Overusing simple reflections so the client feels like they're talking to a mirror rather than a person",
+        "Reflecting only the facts while ignoring the underlying emotion",
+        "Using simple reflections when a deeper reflection would better serve the client"
+      ],
+      "things_to_avoid": [
+        "Mechanical repetition that sounds robotic or insincere",
+        "Adding words that change the meaning of what the client said",
+        "Using simple reflections as a crutch when more skillful responses are needed"
+      ],
+      "confidence_level": 0.95,
+      "references": ["Rogers (1951)", "Miller & Rollnick (2013)", "APA Guidelines for Practice"]
+    },
+    {
+      "type": "complex",
+      "definition": "Reflecting the client's words along with an inferred emotion, meaning, or implication that goes beyond what was explicitly stated",
+      "description": "Complex reflection adds a layer of interpretation by reflecting both what the client said and what they might be feeling or meaning underneath. It involves educated guessing about the emotional subtext. Complex reflections are more likely to deepen the conversation and help clients access feelings they haven't yet articulated.",
+      "psychological_background": "Complex reflections are central to motivational interviewing and are shown to elicit more change talk than simple reflections (Miller & Rollnick, 2013). In person-centered therapy, they demonstrate empathic attunement by going beyond surface content to capture the felt experience. They are associated with stronger therapeutic outcomes when used at appropriate moments.",
+      "examples": [
+        {
+          "context": "Client describing job stress",
+          "user_says": "I've been feeling completely overwhelmed at work lately.",
+          "reflection": "Feeling completely overwhelmed at work makes you wonder whether this is sustainable.",
+          "depth_level": "moderate",
+          "why_it_works": "Adds an inference about the implications of the overwhelm, which may help the client articulate concerns they haven't yet voiced.",
+          "what_it_adds": "Introduces the possibility of a deeper concern (sustainability) that the client may be circling around but hasn't directly named."
+        },
+        {
+          "context": "Client discussing relationship disconnect",
+          "user_says": "My partner just doesn't understand what I'm going through.",
+          "reflection": "It sounds like you're feeling really alone in this, even though you have a partner.",
+          "depth_level": "moderate",
+          "why_it_works": "Names the loneliness that sits beneath the complaint about understanding, helping the client identify the core emotional experience.",
+          "what_it_adds": "Surfaces the emotional consequence of the disconnect — loneliness — which may be more actionable than the intellectual complaint."
+        },
+        {
+          "context": "Client expressing ambivalence about a career change",
+          "user_says": "I keep going back and forth on whether to quit my job.",
+          "reflection": "Part of you wants to make a change, but another part is afraid of what that might mean for your future.",
+          "depth_level": "moderate",
+          "why_it_works": "Holds the tension of ambivalence while naming the fear that may be driving the hesitation, a core technique in motivational interviewing.",
+          "what_it_adds": "Frames the ambivalence as a normal part of the decision-making process rather than indecisiveness."
+        },
+        {
+          "context": "Client describing ongoing grief",
+          "user_says": "It's been a year since my mother passed and I still cry every morning.",
+          "reflection": "A year later, you're still carrying this grief every day — and maybe part of you wonders if it will ever ease.",
+          "depth_level": "moderate",
+          "why_it_works": "Validates the persistence of grief while gently introducing the client's possible unspoken worry about the future of their pain.",
+          "what_it_adds": "Normalizes the grief while opening space to explore the client's relationship with time and healing."
+        }
+      ],
+      "common_mistakes": [
+        "Guessing at emotions the client isn't actually feeling, which breaks trust",
+        "Making complex reflections too frequently, which can feel presumptuous",
+        "Reflecting an inference that is more the counselor's projection than the client's experience"
+      ],
+      "things_to_avoid": [
+        "Using complex reflections when the client needs simple validation first",
+        "Making interpretations that are too specific or far-reaching",
+        "Guessing about trauma or deep pain without adequate rapport"
+      ],
+      "confidence_level": 0.85,
+      "references": ["Miller & Rollnick (2013)", "Rogers (1951)", "APA Guidelines for Practice"]
+    },
+    {
+      "type": "radical",
+      "definition": "Reflecting at the deepest level of the client's experience, often touching on existential themes, core identity, or unspoken truths that the client may not have consciously articulated",
+      "description": "Radical reflection goes beyond the immediate emotion to reflect what might be at the deepest, most fundamental level of the client's experience. It touches on meaning, purpose, identity, and existential concerns. This level of reflection is used sparingly and only when strong rapport exists, as it requires high trust between counselor and client.",
+      "psychological_background": "Radical reflection draws from existential-humanistic traditions and is consistent with Rogers' concept of reflection of meaning. It is most effective when used after the client has already moved toward deeper self-disclosure. Linehan's DBT also uses deep validation that parallels radical reflection by acknowledging the client's experience at its most fundamental level (Linehan, 2015).",
+      "examples": [
+        {
+          "context": "Client describing job overwhelm",
+          "user_says": "I've been feeling completely overwhelmed at work lately.",
+          "reflection": "It sounds like this overwhelm is making you question not just whether you can do this job, but whether this is the life you actually want to be living.",
+          "depth_level": "deep",
+          "why_it_works": "Elevates the conversation from a situational complaint to an existential inquiry about life direction, which may be the real issue beneath the surface.",
+          "what_it_adds": "Opens the possibility that the overwhelm is a symptom of a larger misalignment between the client's values and their current life."
+        },
+        {
+          "context": "Client discussing feeling unseen by partner",
+          "user_says": "My partner just doesn't understand what I'm going through.",
+          "reflection": "And I wonder if that makes you question whether you truly know each other anymore — whether the person you built a life with has somehow become a stranger.",
+          "depth_level": "deep",
+          "why_it_works": "Touches the existential fear of disconnection in a primary relationship, which may be the deepest layer of the client's distress.",
+          "what_it_adds": "Transforms a complaint about communication into a reflection on the fundamental nature of the relationship."
+        },
+        {
+          "context": "Client expressing ambivalence",
+          "user_says": "I keep going back and forth on whether to quit my job.",
+          "reflection": "Maybe this isn't really about the job at all. Maybe it's about whether you're willing to bet on yourself — to trust that you deserve something different.",
+          "depth_level": "deep",
+          "why_it_works": "Shifts from the surface decision to the deeper question of self-worth and agency, which is often at the heart of prolonged ambivalence.",
+          "what_it_adds": "Reframes the indecision as a question of self-trust rather than indecisiveness."
+        },
+        {
+          "context": "Client describing prolonged grief",
+          "user_says": "It's been a year since my mother passed and I still cry every morning.",
+          "reflection": "Every morning you cry, and maybe part of you is afraid that if you stop crying, it means she's really gone — that letting go of the grief means letting go of her.",
+          "depth_level": "deep",
+          "why_it_works": "Touches the profound fear that grief serves as a connection to the deceased, which many grieving people carry but rarely voice.",
+          "what_it_adds": "Opens the door to exploring the relationship between grief, memory, and continued bonds with the deceased."
+        }
+      ],
+      "common_mistakes": [
+        "Using radical reflections before establishing deep rapport",
+        "Making radical reflections that impose meaning the client doesn't recognize",
+        "Using this level of reflection too frequently, which can feel invasive"
+      ],
+      "things_to_avoid": [
+        "Interpreting the client's experience through your own values or beliefs",
+        "Rushing to deep reflections when the client isn't ready",
+        "Using deep reflection as a technique rather than a genuine empathic response"
+      ],
+      "confidence_level": 0.75,
+      "references": ["Rogers (1951)", "Linehan (2015)", "APA Guidelines for Practice"]
+    },
+    {
+      "type": "empathic",
+      "definition": "Reflecting the client's emotional experience with genuine warmth and understanding, communicating that the counselor feels with the client",
+      "description": "Empathic reflection is characterized not just by accurately identifying the emotion but by conveying genuine emotional attunement. It goes beyond accuracy to include warmth, presence, and a sense of being deeply with the client in their experience. This type of reflection communicates unconditional positive regard and is the cornerstone of the therapeutic relationship.",
+      "psychological_background": "Empathic reflection is the heart of Rogers' person-centered approach. Rogers (1951) identified empathy, unconditional positive regard, and congruence as the three necessary and sufficient conditions for therapeutic change. Research consistently shows that the client's experience of counselor empathy is one of the strongest predictors of positive outcomes across all therapeutic modalities.",
+      "examples": [
+        {
+          "context": "Client describing overwhelm",
+          "user_says": "I've been feeling completely overwhelmed at work lately.",
+          "reflection": "That sounds incredibly heavy. Carrying all of that every day — it makes sense that you'd feel stretched beyond what anyone should have to handle.",
+          "depth_level": "moderate",
+          "why_it_works": "Combines accurate emotional reflection with validation and normalization, making the client feel deeply understood.",
+          "what_it_adds": "Conveys the counselor's emotional presence and genuine care, not just cognitive understanding."
+        },
+        {
+          "context": "Client discussing relationship pain",
+          "user_says": "My partner just doesn't understand what I'm going through.",
+          "reflection": "That must be so painful — to feel that disconnect with someone you love. You shouldn't have to carry that alone.",
+          "depth_level": "moderate",
+          "why_it_works": "Names both the pain and the isolation while communicating that the client's suffering matters.",
+          "what_it_adds": "Adds warmth and emotional resonance that makes the client feel held in their experience."
+        },
+        {
+          "context": "Client expressing indecision",
+          "user_says": "I keep going back and forth on whether to quit my job.",
+          "reflection": "That back-and-forth is exhausting, isn't it? It takes so much energy to live in that kind of uncertainty.",
+          "depth_level": "moderate",
+          "why_it_works": "Validates the emotional toll of ambivalence rather than treating it as a problem to solve.",
+          "what_it_adds": "Shifts the focus from the decision to the emotional experience of being stuck."
+        },
+        {
+          "context": "Client describing ongoing grief",
+          "user_says": "It's been a year since my mother passed and I still cry every morning.",
+          "reflection": "A year of mornings with her absence. That kind of love doesn't just stop, and it sounds like your heart still needs to grieve.",
+          "depth_level": "deep",
+          "why_it_works": "Normalizes the grief while honoring the depth of the client's love and loss.",
+          "what_it_adds": "Transforms the client's potential shame about continued grief into an affirmation of the depth of their bond."
+        }
+      ],
+      "common_mistakes": [
+        "Confusing empathy with sympathy — empathy joins the client, sympathy observes from above",
+        "Performing empathy without genuine emotional engagement",
+        "Being empathic but inaccurate — feeling with the client about the wrong thing"
+      ],
+      "things_to_avoid": [
+        "Using phrases like 'I know exactly how you feel' which can feel dismissive",
+        "Pity or feeling sorry for the client rather than with them",
+        "Overdoing empathic reflections so they lose authenticity"
+      ],
+      "confidence_level": 0.9,
+      "references": ["Rogers (1951)", "APA Guidelines for Practice", "Miller & Rollnick (2013)"]
+    },
+    {
+      "type": "paraphrasing",
+      "definition": "Restating the client's message in the counselor's own words to confirm understanding of the content and meaning",
+      "description": "Paraphrasing involves translating the client's message into the counselor's own words while preserving the original meaning. Unlike simple reflection (which uses the client's words), paraphrasing demonstrates that the counselor has truly comprehended and integrated what was said. It is particularly useful for clarifying complex or detailed narratives.",
+      "psychological_background": "Paraphrasing is a core active listening skill recognized across all major therapeutic modalities. It serves a dual purpose: confirming understanding and giving the client the opportunity to correct any misinterpretation. In CBT, paraphrasing is used to ensure accurate understanding before collaborative case conceptualization. In motivational interviewing, it helps capture the client's meaning before moving forward.",
+      "examples": [
+        {
+          "context": "Client describing a complex work situation",
+          "user_says": "I've been feeling completely overwhelmed at work lately. There's just too many deadlines, my team isn't pulling their weight, and I feel like I'm the only one who cares about doing a good job.",
+          "reflection": "So it's not just the volume of work — it's the sense that you're carrying the weight for the whole team, and that feels deeply unfair.",
+          "depth_level": "moderate",
+          "why_it_works": "Captures the full scope of the client's frustration — workload, fairness, and values — in a concise way.",
+          "what_it_adds": "Synthesizes multiple points into a coherent summary that helps the client see the full picture of their distress."
+        },
+        {
+          "context": "Client describing a relationship pattern",
+          "user_says": "My partner just doesn't understand what I'm going through. Every time I try to explain, they either get defensive or change the subject.",
+          "reflection": "It sounds like you're hitting a wall whenever you try to communicate. You reach out, and instead of feeling heard, you feel shut down.",
+          "depth_level": "moderate",
+          "why_it_works": "Captures both the specific behavior (getting defensive) and the emotional consequence (feeling shut down).",
+          "what_it_adds": "Identifies the relational pattern rather than just the individual incidents."
+        },
+        {
+          "context": "Client describing indecision",
+          "user_says": "I keep going back and forth on whether to quit my job. The pay is good and I've been there 10 years, but I dread going in every single day.",
+          "reflection": "So you're torn between the security and investment you've built and the reality that this job is draining you.",
+          "depth_level": "moderate",
+          "why_it_works": "Clarifies the competing values at the heart of the dilemma: security versus well-being.",
+          "what_it_adds": "Frames the conflict in terms of values rather than just logistics, which may help the client prioritize."
+        },
+        {
+          "context": "Client describing grief",
+          "user_says": "It's been a year since my mother passed and I still cry every morning. People keep telling me I should be over it by now.",
+          "reflection": "So you're grieving in your own way and on your own timeline, but you're also dealing with external pressure to move on — which probably makes you feel like something is wrong with you.",
+          "depth_level": "moderate",
+          "why_it_works": "Captures both the grief itself and the secondary distress of feeling judged for how long it's lasting.",
+          "what_it_adds": "Validates the client's experience while naming the additional burden of social pressure."
+        }
+      ],
+      "common_mistakes": [
+        "Paraphrasing too long, turning it into a monologue",
+        "Adding the counselor's own opinions or interpretations into the paraphrase",
+        "Paraphrasing content while missing the emotional theme"
+      ],
+      "things_to_avoid": [
+        "Using paraphrasing as a way to avoid genuine emotional engagement",
+        "Paraphrasing when a simple reflection would be more appropriate",
+        "Over-paraphrasing, which can make the client feel processed rather than heard"
+      ],
+      "confidence_level": 0.9,
+      "references": ["Miller & Rollnick (2013)", "APA Guidelines for Practice"]
+    },
+    {
+      "type": "summarizing",
+      "definition": "Pulling together multiple themes, feelings, and meanings expressed over the course of a conversation or session into a cohesive overview",
+      "description": "Summarizing is a macro-level reflection that captures the major themes, emotions, and meanings from an extended period of conversation. It helps organize the client's experience, highlights important threads, and creates a sense of coherence. Summaries are especially powerful at transition points in therapy — between topics, at the end of sessions, or when reviewing progress.",
+      "psychological_background": "Summarizing serves an integrative function in therapy. In motivational interviewing, summaries are used strategically to consolidate change talk and prepare for the next phase of the conversation (Miller & Rollnick, 2013). In person-centered therapy, comprehensive summaries demonstrate deep understanding and help the client see the interconnections between their experiences. Summaries also help with memory consolidation and narrative coherence.",
+      "examples": [
+        {
+          "context": "End of a session focused on work stress",
+          "user_says": "[Multiple statements throughout session about work, identity, burnout, and fear of change]",
+          "reflection": "As I sit with everything you've shared today, what stands out to me is this: you came in talking about being overwhelmed at work, but underneath that, I'm hearing a deeper question about whether the life you've built is actually the life you want. There's the practical pressure — the deadlines, the team, the daily dread. And then there's this deeper fear that if you let yourself acknowledge how unhappy you are, you'll have to do something about it. And that feels terrifying.",
+          "depth_level": "deep",
+          "why_it_works": "Synthesizes the practical and existential dimensions of the client's experience into a coherent narrative that helps them see the full picture.",
+          "what_it_adds": "Creates narrative coherence and helps the client identify the deeper theme beneath the surface complaints."
+        },
+        {
+          "context": "Mid-session summary during relationship discussion",
+          "user_says": "[Multiple statements about partner, communication, loneliness, and fear of abandonment]",
+          "reflection": "Let me see if I can pull this together. You love your partner, and you've built a life together. But somewhere along the way, you started feeling invisible. You've tried to reach out, but the conversations don't go anywhere. And what I'm hearing underneath all of this is a fear that maybe this distance means the relationship is fundamentally broken — even though admitting that feels like it would destroy everything you've built.",
+          "depth_level": "deep",
+          "why_it_works": "Organizes the client's scattered emotional statements into a clear narrative arc.",
+          "what_it_adds": "Helps the client see the trajectory of their own feelings and name the fear they may not have articulated."
+        },
+        {
+          "context": "Progress summary after several sessions on grief",
+          "user_says": "[Reflecting on their journey over multiple sessions]",
+          "reflection": "When you first came in, you were drowning in grief and angry at yourself for not being over it. Over these weeks, I've watched you begin to understand that your grief isn't a problem to solve — it's a reflection of how much she mattered. You're still crying every morning, but now you're also finding moments of gratitude alongside the tears. You haven't stopped grieving, but you've started grieving with more compassion for yourself.",
+          "depth_level": "deep",
+          "why_it_works": "Highlights growth and shifts in perspective that the client may not see in themselves.",
+          "what_it_adds": "Provides a mirror for the client's progress and reinforces the therapeutic work."
+        }
+      ],
+      "common_mistakes": [
+        "Summarizing too frequently, which disrupts the flow of the session",
+        "Summarizing only the counselor's preferred themes while ignoring what the client emphasized",
+        "Creating summaries that are too long and lose the client's attention"
+      ],
+      "things_to_avoid": [
+        "Using summaries to redirect the conversation toward the counselor's agenda",
+        "Summarizing in a way that implies the client's issues are resolved",
+        "Rushing through summaries without pausing to check with the client"
+      ],
+      "confidence_level": 0.85,
+      "references": ["Miller & Rollnick (2013)", "Rogers (1951)", "APA Guidelines for Practice"]
+    }
+  ],
+  "reflection_examples_by_emotion": {
+    "anxiety": [
+      {
+        "user_says": "I can't stop worrying about everything. My mind just won't shut off.",
+        "simple_reflection": "Your mind won't shut off.",
+        "complex_reflection": "It sounds like your anxiety has taken over, and you feel like you've lost control of your own thoughts.",
+        "radical_reflection": "I wonder if the racing mind isn't just about the worries themselves, but about a deeper fear that if you stop being vigilant, something terrible will happen — as if your anxiety is trying to protect you from a danger you can't name.",
+        "explanation": "Anxiety often involves a loss of perceived control. Simple reflection validates the experience. Complex reflection names the loss of control. Radical reflection explores the protective function anxiety may serve."
+      },
+      {
+        "user_says": "I had a panic attack in the grocery store today. I thought I was dying.",
+        "simple_reflection": "A panic attack in the grocery store.",
+        "complex_reflection": "That sounds absolutely terrifying — your body was telling you that you were in danger, even though you were somewhere safe.",
+        "radical_reflection": "Your body is screaming danger in a place where there is none. I wonder if this is your nervous system trying to tell you something about the level of threat you've been living under — not just today, but maybe for a long time.",
+        "explanation": "Panic attacks involve the body's threat system misfiring. Simple reflection acknowledges the event. Complex reflection validates the terror. Radical reflection connects the panic to a larger pattern of living in survival mode."
+      },
+      {
+        "user_says": "I'm so anxious about this presentation tomorrow. I'm going to embarrass myself.",
+        "simple_reflection": "You're anxious about tomorrow's presentation.",
+        "complex_reflection": "You're predicting the worst outcome, and that prediction is creating so much fear that it's hard to see anything else.",
+        "radical_reflection": "I wonder if this anxiety isn't really about the presentation at all — maybe it touches on a deeper fear of being seen and judged, of not being enough.",
+        "explanation": "Performance anxiety often has roots in core beliefs about worthiness. Simple reflection acknowledges the surface fear. Complex reflection names the cognitive distortion. Radical reflection connects to the deeper identity concern."
+      }
+    ],
+    "sadness": [
+      {
+        "user_says": "I just feel so empty inside. Like nothing matters anymore.",
+        "simple_reflection": "You feel empty inside.",
+        "complex_reflection": "It sounds like something has drained the meaning and color out of your life, and you're moving through the days feeling hollow.",
+        "radical_reflection": "This emptiness might be your heart's way of protecting itself from pain so deep that feeling it fully would be unbearable. The numbness isn't weakness — it's survival.",
+        "explanation": "Emptiness often signals depression or emotional numbing. Simple reflection names the feeling. Complex reflection adds the sense of loss of meaning. Radical reflection reframes the numbness as a protective mechanism."
+      },
+      {
+        "user_says": "I cry at everything now. A commercial, a song, even a kind word from a stranger.",
+        "simple_reflection": "You've been crying a lot.",
+        "complex_reflection": "It sounds like your emotional guard is down, and everything is reaching you in a way it didn't before.",
+        "radical_reflection": "Maybe these tears aren't about the commercials or the songs. Maybe your grief has finally found safe enough cracks to come through — and your tears are actually a sign that you're beginning to heal.",
+        "explanation": "Increased tearfulness can signal emotional release. Simple reflection acknowledges the behavior. Complex reflection notices the lowered defenses. Radical reflection reframes crying as healing rather than weakness."
+      },
+      {
+        "user_says": "I don't see the point in anything anymore. What's the use?",
+        "simple_reflection": "You're struggling to see the point.",
+        "complex_reflection": "You've lost your sense of direction and purpose, and right now, the future feels meaningless.",
+        "radical_reflection": "When someone says nothing matters, I hear a deep exhaustion — not just with life, but with the effort of pretending things are okay when they aren't. What would it feel like to stop pretending, even just here?",
+        "explanation": "Hopelessness is a significant clinical indicator. Simple reflection acknowledges the feeling. Complex reflection names the loss of meaning. Radical reflection connects to the exhaustion of masking pain."
+      }
+    ],
+    "anger": [
+      {
+        "user_says": "I'm furious. They had no right to treat me that way.",
+        "simple_reflection": "You're furious.",
+        "complex_reflection": "You feel deeply disrespected, and that sense of injustice is burning inside you.",
+        "radical_reflection": "This fury isn't just about what they did — it's about what it means to you. Maybe it touches on a moment where you needed to matter to someone and didn't.",
+        "explanation": "Anger often masks deeper hurt. Simple reflection validates the intensity. Complex reflection connects anger to the sense of violation. Radical reflection explores the vulnerability beneath the rage."
+      },
+      {
+        "user_says": "I can't believe they got away with it. Nobody did anything.",
+        "simple_reflection": "You're frustrated that nothing happened.",
+        "complex_reflection": "You're carrying the weight of an injustice that no one else seems to see or care about, and that feels deeply isolating.",
+        "radical_reflection": "When injustice goes unaddressed, it doesn't just make us angry — it shakes our faith in whether the world is fair, whether good people matter. I wonder if that's part of what's hurting.",
+        "explanation": "Unaddressed anger often becomes moral injury. Simple reflection names the frustration. Complex reflection adds the isolation. Radical reflection connects to the broader disillusionment."
+      },
+      {
+        "user_says": "I just want to scream. I'm so tired of being taken for granted.",
+        "simple_reflection": "You're tired of being taken for granted.",
+        "complex_reflection": "You've been giving and giving, and no one has stopped to see what it's costing you. That depletion has turned into rage.",
+        "radical_reflection": "Maybe the anger isn't really about being taken for granted — maybe it's about realizing that you've been taking yourself for granted, too. You've taught people how to treat you by not valuing yourself enough to demand more.",
+        "explanation": "Chronic resentment often reflects self-neglect. Simple reflection validates the feeling. Complex reflection traces the path from depletion to anger. Radical reflection invites accountability without blame."
+      }
+    ],
+    "stress": [
+      {
+        "user_says": "I have way too much on my plate. I can't keep up with everything.",
+        "simple_reflection": "You have too much on your plate.",
+        "complex_reflection": "You're stretched beyond your capacity, and it feels like no matter how hard you try, you can't catch up.",
+        "radical_reflection": "I wonder if this relentless pace isn't just about the demands around you, but about a belief that you can only be worthy if you're constantly doing, producing, achieving.",
+        "explanation": "Overwhelm often masks deeper beliefs about worthiness. Simple reflection acknowledges the overload. Complex reflection adds the futility. Radical reflection connects to the self-imposed pressure."
+      },
+      {
+        "user_says": "I haven't slept properly in weeks. My body is running on empty.",
+        "simple_reflection": "You haven't been sleeping well.",
+        "complex_reflection": "Your body is exhausted and sending you urgent signals, but the stress keeps overriding your need for rest.",
+        "radical_reflection": "Your body is screaming for rest, and you keep pushing through. I wonder what would happen if you let yourself rest — and whether part of you believes you don't deserve to.",
+        "explanation": "Sleep disruption from stress reflects the body's alarm system. Simple reflection notes the symptom. Complex reflection names the body-mind conflict. Radical reflection explores the permission to rest."
+      },
+      {
+        "user_says": "Everyone keeps telling me to relax, but they have no idea how much I'm juggling.",
+        "simple_reflection": "You feel misunderstood when people tell you to relax.",
+        "complex_reflection": "You're carrying an invisible load, and the people around you can't see how much strength it takes just to get through each day.",
+        "radical_reflection": "When people say 'just relax,' what I hear you saying is: 'See me. Really see what I'm carrying.' Maybe what you need isn't advice — it's acknowledgment.",
+        "explanation": "Dismissive advice often triggers anger because it invalidates the struggle. Simple reflection validates the misunderstanding. Complex reflection adds the invisible burden. Radical reflection names the unmet need for recognition."
+      }
+    ],
+    "grief": [
+      {
+        "user_says": "I still reach for my phone to call her. Then I remember she's gone.",
+        "simple_reflection": "You still reach for your phone to call her.",
+        "complex_reflection": "Your habits are still connected to a world where she was alive, and every time reality catches up, it's like losing her all over again.",
+        "radical_reflection": "Maybe those moments when you reach for your phone aren't mistakes — maybe they're your love refusing to accept that the connection is gone. That love is still alive in you, even if she isn't.",
+        "explanation": "Phantom behaviors are a common grief response. Simple reflection captures the habit. Complex reflection explains the repeated loss. Radical reflection reframes the behavior as continued love."
+      },
+      {
+        "user_says": "I feel guilty for laughing again. Like I'm betraying her memory.",
+        "simple_reflection": "You feel guilty for laughing.",
+        "complex_reflection": "You're caught between the natural human need to feel joy and the grief voice that says moving forward means forgetting.",
+        "radical_reflection": "What if she wouldn't want you to suffer forever? What if your laughter isn't a betrayal of her memory, but proof that her love gave you the capacity to feel joy?",
+        "explanation": "Grief guilt is a common and painful experience. Simple reflection names the guilt. Complex reflection explains the conflict. Radical reflection offers a reframe that honors both the love and the healing."
+      },
+      {
+        "user_says": "The house is so quiet without him. I can't stand the silence.",
+        "simple_reflection": "The house is quiet without him.",
+        "complex_reflection": "The silence isn't just an absence of sound — it's the absence of his presence, his laugh, the way he filled a room.",
+        "radical_reflection": "That silence is the shape of his absence. And yet, if you listen closely, the silence is also filled with everything he left behind — the memories, the love, the way he changed you. The silence isn't empty. It's full of him.",
+        "explanation": "Sensory reminders of loss are deeply painful. Simple reflection names the silence. Complex reflection translates the silence into absence. Radical reflection transforms the silence into presence."
+      }
+    ],
+    "shame": [
+      {
+        "user_says": "I'm so embarrassed. I made a fool of myself at the meeting.",
+        "simple_reflection": "You're embarrassed about the meeting.",
+        "complex_reflection": "You're replaying that moment over and over, and each time, the judgment you're placing on yourself gets harsher.",
+        "radical_reflection": "I wonder if the embarrassment goes deeper than this one meeting. Maybe it taps into a belief that you're not competent enough, not polished enough, not enough — and this moment just confirmed what you've always feared.",
+        "explanation": "Shame often connects to core beliefs. Simple reflection acknowledges the feeling. Complex reflection names the rumination. Radical reflection connects the moment to deeper self-beliefs."
+      },
+      {
+        "user_says": "I can't believe I said that. Everyone must think I'm an idiot.",
+        "simple_reflection": "You're worried about what people think.",
+        "complex_reflection": "You're assuming the worst about how others see you, and that assumption is causing real pain.",
+        "radical_reflection": "When we're drowning in shame, we become our own harshest judge. What if, instead of assuming the worst, we considered that most people were too busy worrying about themselves to judge you as harshly as you judge yourself?",
+        "explanation": "Shame involves harsh self-judgment and mind-reading. Simple reflection validates the worry. Complex reflection names the assumption. Radical reflection gently challenges the shame narrative."
+      },
+      {
+        "user_says": "I don't want anyone to know about my past. It's too shameful.",
+        "simple_reflection": "You don't want people to know about your past.",
+        "complex_reflection": "You're carrying something heavy from your past, and the fear of being seen — truly seen — feels dangerous.",
+        "radical_reflection": "Shame thrives in secrecy. And yet, I wonder if part of you knows that the thing you're most ashamed of might also be the thing that, shared with the right person, could finally set you free.",
+        "explanation": "Shame's power comes from concealment. Simple reflection acknowledges the secrecy. Complex reflection names the fear of vulnerability. Radical reflection introduces the healing potential of disclosure."
+      }
+    ],
+    "loneliness": [
+      {
+        "user_says": "I'm surrounded by people and I still feel completely alone.",
+        "simple_reflection": "You feel alone even when people are around.",
+        "complex_reflection": "There's a painful gap between being around people and actually being connected to them. You're present, but you feel invisible.",
+        "radical_reflection": "Maybe the loneliest place is a room full of people who know you but don't see you. And I wonder if this loneliness is asking you a question: what kind of connection are you truly hungry for?",
+        "explanation": "Loneliness is about perceived disconnection, not physical isolation. Simple reflection captures the paradox. Complex reflection names the invisibility. Radical reflection invites exploration of deeper needs."
+      },
+      {
+        "user_says": "I haven't had a real conversation with anyone in weeks.",
+        "simple_reflection": "You haven't had a real conversation in weeks.",
+        "complex_reflection": "You're starving for genuine connection, and the superficial interactions you're having aren't nourishing you at all.",
+        "radical_reflection": "Connection isn't something you can get from others until you first offer it to yourself. I wonder if part of this loneliness is about the distance between you and your own heart.",
+        "explanation": "Loneliness can reflect a disconnection from self as well as others. Simple reflection notes the absence. Complex reflection names the hunger. Radical reflection turns inward."
+      },
+      {
+        "user_says": "Nobody checks on me. I could disappear and no one would notice.",
+        "simple_reflection": "You feel like no one checks on you.",
+        "complex_reflection": "You feel unseen and unimportant, as if you don't matter enough for anyone to wonder how you're doing.",
+        "radical_reflection": "I notice you're here, and I'm checking on you right now. And I wonder if part of the pain is that you've learned to believe you don't deserve to be checked on — that somewhere along the way, you internalized the message that you're not worth the effort.",
+        "explanation": "Feeling unnoticed often connects to core beliefs about worthiness. Simple reflection validates the feeling. Complex reflection names the unworthiness belief. Radical reflection offers immediate counter-evidence."
+      }
+    ],
+    "confusion": [
+      {
+        "user_says": "I don't know what I want anymore. I feel so lost.",
+        "simple_reflection": "You feel lost.",
+        "complex_reflection": "You've lost your sense of direction, and that disorientation is making everything feel uncertain and unstable.",
+        "radical_reflection": "Maybe being lost isn't a failure — maybe it's a necessary passage. The old map doesn't fit anymore, and you're between who you were and who you're becoming. That confusion might be growth in disguise.",
+        "explanation": "Confusion can signal a transition between life stages. Simple reflection validates the feeling. Complex reflection adds the instability. Radical reflection reframes confusion as transition."
+      },
+      {
+        "user_says": "Everyone tells me what I should do, but I don't know who to listen to — including myself.",
+        "simple_reflection": "You're getting conflicting advice.",
+        "complex_reflection": "You're caught between external voices and your own, and you've lost trust in your ability to know what's right for you.",
+        "radical_reflection": "When we can't hear our own voice, it's often because someone else's voice has been louder for so long that we've forgotten what our own sounds like. Reclaiming that voice might be the real work here.",
+        "explanation": "Decision confusion often reflects disconnection from self. Simple reflection notes the conflict. Complex reflection names the loss of self-trust. Radical reflection connects to the process of reclaiming autonomy."
+      },
+      {
+        "user_says": "I thought I had it figured out, but now I'm back to square one.",
+        "simple_reflection": "You feel like you're back to square one.",
+        "complex_reflection": "You had a moment of clarity, and now the ground has shifted again, and the uncertainty has returned.",
+        "radical_reflection": "Growth isn't linear. Being back here doesn't mean you've lost what you gained — it means you're circling the same lesson at a deeper level. The fact that you can see you're back here means you're not really at square one at all.",
+        "explanation": "Progress regression is a common source of confusion. Simple reflection acknowledges the setback. Complex reflection names the return of uncertainty. Radical reflection reframes regression as deepening."
+      }
+    ],
+    "hopelessness": [
+      {
+        "user_says": "Nothing is ever going to change. This is just how my life is.",
+        "simple_reflection": "You feel like nothing will change.",
+        "complex_reflection": "You're trapped in a sense of permanence, as if this pain is the final word on your life.",
+        "radical_reflection": "Hopelessness feels like the truth, but it's actually a symptom — not a prophecy. It's the voice that speaks loudest when we're closest to a breakthrough. The fact that you're here, talking about this, tells me you haven't given up entirely.",
+        "explanation": "Hopelessness is both a symptom and a cognitive distortion. Simple reflection validates the feeling. Complex reflection names the perceived permanence. Radical reflection challenges the hopelessness as a symptom rather than reality."
+      },
+      {
+        "user_says": "I've tried everything. Nothing works.",
+        "simple_reflection": "You feel like nothing works.",
+        "complex_reflection": "You've exhausted your resources, and the repeated failures have convinced you that change is impossible.",
+        "radical_reflection": "When we say we've tried everything, we usually mean we've tried everything we knew. But you're here, and that means you're still willing to look — even if you can't see the way yet.",
+        "explanation": "Hopelessness after repeated failure is a common pattern. Simple reflection acknowledges the exhaustion. Complex reflection names the conclusion of impossibility. Radical reflection gently challenges the absoluteness of 'everything.'"
+      },
+      {
+        "user_says": "What's the point of going to therapy? I'm too far gone.",
+        "simple_reflection": "You're questioning whether therapy can help.",
+        "complex_reflection": "You're in so much pain that you can't imagine anything reaching you, and you've started to believe you're beyond help.",
+        "radical_reflection": "The part of you that says you're too far gone is the same part that brought you here. That's not hopelessness — that's hope disguised as despair.",
+        "explanation": "Resistance to therapy often coexists with a deep desire for help. Simple reflection notes the doubt. Complex reflection names the despair. Radical reflection reframes the resistance as evidence of underlying hope."
+      }
+    ],
+    "positive_emotions": [
+      {
+        "user_says": "I finally got the promotion! I can't believe it!",
+        "simple_reflection": "You got the promotion!",
+        "complex_reflection": "This is a huge accomplishment, and you're allowing yourself to feel proud and surprised — like part of you didn't believe this was possible.",
+        "radical_reflection": "This joy isn't just about the promotion. Maybe it's about proving something to yourself — that you are capable, that your hard work matters, that you deserve to be seen and rewarded.",
+        "explanation": "Positive emotions in therapy can be as important as negative ones. Simple reflection celebrates with the client. Complex reflection adds the element of surprise and self-doubt. Radical reflection connects the achievement to deeper beliefs about self-worth."
+      },
+      {
+        "user_says": "I actually felt happy today. Like genuinely happy. It's been so long.",
+        "simple_reflection": "You felt genuinely happy today.",
+        "complex_reflection": "After a long stretch of darkness, something broke through, and you let yourself feel it. That happiness feels almost foreign, but it's real.",
+        "radical_reflection": "Happiness after darkness isn't just a feeling — it's a homecoming. You're not just happy today. You're remembering what it feels like to be alive.",
+        "explanation": "Rediscovering happiness after a difficult period is significant. Simple reflection acknowledges the moment. Complex reflection adds the contrast with prior pain. Radical reflection frames it as a return to self."
+      },
+      {
+        "user_says": "I stood up for myself today. I actually said what I needed to say.",
+        "simple_reflection": "You stood up for yourself.",
+        "complex_reflection": "You found your voice today, and that act of self-advocacy took real courage — especially if this isn't something that comes naturally to you.",
+        "radical_reflection": "When you stood up for yourself today, you weren't just setting a boundary with someone else. You were telling yourself: I matter. My needs matter. I am worth defending.",
+        "explanation": "Self-advocacy is often a breakthrough in therapy. Simple reflection acknowledges the action. Complex reflection adds the element of courage. Radical reflection connects the external boundary to internal self-worth."
+      }
+    ]
+  }
+}
